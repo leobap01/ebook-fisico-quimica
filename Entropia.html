@@ -1,0 +1,1079 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Entropia &#8212; Físico-Química</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Primeira Lei da termodinâmica" href="Primeira_Lei.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Físico-Química</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Aprendendo Físico-Química com auxílio de Phython
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Gas_ideal.html">
+   Gás Ideal
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Gases_Reais_v2.html">
+   Gáses Reais
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Primeira_Lei.html">
+   Primeira Lei da termodinâmica
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Entropia
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/Entropia.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FEntropia.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/Entropia.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fundamentos-teoricos">
+   Fundamentos Teóricos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-1-obtendo-o-polinomio-da-capacidade-calorifica">
+   Exemplo 1: Obtendo o polinômio da capacidade calorífica
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solucao">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercicio-2-calculando-entropias-da-terceira-lei">
+   Exercício 2: Calculando entropias da terceira Lei
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solucao-a">
+     Solução (a)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solucao-b">
+     Solução (b)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solucao-conjunta-dos-itens-c-e-d">
+     Solução conjunta dos itens (c) e (d)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Entropia</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fundamentos-teoricos">
+   Fundamentos Teóricos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-1-obtendo-o-polinomio-da-capacidade-calorifica">
+   Exemplo 1: Obtendo o polinômio da capacidade calorífica
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solucao">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercicio-2-calculando-entropias-da-terceira-lei">
+   Exercício 2: Calculando entropias da terceira Lei
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solucao-a">
+     Solução (a)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solucao-b">
+     Solução (b)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solucao-conjunta-dos-itens-c-e-d">
+     Solução conjunta dos itens (c) e (d)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="entropia">
+<h1>Entropia<a class="headerlink" href="#entropia" title="Permalink to this headline">#</a></h1>
+<section id="fundamentos-teoricos">
+<h2>Fundamentos Teóricos<a class="headerlink" href="#fundamentos-teoricos" title="Permalink to this headline">#</a></h2>
+<p><font size = "4"> Entropia é a função termodinâmica que aponta o sentido de uma transformação espontânea e é definida a partir de uma transformação reversível, onde</p>
+<div class="math notranslate nohighlight">
+\[ dS = \frac{dQ_{rev}}{T} \]</div>
+<p>nesta equação <span class="math notranslate nohighlight">\(dQ_{rev}\)</span> é a quantidade calor trocado em uma transformação reversível. A entropia só depende do estado final e inicial do sistema. Logo, em uma transformação cíclica <span class="math notranslate nohighlight">\( \Delta S = 0\)</span>.</p>
+<p>A variação da entropia pode ser cálculada para diferentes transformações reversíveis:</p>
+<ul class="simple">
+<li><p><strong>Mudança de fase reversível a T e p constantes</strong> : <span class="math notranslate nohighlight">\( dS = \frac{\Delta H}{T} \)</span></p></li>
+<li><p><strong>Aquecimento reversível a p constante sem mudança de fase</strong> : <span class="math notranslate nohighlight">\( dS = \frac{Cp}{T} dT \)</span></p></li>
+<li><p><strong>Transformação reversível em função de T e V</strong> : <span class="math notranslate nohighlight">\( dS = \frac{Cv}{T} dT + \frac{\alpha}{\kappa} dV \)</span></p></li>
+<li><p><strong>Transformação reversível em função de T e p</strong> : <span class="math notranslate nohighlight">\( dS = \frac{Cp}{T} dT - \alpha V dV \)</span></p></li>
+</ul>
+<p>Quando a transformação é irreversível, buscamos uma transformação reversível entre os mesmos estados final e inicial, de forma que as equações anteriores possam ser aplicadas. Todas as equações anteriores se referem ao sistema e não contem nenhum informação sobre as vizinhanças. No entanto, a relação entre espontaneidade de processos e entropia está associada a variação da entropia do sistema mais vizinhanças, chamada de entropia do universo ou entropia total. Esta pode ser descrita pela equação</p>
+<div class="math notranslate nohighlight">
+\[ \Delta S_{universo} = \Delta S_{viz} + \Delta S_{sis} \]</div>
+<p>Em um processo <em>reversível</em> <span class="math notranslate nohighlight">\( \Delta S_{universo} = 0 \)</span>. Apesar de <span class="math notranslate nohighlight">\(\Delta S_{viz}\)</span> e <span class="math notranslate nohighlight">\( \Delta S_{sis} \)</span> variarem, a entropia do universo se mantem constante em processos reversíveis. No caso de processos irreversíveis</p>
+<p><span class="math notranslate nohighlight">\( \Delta S_{universo} &gt; 0 \)</span></p>
+<p>Por consequência, a entropia deve aumentar em transformações espontâneas. Enquanto que  <span class="math notranslate nohighlight">\( \Delta S_{universo} = 0 \)</span>  define um estado de equilíbrio.  <font></p>
+<p>Os seguintes módulos precisam ser carregados para resolução dos exercícios:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tudo começa com a importação dos módulos necessários para fazer as contas</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">curve_fit</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">quad</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="exemplo-1-obtendo-o-polinomio-da-capacidade-calorifica">
+<h2>Exemplo 1: Obtendo o polinômio da capacidade calorífica<a class="headerlink" href="#exemplo-1-obtendo-o-polinomio-da-capacidade-calorifica" title="Permalink to this headline">#</a></h2>
+<p><font size ="4">A tabela abaixo apresenta os valores de <span class="math notranslate nohighlight">\(Cº_{p,m} (J mol^{-1} K^{-1})\)</span> para  <span class="math notranslate nohighlight">\(O_2(g)\)</span> no intervalo de tempertaura de 298K até 1500K. a) Ajuste um polinômio de terceiro grau ao dados de capacidade calorífica em função da temperatura e construa o gráfico de <span class="math notranslate nohighlight">\(Cº_{p,m}\)</span> versus temperatura. b) Uma segunda alternativa é ajustar uma função do tipo <span class="math notranslate nohighlight">\(Cº_{p,m} = A + BT + CT^2 + D/T^2 \)</span> aos dados fornecidos. Ajuste esta função aos dados fornecidos e construa o gráfico de <span class="math notranslate nohighlight">\(Cº_{p,m}\)</span> versus temperatura. c) Compare os resultados obtidos.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>T (K)</p></td>
+<td><p>298.15</p></td>
+<td><p>400.</p></td>
+<td><p>500.</p></td>
+<td><p>600.</p></td>
+<td><p>700.</p></td>
+<td><p>800.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cp (J/K mol)</p></td>
+<td><p>29.376</p></td>
+<td><p>30.106</p></td>
+<td><p>31.091</p></td>
+<td><p>32.090</p></td>
+<td><p>32.981</p></td>
+<td><p>33.733</p></td>
+</tr>
+<tr class="row-even"><td><p>T (K)</p></td>
+<td><p>900.</p></td>
+<td><p>1000.</p></td>
+<td><p>1100.</p></td>
+<td><p>1200.</p></td>
+<td><p>1300.</p></td>
+<td><p>1400.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cp (J/K mol)</p></td>
+<td><p>34.355</p></td>
+<td><p>34.870</p></td>
+<td><p>35.300</p></td>
+<td><p>35.667</p></td>
+<td><p>35.988</p></td>
+<td><p>36.277</p></td>
+</tr>
+</tbody>
+</table>
+<section id="solucao">
+<h3>Solução<a class="headerlink" href="#solucao" title="Permalink to this headline">#</a></h3>
+<p><font size = "4"> Como os cálculos de variação da entropia dependem dos valores da capacidade calorífica, é importante conhecermos diferentes formas para expressar Cp(T). Os valores dados na tabela serão escritos na forma de vetores e em seguida as funções informadas no enunciado serão ajustadas aos dados.Incialmente será feito o ajusta a uma função polinomial de terceiro grau e em seguida a segunda função  será ajustada.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">298.15</span><span class="p">,</span><span class="mf">400.</span><span class="p">,</span><span class="mf">500.</span><span class="p">,</span><span class="mf">600.</span><span class="p">,</span><span class="mf">700.</span><span class="p">,</span><span class="mf">800.</span><span class="p">,</span><span class="mf">900.</span><span class="p">,</span><span class="mf">1000.</span><span class="p">,</span><span class="mf">1100.</span><span class="p">,</span><span class="mf">1200.</span><span class="p">,</span><span class="mf">1300.</span><span class="p">,</span><span class="mf">1400.</span><span class="p">,</span><span class="mf">1500.</span><span class="p">])</span>
+<span class="n">Cp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">29.376</span><span class="p">,</span> <span class="mf">30.106</span><span class="p">,</span> <span class="mf">31.091</span><span class="p">,</span> <span class="mf">32.090</span><span class="p">,</span> <span class="mf">32.981</span><span class="p">,</span> <span class="mf">33.733</span><span class="p">,</span> <span class="mf">34.355</span><span class="p">,</span> <span class="mf">34.870</span><span class="p">,</span> <span class="mf">35.300</span><span class="p">,</span> <span class="mf">35.667</span><span class="p">,</span><span class="mf">35.988</span><span class="p">,</span> <span class="mf">36.277</span><span class="p">,</span> <span class="mf">36.544</span><span class="p">])</span>
+
+<span class="c1">#Ajuste polinomial</span>
+
+
+<span class="n">deg</span> <span class="o">=</span> <span class="mi">3</span> <span class="c1">#grau do polinômio</span>
+
+<span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">Cp</span><span class="p">,</span> <span class="n">deg</span><span class="p">)</span> <span class="c1">#objeto que guardará os coeficientes do polinômio</span>
+
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">(</span><span class="n">z</span><span class="p">)</span> <span class="c1">#polinômio criado com os coeficientes ajustados</span>
+
+
+<span class="c1">#Impressão dos resultados</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Cºp,m = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.5f&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; +&#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.5f&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;T&#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.5e&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;T²&#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.5e&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;T³&#39;</span><span class="p">)</span>   
+
+<span class="c1">#imprimir diretamente o polinômio:</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cºp,m =  25.66508 + 0.01304T-3.81147e-06T²-5.57560e-11T³
+            3             2
+-5.576e-11 x - 3.811e-06 x + 0.01304 x + 25.67
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size = "4"> Foram mostrados os resultados de duas formas distintas para fins comparativos. A criação do polinômio <em>y</em> pode facilitar algumas operações, como a construção de gráficos. O gráfico de Cp versus T será construído usando  o polinômio y, considerando os valores de temperatura informados no enunciado do problema. <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span> <span class="c1"># estes dois parâmetros precisam aparecer antes da definição do plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="c1">#plota os valores informados no enunciado na forma de pontos</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="n">Cp</span><span class="p">,</span><span class="s1">&#39;*&#39;</span><span class="p">)</span>
+<span class="c1">#plota o polinômio ajustado como uma linha</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="n">y</span><span class="p">(</span><span class="n">T</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Polinômio de 3º grau&#39;</span><span class="p">)</span>
+<span class="c1">#definição da legenda dos eixos</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Temperatura (K)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Cºp,m (J/mol K)&#39;</span><span class="p">)</span>
+<span class="c1">#Mostra a legenda de cada curva</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;best&#39;</span><span class="p">)</span> 
+<span class="c1">#mostra o gráfico</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;function matplotlib.pyplot.show(*args, **kw)&gt;
+</pre></div>
+</div>
+<img alt="_images/Entropia_9_1.png" src="_images/Entropia_9_1.png" />
+</div>
+</div>
+<p><font size = "4"> Em seguida será ajustada a função <span class="math notranslate nohighlight">\(Cº_{p,m} = A + BT + CT^2 + D/T^2 \)</span> aos dados do problema. Neste caso é preciso definir a função segundo a sintaxe do Python e em seguida usar a função <em>curve_fit()</em> para ajustar a função desejada aos dados do problema. <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definir a função que será ajustada</span>
+<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">):</span>
+
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">*</span><span class="n">T</span> <span class="o">+</span> <span class="n">c</span><span class="o">*</span><span class="n">T</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">d</span><span class="o">/</span><span class="n">T</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="c1"># ajuste da função usando mínimos quadrados</span>
+<span class="c1"># popt são os parâmetros do modelo obtidos após ajuste</span>
+<span class="c1"># pcov é a matriz de covariância de popt. A partir dela pode ser calculado o desvio padrão de cada parâmetro do ajuste</span>
+<span class="n">popt</span><span class="p">,</span> <span class="n">pcov</span> <span class="o">=</span> <span class="n">curve_fit</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">Cp</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Cºp,m = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">popt</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.3e&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; +&#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">popt</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.3e&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;T &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">popt</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.3e&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;T²  +&#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">popt</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.5e&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;/T²&#39;</span><span class="p">)</span>   
+
+<span class="c1">#imprimir só os coeficientes na forma de vetor</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Coeficientes da função&quot;</span><span class="p">,</span> <span class="n">popt</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cºp,m =  2.483e+01 + 1.456e-02T -4.560e-06T²  + 4.90797e+04/T²
+Coeficientes da função [ 2.48294824e+01  1.45554447e-02 -4.55956846e-06  4.90796782e+04]
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size ="4"> Novamente construiremos o gráfico de Cp versus T com os dados do enunciado e a equação ajustada.É possível perceber que ambas funções se ajustam bem aos dados do problema e que não é possível fazer uso de uma equação de primeiro grau para representar os dados fornecidos. A superposição das curvas confirma a similaridade dos modelos ajustados e que a escolha de uma função ou outra dependerá do problema em questão e das operações matemáticas que serão realizadas posteriormente. <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span> <span class="c1"># estes dois parâmetros precisam aparecer antes da definição do plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="n">Cp</span><span class="p">,</span><span class="s1">&#39;*&#39;</span><span class="p">)</span>
+<span class="c1">#gráfico da função ajustada. O argumento *popt informa que serão usados todos os coeficientes da</span>
+<span class="c1"># equação que foi ajustada</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="n">func</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="o">*</span><span class="n">popt</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;$Cº_{p,m} = A + BT + CT^2 + D/T^2 $&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Temperatura (K)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Cºp,m (J/mol K)&#39;</span><span class="p">)</span>
+<span class="c1">#Mostra a legenda de cada curva</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;best&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;function matplotlib.pyplot.show(*args, **kw)&gt;
+</pre></div>
+</div>
+<img alt="_images/Entropia_13_1.png" src="_images/Entropia_13_1.png" />
+</div>
+</div>
+<p><font size ="4">Superposição dos resultados para fins de comparação.<font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span> <span class="c1"># estes dois parâmetros precisam aparecer antes da definição do plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="n">Cp</span><span class="p">,</span><span class="s1">&#39;*&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="n">func</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="o">*</span><span class="n">popt</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;$Cº_{p,m} = A + BT + CT^2 + D/T^2 $&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="n">y</span><span class="p">(</span><span class="n">T</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Polinômio de 3º grau&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Temperatura (K)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Cºp,m (J/mol K)&#39;</span><span class="p">)</span>
+<span class="c1">#Mostra a legenda de cada curva</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;best&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;function matplotlib.pyplot.show(*args, **kw)&gt;
+</pre></div>
+</div>
+<img alt="_images/Entropia_15_1.png" src="_images/Entropia_15_1.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="exercicio-2-calculando-entropias-da-terceira-lei">
+<h2>Exercício 2: Calculando entropias da terceira Lei<a class="headerlink" href="#exercicio-2-calculando-entropias-da-terceira-lei" title="Permalink to this headline">#</a></h2>
+<p><font size ="4">Gráficos de Cp/T versus T são usados para determinar a entropia de um material, uma vez que o valor de entropia é igual a área sob a curva. A tabela abaixo apresenta a variação de Cp do <span class="math notranslate nohighlight">\(Na_2SO_4\)</span> em função da temperatura. a) Ajuste um polinômio de terceira ordem que passa pela origem aos dados fornecidos e calcule a entropia do <span class="math notranslate nohighlight">\(Na_2SO_4\)</span> a 90 K. b) Em baixas temperaturas é possível ajustar uma função do tipo aT³ aos valores de Cp/T (“a” é uma constante). Investigue em qual intervalo de temperaturas esta aproximação é válida. c) Ajuste uma função do tipo <span class="math notranslate nohighlight">\( Cº_{p,m} = A + BT + CT^2 + \frac{D}{T^2} \)</span> e calcule a entropia a 90 K. d) Ajuste uma função do tipo <span class="math notranslate nohighlight">\( Cº_{p,m} = A + BT + CT^2 + DT^3 \)</span> e calcule a entropia a 90 K. Compare os ajustes dos itens (c) e (d).</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Cp(<span class="math notranslate nohighlight">\(cal ~ K^{-1}\)</span> )</p></td>
+<td><p>0.171</p></td>
+<td><p>0.286</p></td>
+<td><p>0.626</p></td>
+<td><p>1.615</p></td>
+<td><p>4.346</p></td>
+<td><p>7.032</p></td>
+<td><p>10.48</p></td>
+<td><p>13.28</p></td>
+</tr>
+<tr class="row-odd"><td><p>T(K)</p></td>
+<td><p>13.74</p></td>
+<td><p>16.25</p></td>
+<td><p>20.43</p></td>
+<td><p>27.73</p></td>
+<td><p>41.11</p></td>
+<td><p>52.72</p></td>
+<td><p>68.15</p></td>
+<td><p>82.96</p></td>
+</tr>
+</tbody>
+</table>
+<section id="solucao-a">
+<h3>Solução (a)<a class="headerlink" href="#solucao-a" title="Permalink to this headline">#</a></h3>
+<p><font size = "4"> Vamos ajustar a função informada no item <strong>a</strong> e em seguida calcular a entropia resolvendo   <span class="math notranslate nohighlight">\( dS = \frac{Cp}{T} dT \)</span> no intervalo de temperaturas informado. Para isto recorremos ao enunciado da terceira lei da termodinâmica:</p>
+<p><strong>Para qualquer processo isotérmico que envolve apenas substâncias em equilíbrio interno, a variação da entropia tende a zero à medida que T tende a zero:</strong></p>
+<div class="math notranslate nohighlight">
+\[ \lim_{T \rightarrow 0} \Delta S = 0 \]</div>
+<p>Desta forma podemos integrar de 0 K até 90 K, considerando que <span class="math notranslate nohighlight">\(S_0 = 0\)</span> em T = 0 K para <span class="math notranslate nohighlight">\(Na_2 SO_4\)</span>. Neste intervalo de temperatura o <span class="math notranslate nohighlight">\(Na_2 SO_4\)</span> se mantém sólido, desta forma não precisamos nos preocupar em levar em consideração as mudanças de fase do sistema.</p>
+<p>Os dados do problema serão inseridos na forma de vetores e a função polinomial que cruza a origem será definida segundo a sintaxe do Python. Posteriormente o método dos mínimos quadrados será usado para ajustar a função aos pontos do problema, assim como foi feito no primeiro exemplo. <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">13.74</span><span class="p">,</span><span class="mf">16.25</span><span class="p">,</span><span class="mf">20.43</span><span class="p">,</span><span class="mf">27.73</span><span class="p">,</span><span class="mf">41.11</span><span class="p">,</span><span class="mf">52.72</span><span class="p">,</span><span class="mf">68.15</span><span class="p">,</span><span class="mf">82.96</span><span class="p">,</span><span class="mf">95.71</span><span class="p">])</span>
+<span class="n">Cp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.171</span><span class="p">,</span><span class="mf">0.286</span><span class="p">,</span><span class="mf">0.626</span><span class="p">,</span><span class="mf">1.615</span><span class="p">,</span><span class="mf">4.346</span><span class="p">,</span><span class="mf">7.032</span><span class="p">,</span><span class="mf">10.48</span><span class="p">,</span><span class="mf">13.28</span><span class="p">,</span><span class="mf">15.33</span><span class="p">])</span>
+
+<span class="c1"># Definir a função que será ajustada</span>
+<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">):</span>
+
+    <span class="k">return</span> <span class="n">b</span><span class="o">*</span><span class="n">T</span> <span class="o">+</span> <span class="n">c</span><span class="o">*</span><span class="n">T</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">d</span><span class="o">*</span><span class="n">T</span><span class="o">**</span><span class="mi">3</span>
+
+<span class="c1"># ajuste da função usando mínimos quadrados</span>
+<span class="c1"># popt são os parâmetros do modelo obtidos após ajuste</span>
+<span class="c1"># pcov é a matriz de covariância de popt. A partir dela pode ser calculado o desvio padrão de cada parâmetro do ajuste</span>
+<span class="n">popt</span><span class="p">,</span> <span class="n">pcov</span> <span class="o">=</span> <span class="n">curve_fit</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">Cp</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Cºp,m = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">popt</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.3e&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;T  +&#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">popt</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.3e&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;T² &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">popt</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.5e&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;T³&#39;</span><span class="p">)</span>   
+
+<span class="c1">#imprimir só os coeficientes na forma de vetor</span>
+<span class="n">popt</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cºp,m = -5.746e-02T  + 5.167e-03T² -3.03363e-05T³
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([-5.74633196e-02,  5.16679456e-03, -3.03363216e-05])
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size = "4"> O gráfico do ajuste mais os pontos do problema será construído para verificarmos se a função representa de forma adequada os dados experimentais. Em seguida será definida uma função para o resultado da divisão <span class="math notranslate nohighlight">\(\frac{Cp(T)}{T}\)</span>. Esta nova função será integrada de 0 K até 90 K usando a função <em>quad()</em>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span> <span class="c1"># estes dois parâmetros precisam aparecer antes da definição do plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="n">Cp</span><span class="p">,</span><span class="s1">&#39;*&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="n">func</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="o">*</span><span class="n">popt</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Temperatura (K)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Cºp,m (J/mol K)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;function matplotlib.pyplot.show(*args, **kw)&gt;
+</pre></div>
+</div>
+<img alt="_images/Entropia_20_1.png" src="_images/Entropia_20_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fazendo a integração no intervalo desejado</span>
+<span class="c1">#Definição da função Cp(T)/T</span>
+
+<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">T</span><span class="p">):</span>
+
+    <span class="k">return</span> <span class="n">popt</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">popt</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">T</span> <span class="o">+</span> <span class="n">popt</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span><span class="n">T</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="n">ans</span><span class="p">,</span> <span class="n">err</span> <span class="o">=</span> <span class="n">quad</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span> <span class="c1">#calcula a integral da função da acima e o erro da integração</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Delta S (J/K mol)= &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">ans</span> <span class="p">,</span> <span class="s1">&#39;6.3f&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;erro da integração = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">err</span><span class="p">,</span> <span class="s1">&#39;6.3e&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Delta S (J/K mol)=  8.382
+erro da integração = 1.006e-13
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="solucao-b">
+<h3>Solução (b)<a class="headerlink" href="#solucao-b" title="Permalink to this headline">#</a></h3>
+<p><font size ="4"> Neste caso é preciso analisar o intervalo no qual o ajusto pedido é válido. Nós faremos um corte nos valores informados na forma de vetores, para criar uma nova lista reduzida de valores. A instrução T[:X], onde X é um número inteiro, faz a retirada dos X primeiros valores do vetor T e os armazena em uma nova variável, chamada de Ti. Em nossa resolução foram considerados os primeiros cinco valores de temperatura. Para que o ajuste possa ser feito, é preciso também extrair os primeiros cinco valores de Cp, caso contrário não será possível proceder com o ajuste de funções a criação de gráficos. O leitor é incentivado a testar outros intervalos e avaliar a variação do desvio padrão calculado e precisão do ajuste. O desvio padrão deste ajuste foi calculado como a raíz quadrada da diagonal da matriz de covariância.  <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Corte nos valores iniciais de Cp e T</span>
+<span class="c1">#Foram tomados apenas os primeiros 5 valores</span>
+
+<span class="n">Ti</span> <span class="o">=</span> <span class="n">T</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span> 
+<span class="n">Cpi</span> <span class="o">=</span> <span class="n">Cp</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
+
+<span class="c1"># Definir a função que será ajustada</span>
+<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">Ti</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
+
+    <span class="k">return</span> <span class="n">a</span><span class="o">*</span><span class="n">Ti</span><span class="o">**</span><span class="mi">3</span>
+
+<span class="n">a</span><span class="p">,</span> <span class="n">pcov</span> <span class="o">=</span> <span class="n">curve_fit</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">Ti</span><span class="p">,</span> <span class="n">Cpi</span><span class="p">)</span> <span class="c1"># faz o ajuste do modelo</span>
+
+<span class="n">perr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">pcov</span><span class="p">))</span> <span class="c1"># calcula o desvio padrão do modelo</span>
+
+<span class="c1">#imprimir só os coeficientes na forma de vetor</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a= &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39;6.3e&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;desvio padrão do ajuste = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">perr</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;6.3e&#39;</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span> <span class="c1"># estes dois parâmetros precisam aparecer antes da definição do plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Ti</span><span class="p">,</span><span class="n">Cpi</span><span class="p">,</span><span class="s1">&#39;*&#39;</span><span class="p">)</span>
+<span class="c1">#Gráfico da função</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Ti</span><span class="p">,</span><span class="n">func</span><span class="p">(</span><span class="n">Ti</span><span class="p">,</span> <span class="o">*</span><span class="n">a</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;$Cp(T)=a^3$&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Temperatura (K)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Cºp,m (J/mol K)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;best&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a= 6.383e-05
+desvio padrão do ajuste = 1.919e-06
+</pre></div>
+</div>
+<img alt="_images/Entropia_23_1.png" src="_images/Entropia_23_1.png" />
+</div>
+</div>
+<p><font size = "4"> A análise do gráfico e desvio padrão mostra que a função <span class="math notranslate nohighlight">\(aT^3\)</span> se ajusta bem aos primeiros 5 valores de <span class="math notranslate nohighlight">\(C_p\)</span>. A equação <span class="math notranslate nohighlight">\(C_p = aT^3\)</span>, que define a dependência da capacidade calorífica com a temperatura em valores muito baixos de T, é denominado de <strong>Lei de Debye</strong>. Esta equação é válida para sólidos não metálicos, pois para sólidos metálicos a temperaturas póximas de 0K é válida a relação <span class="math notranslate nohighlight">\(C_p \sim C_V = aT^3 + bT\)</span>. <font></p>
+</section>
+<section id="solucao-conjunta-dos-itens-c-e-d">
+<h3>Solução conjunta dos itens (c) e (d)<a class="headerlink" href="#solucao-conjunta-dos-itens-c-e-d" title="Permalink to this headline">#</a></h3>
+<p><font size = "4"> Primeiramente será ajustada a função <span class="math notranslate nohighlight">\( Cº_{p,m} = A + BT + CT^2 + \frac{D}{T^2} \)</span> e calculado <span class="math notranslate nohighlight">\(\Delta S \)</span> em 90 K.O procedimento adotado será o mesmo de exemplos anteriores: 1) definição da função a ser ajustada; 2) ajuste da função por mínimos quadrados; 3) definição da função Cp/T; 4) integração da função Cp/T usando a função <em>quad()</em>. <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Considerando a primeira função</span>
+
+
+<span class="c1"># Definir a função que será ajustada</span>
+<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">):</span>
+
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">*</span><span class="n">T</span> <span class="o">+</span> <span class="n">c</span><span class="o">*</span><span class="n">T</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">d</span><span class="o">/</span><span class="n">T</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="c1"># ajuste da função usando mínimos quadrados</span>
+<span class="c1"># popt são os parâmetros do modelo obtidos após ajuste</span>
+<span class="c1"># pcov é a matriz de covariância de popt. A partir dela pode ser calculado o desvio padrão de cada parâmetro do ajuste</span>
+<span class="n">popt</span><span class="p">,</span> <span class="n">pcov</span> <span class="o">=</span> <span class="n">curve_fit</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">Cp</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Cºp,m = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">popt</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.3e&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; +&#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">popt</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.3e&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;T &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">popt</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.3e&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;T²  +&#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">popt</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.5e&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;/T²&#39;</span><span class="p">)</span>   
+
+
+<span class="c1">#Definição da função Cp/T</span>
+<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">T</span><span class="p">):</span>
+
+    <span class="k">return</span> <span class="n">popt</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="n">T</span> <span class="o">+</span> <span class="n">popt</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">popt</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span><span class="n">T</span> <span class="o">+</span> <span class="n">popt</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">/</span><span class="n">T</span><span class="o">**</span><span class="mi">3</span>
+
+<span class="c1">#integração da função Cp/T</span>
+<span class="n">ans</span><span class="p">,</span> <span class="n">err</span> <span class="o">=</span> <span class="n">quad</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Delta S (J/K mol)= &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">ans</span> <span class="p">,</span> <span class="s1">&#39;6.3f&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;erro da integração = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">err</span><span class="p">,</span> <span class="s1">&#39;6.3e&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cºp,m = -6.436e+00 + 2.829e-01T -5.728e-04T²  + 5.61810e+02/T²
+Delta S (J/K mol)= -36.947
+erro da integração = 2.677e+01
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-11-900a5a636b92&gt;:24: IntegrationWarning: The integral is probably divergent, or slowly convergent.
+  ans, err = quad(func, 0, 90)
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size ="4"> Perceba que o resultado é muito diferente do obtido no item <strong>a</strong> e que um aviso foi dado pelo sistema de que a integral é divergente ou tem convergência demorada. <font></p>
+<p><font size ="4"> Agora será ajustado um polinômio do terceiro grau e cálculado <span class="math notranslate nohighlight">\(\Delta S\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Considerando o polinômio do terceiro grau</span>
+
+
+<span class="n">deg</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">Cp</span><span class="p">,</span> <span class="n">deg</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Cºp,m = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.5f&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.5f&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;T + &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.5e&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;T² &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.5e&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;T³&#39;</span><span class="p">)</span>   
+
+<span class="c1">#imprimir só os coeficientes na forma de vetor</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+
+
+<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">T</span><span class="p">):</span>
+    
+     <span class="k">return</span> <span class="n">y</span><span class="o">/</span><span class="n">T</span> <span class="c1"># Para simplificar foi usado o polinômio y para definir a função Cp/T</span>
+    
+<span class="c1">#    return z[3]/T + z[2] + z[1]*T + z[0]*T**2 esta seria uma segunda alternativa para definir a função</span>
+
+<span class="n">ans</span><span class="p">,</span> <span class="n">err</span> <span class="o">=</span> <span class="n">quad</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Delta S (J/K mol)= &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">ans</span> <span class="p">,</span> <span class="s1">&#39;6.3f&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;erro da integração = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">err</span><span class="p">,</span> <span class="s1">&#39;6.3e&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cºp,m = -0.20558-0.04189T +  4.85438e-03T² -2.85176e-05T³
+[-2.85176338e-05  4.85438172e-03 -4.18860690e-02 -2.05576078e-01]
+
+Delta S (J/K mol)= 523.714
+erro da integração = 5.879e-12
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size ="4">Os três valores de entropia calculados nos itens (a), (c) e (d) diferem quanto ao valor e sinal. Não havendo acordo entre os métodos empregados. Era de se esperar que os três resultados apresentassem uma pequena diferença e não o desacordo observado. O erro ocorre porque as funções utilizadas nos itens (c) e (d) apresentam uma indeterminação na origem, o que levará a problemas de integração. Nestes casos, a integral deve ser separada em dois intervalos:</p>
+<div class="math notranslate nohighlight">
+\[ \Delta Sº = \int_{0}^{90} \frac{C_p}{T} dT = \int_{0}^{T_{baixa}} \frac{C_p}{T} dT + \int_{T_{baixa}}^{90} \frac{C_p}{T} dT \]</div>
+<p>Como visto no item (b), Cp pode ser ajustado a uma função do tipo <span class="math notranslate nohighlight">\( aT^3\)</span>, de forma que a integração se torna:</p>
+<div class="math notranslate nohighlight">
+\[ \Delta Sº = \int_{0}^{T_{baixa}} \frac{aT^3}{T} dT + \int_{T_{baixa}}^{90} \frac{C_p}{T} dT \]</div>
+<p>ou</p>
+<div class="math notranslate nohighlight">
+\[ \Delta Sº = \frac{aT^3}{3} + \int_{T_{baixa}}^{90} \frac{C_p}{T} dT = \frac{C_p}{3} + \int_{T_{baixa}}^{90} \frac{C_p}{T} dT\]</div>
+<p>Onde <span class="math notranslate nohighlight">\(C_p\)</span> da primeira integral da direita se refere ao valor da capacidade calorífica em <span class="math notranslate nohighlight">\(T_{baixa}\)</span>. Em nosso caso, é maior valor T para o qual é válido o ajuste da função aT³ usada no item (c).
+Vamos resolver os problemas com as modificações necessárias.  <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Considerando a função Cp = aT^3 em temperaturas baixas</span>
+<span class="c1"># Não é preciso refazer o ajuste, pois os coeficientes já estão salvos.</span>
+
+<span class="c1">#Definição da função Cp/T = aT^3/T</span>
+
+<span class="k">def</span> <span class="nf">func1</span><span class="p">(</span><span class="n">T</span><span class="p">):</span>
+
+    <span class="k">return</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">T</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="n">ans1</span><span class="p">,</span> <span class="n">err1</span> <span class="o">=</span> <span class="n">quad</span><span class="p">(</span><span class="n">func1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">func2</span><span class="p">(</span><span class="n">T</span><span class="p">):</span>
+
+    <span class="k">return</span> <span class="n">popt</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="n">T</span> <span class="o">+</span> <span class="n">popt</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">popt</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span><span class="n">T</span> <span class="o">+</span> <span class="n">popt</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">/</span><span class="n">T</span><span class="o">**</span><span class="mi">3</span>
+
+<span class="n">ans2</span><span class="p">,</span> <span class="n">err2</span> <span class="o">=</span> <span class="n">quad</span><span class="p">(</span><span class="n">func2</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
+
+<span class="n">DS</span> <span class="o">=</span> <span class="n">ans1</span> <span class="o">+</span> <span class="n">ans2</span>
+<span class="n">erro</span> <span class="o">=</span> <span class="n">err1</span> <span class="o">+</span> <span class="n">err2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Delta S (J/K mol)= &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">DS</span> <span class="p">,</span> <span class="s1">&#39;6.3f&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;erro da integração = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">erro</span><span class="p">,</span> <span class="s1">&#39;6.3e&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Delta S (J/K mol)=  8.565
+erro da integração = 9.509e-14
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Considerando a função Cp = aT^3 em temperaturas baixas</span>
+<span class="c1"># Não é preciso refazer o ajuste, pois os coeficientes já estão salvos.</span>
+<span class="c1"># Esta primeira integração não precisa ser repetida, pois os resultado será o mesmo. </span>
+<span class="c1">#Mas calcularemos de novo a integral para fixar a necessidade da separação dos cálculos</span>
+
+<span class="k">def</span> <span class="nf">func1</span><span class="p">(</span><span class="n">T</span><span class="p">):</span>
+
+    <span class="k">return</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">T</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="n">ans1</span><span class="p">,</span> <span class="n">err1</span> <span class="o">=</span> <span class="n">quad</span><span class="p">(</span><span class="n">func1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">func2</span><span class="p">(</span><span class="n">T</span><span class="p">):</span>
+
+    <span class="k">return</span> <span class="n">z</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">/</span><span class="n">T</span> <span class="o">+</span> <span class="n">z</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">z</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">T</span> <span class="o">+</span> <span class="n">z</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">T</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="n">ans2</span><span class="p">,</span> <span class="n">err2</span> <span class="o">=</span> <span class="n">quad</span><span class="p">(</span><span class="n">func2</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
+
+
+<span class="n">DS</span> <span class="o">=</span> <span class="n">ans1</span> <span class="o">+</span> <span class="n">ans2</span>
+<span class="n">erro</span> <span class="o">=</span> <span class="n">err1</span> <span class="o">+</span> <span class="n">err2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Delta S (J/K mol)= &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">DS</span> <span class="p">,</span> <span class="s1">&#39;6.3f&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;erro da integração = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">erro</span><span class="p">,</span> <span class="s1">&#39;6.3e&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Delta S (J/K mol)=  8.556
+erro da integração = 9.499e-14
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size = "4">Verifiquem que o resultado dos itens (a), (c) e (d) são similares. Novamente, a escolha do modelo matemático dependerá dos cálculos que pretende realizar e as propriedades que pretende calcular. <font></p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="Primeira_Lei.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Primeira Lei da termodinâmica</p>
+        </div>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Leonardo Baptista<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
