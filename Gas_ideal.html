@@ -1,0 +1,1057 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Gás Ideal &#8212; Físico-Química</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Gáses Reais" href="Gases_Reais_v2.html" />
+    <link rel="prev" title="Aprendendo Físico-Química com auxílio de Phython" href="intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Físico-Química</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Aprendendo Físico-Química com auxílio de Phython
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Gás Ideal
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Gases_Reais_v2.html">
+   Gáses Reais
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Primeira_Lei.html">
+   Primeira Lei da termodinâmica
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Entropia.html">
+   Entropia
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/Gas_ideal.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FGas_ideal.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/Gas_ideal.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fundamentos-teoricos">
+   Fundamentos teóricos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-1-verificacao-da-lei-de-boyle">
+   Exemplo 1: Verificação da Lei de Boyle
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solucao">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-2-aplicacao-da-equacao-de-estado-do-gas-ideal">
+   Exemplo 2: Aplicação da equação de estado do gás ideal
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-3-aplicacao-da-lei-de-dalton">
+   Exemplo 3: Aplicação da Lei de Dalton
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-4-calculo-da-massa-molar-de-um-gas">
+   Exemplo 4: Cálculo da massa molar de um gás
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-5-determinacao-da-escala-de-temperatura-do-gas-ideal">
+   Exemplo 5: Determinação da escala de temperatura do gás ideal
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-6-calculo-do-valor-da-constante-universal-dos-gases">
+   Exemplo 6: Cálculo do valor da constante universal dos gases
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Gás Ideal</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fundamentos-teoricos">
+   Fundamentos teóricos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-1-verificacao-da-lei-de-boyle">
+   Exemplo 1: Verificação da Lei de Boyle
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solucao">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-2-aplicacao-da-equacao-de-estado-do-gas-ideal">
+   Exemplo 2: Aplicação da equação de estado do gás ideal
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-3-aplicacao-da-lei-de-dalton">
+   Exemplo 3: Aplicação da Lei de Dalton
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-4-calculo-da-massa-molar-de-um-gas">
+   Exemplo 4: Cálculo da massa molar de um gás
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-5-determinacao-da-escala-de-temperatura-do-gas-ideal">
+   Exemplo 5: Determinação da escala de temperatura do gás ideal
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-6-calculo-do-valor-da-constante-universal-dos-gases">
+   Exemplo 6: Cálculo do valor da constante universal dos gases
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="gas-ideal">
+<h1>Gás Ideal<a class="headerlink" href="#gas-ideal" title="Permalink to this headline">#</a></h1>
+<section id="fundamentos-teoricos">
+<h2>Fundamentos teóricos<a class="headerlink" href="#fundamentos-teoricos" title="Permalink to this headline">#</a></h2>
+<p><font size="4"> Dos estados de agregação conhecido, o estado gasoso é o mais simples e permite uma descrição quantitativa simples. A forma como descrevemos de forma quantitativa o estado de um gás é por meio de uma equação de estado. A equação de estado do sistema é a relação matemática entre os valores que descrevem o estado do sistema. O gás ideal é descrito pela equação <span class="math notranslate nohighlight">\(pV = nRT\)</span>. Sendo R a constante universal dos gases (8,314 J/K mol em unidades S.I.), p é a pressão (informada em Pascal, Pa), V o volume do sistema informado em <span class="math notranslate nohighlight">\(m^3\)</span>, T a temperatura informada na escala Kelvin (K) e n a quantidade de matéria expressa em mol.</p>
+<p>Como R é uma constante, se soubermos valor de três propriedades, é possível calcular o valor da quarta. Esta equação resume em si diversas propriedades empíricas conhecidas dos  gases:</p>
+<ul class="simple">
+<li><p>A <strong>Lei de Boyle</strong>, que mostra a pressão é inversamente proporcional ao volume, desde que a quantidade de matéria e temperatura sejam mantidas constantes.</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\( pV = cte  \)</span> T e n = cte</p>
+<ul class="simple">
+<li><p>A <strong>Lei de Charles</strong>, que mostra que um gás a p e n constantes o volume é diretamente proporcional a temperatura.</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\( V \propto T \)</span> p e n = cte</p>
+<ul class="simple">
+<li><p>O <strong>princípio de Avogadro</strong>, que diz que volumes iguais de gases distintos apresentam o mesma quantidade de matéria.</p></li>
+</ul>
+<p>A equação do gás ideal pode ser aplicada para o estudo das transformações de estado de um gás (compressões, aquecimentos etc) ou para descrição da mistura de gases ideais. Caso dois gases distintos sejam encerrados em um mesmo recipiente (gases A e B), ambos ocuparão todo o volume do sistema, mas não irão interagir entre si de forma que a pressão exercida por cada gás é denominada de <em>pressão parcial</em>, e a pressão total é dada pelo somatório das pressões parciais, <span class="math notranslate nohighlight">\(p_{total} = p_A + p_B\)</span>. Sendo <span class="math notranslate nohighlight">\(p_i\)</span> a pressão parcial dos gases A e B.</p>
+<p>Ainda é possível  relacionar a composição do sistema, informada em fração molar (<span class="math notranslate nohighlight">\(x\)</span>), com a pressão  total. Esta relação é denominada de <strong>Lei de Dalton</strong>:</p>
+<div class="math notranslate nohighlight">
+\[ p_i = x_i \times p_{total} \]</div>
+<p>Para a resolução dos exercíos faremos uso das bibliotecas Numpy e Matplolib.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#bibliotecas necessárias para resolução de exercícios</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="exemplo-1-verificacao-da-lei-de-boyle">
+<h2>Exemplo 1: Verificação da Lei de Boyle<a class="headerlink" href="#exemplo-1-verificacao-da-lei-de-boyle" title="Permalink to this headline">#</a></h2>
+<p><font size="4">  Construa um gráfico de pressão versus volume para uma gás que obedece a equação de estado do gás ideal e mostre que este gás segue a Lei de Boyle. <font></p>
+<section id="solucao">
+<h3>Solução<a class="headerlink" href="#solucao" title="Permalink to this headline">#</a></h3>
+<p><font size="4"> Como a Lei deve ser válida para qualquer gás, consideraremos 1 mol de um gás ideal e calcularemos a pressão para um intervalo de valores de volume. Incialmente será criado um vetor contendo o intevalo de volumes desejados com a função numpy.arange(). Depois, para cada valor de volume será calculado a pressão segundo a equação do gás ideal. O procedimento será repetido para três temperatura distintas e finalmente os valores de p versus V será plotado usando o matplotlib. <font ></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Criando o intervalo de volumes em litros. Começando em 1 L e finalizando em 20 L</span>
+
+<span class="n">V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mf">0.5</span><span class="p">)</span>
+
+<span class="n">R</span> <span class="o">=</span> <span class="mf">0.082</span> <span class="c1"># atm L /K mol</span>
+
+<span class="c1">#Os valores de pressão serão calculados em atm para 3 valores de temperatura.</span>
+
+<span class="n">p1</span> <span class="o">=</span> <span class="n">R</span><span class="o">*</span><span class="mi">300</span><span class="o">/</span><span class="n">V</span>
+
+<span class="n">p2</span> <span class="o">=</span> <span class="n">R</span><span class="o">*</span><span class="mi">400</span><span class="o">/</span><span class="n">V</span>
+
+<span class="n">p3</span> <span class="o">=</span> <span class="n">R</span><span class="o">*</span><span class="mi">500</span><span class="o">/</span><span class="n">V</span>
+
+<span class="c1"># Criando os gráficos</span>
+<span class="c1"># estes dois parâmetros precisam aparecer antes da definição do plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span> <span class="c1">#define o tamanho da fonte</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span> <span class="c1">#define as dimensões do gráfico</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">V</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;T = 300 K&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">V</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;T = 400 K&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">V</span><span class="p">,</span> <span class="n">p3</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;T = 500 K&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;p (atm)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;V (L)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;best&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Gas_ideal_6_0.png" src="_images/Gas_ideal_6_0.png" />
+</div>
+</div>
+<p><font size="4"> As curvas obtidas são as chamadas isotermas do gás ideal. Elas mostram que a pressão é inversamente proporcional ao volume, como definido pela Lei de Boyle. A medida que a temperatura se eleva as isotermas se deslocam para valores mais elevados de pressão e volume. <font></p>
+</section>
+</section>
+<section id="exemplo-2-aplicacao-da-equacao-de-estado-do-gas-ideal">
+<h2>Exemplo 2: Aplicação da equação de estado do gás ideal<a class="headerlink" href="#exemplo-2-aplicacao-da-equacao-de-estado-do-gas-ideal" title="Permalink to this headline">#</a></h2>
+<p><font size="4"> Nitrogênio é aquecido a 500 K num vaso com volume constante. Se o gás entra no vaso a uma pressão de 100 atm e a 300 K. Qual sua pressão na temperatura de trabalho, se seu comportamento for de um gas ideal?</p>
+<section id="id1">
+<h3>Solução<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<p>Podemos escrever a equação do gás ideal como: <span class="math notranslate nohighlight">\( \frac{pV}{T} = nR \)</span>. Se a quantidade de materia do sistema for mantida constante, teremos:</p>
+<div class="math notranslate nohighlight">
+\[\frac{p_1 V_1}{T_1} = nR \]</div>
+<div class="math notranslate nohighlight">
+\[\frac{p_2 V_2}{T_2} = nR \]</div>
+<div class="math notranslate nohighlight">
+\[\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2}  \]</div>
+<p>Como o a transformação ocorre a volume constante: <span class="math notranslate nohighlight">\( \frac{p_1 }{T_1} = \frac{p_2 }{T_2}\)</span> <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Definindo variáveis</span>
+
+<span class="n">T1</span> <span class="o">=</span> <span class="mi">300</span>    <span class="c1">#K</span>
+<span class="n">T2</span> <span class="o">=</span> <span class="mi">500</span>    <span class="c1">#K</span>
+<span class="n">P1</span> <span class="o">=</span> <span class="mi">100</span>    <span class="c1">#atm</span>
+
+<span class="c1"># Como não foi pedido que a resposta tenha uam unidade específica,</span>
+<span class="c1"># não é preciso mudar a unidade da pressão para Pa.</span>
+
+<span class="n">p2</span><span class="o">=</span> <span class="p">(</span><span class="n">P1</span><span class="o">*</span><span class="n">T2</span><span class="p">)</span> <span class="o">/</span> <span class="n">T1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Pressão (atm) = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">p2</span><span class="p">,</span><span class="s1">&#39;6.4f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Pressão (atm) = 166.6667
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size="4">Note que a pressão aumenta a medida que a temperatura aumenta, assim como esperado para o valor do volume. Logo, tanto o volume quanto pressão aumentam a medida que temperatura aumenta.<font></p>
+</section>
+</section>
+<section id="exemplo-3-aplicacao-da-lei-de-dalton">
+<h2>Exemplo 3: Aplicação da Lei de Dalton<a class="headerlink" href="#exemplo-3-aplicacao-da-lei-de-dalton" title="Permalink to this headline">#</a></h2>
+<p><font size="4"> Sabendo que o ar seco possui composição ponderal de 75,5% de <span class="math notranslate nohighlight">\(N_2\)</span>, 1,3% de Ar, 23,2% de <span class="math notranslate nohighlight">\(O_2\)</span>, calcule a pressão parcial  de cada componente quando a pressão total for 1,20 atm.</p>
+<section id="id2">
+<h3>Solução<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
+<p>A composição centesimal informada está em base molar, logo, basta converter esta composição em fração molar e aplicar a Lei de Dalton. Como a pressão total foi informada em atm e a fração molar é uma grandeza adimensional, o resultado será expresso em atm. <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Definindo Variáveis</span>
+
+<span class="c1">#Fração molar não depende da massa total da amostra.</span>
+
+
+<span class="n">x_N2</span> <span class="o">=</span> <span class="mf">0.755</span>
+<span class="n">x_O2</span> <span class="o">=</span> <span class="mf">0.232</span>
+<span class="n">x_Ar</span> <span class="o">=</span> <span class="mf">0.013</span>
+
+<span class="n">pTotal</span> <span class="o">=</span> <span class="mf">1.20</span>   <span class="c1">#atm</span>
+
+
+<span class="c1"># Cálculo da pressão parcial usando a Lei de Dalton</span>
+
+
+
+<span class="n">pN2</span> <span class="o">=</span> <span class="n">x_N2</span> <span class="o">*</span> <span class="n">pTotal</span>
+
+<span class="n">pO2</span> <span class="o">=</span> <span class="n">x_O2</span> <span class="o">*</span> <span class="n">pTotal</span>
+
+<span class="n">pAr</span> <span class="o">=</span> <span class="n">x_Ar</span> <span class="o">*</span> <span class="n">pTotal</span>
+
+<span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Pressão Parcial N2 (atm) = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">pN2</span><span class="p">,</span><span class="s1">&#39;6.4f&#39;</span><span class="p">))</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Pressão Parcial O2 (atm) = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">pO2</span><span class="p">,</span><span class="s1">&#39;6.4f&#39;</span><span class="p">))</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Pressão Parcial Ar (atm) = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">pAr</span><span class="p">,</span><span class="s1">&#39;6.4f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Pressão Parcial N2 (atm) = 0.9060
+Pressão Parcial O2 (atm) = 0.2784
+Pressão Parcial Ar (atm) = 0.0156
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="exemplo-4-calculo-da-massa-molar-de-um-gas">
+<h2>Exemplo 4: Cálculo da massa molar de um gás<a class="headerlink" href="#exemplo-4-calculo-da-massa-molar-de-um-gas" title="Permalink to this headline">#</a></h2>
+<p><font size="4">  Deduza uma equação entre a pressão e massa específica, <span class="math notranslate nohighlight">\(\rho \)</span> , de um gás ideal de massa molar <em>M</em>. Verifique graficamente o resultado usando os dados referentes ao éter dimetílico, a 25°C. Mostre que o comportamento de gás ideal ocorre nas pressões baixas. Estime a massa molar do éter dimetílico.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>p(kPa)</p></td>
+<td><p>12.223</p></td>
+<td><p>25.20</p></td>
+<td><p>36.97</p></td>
+<td><p>60.37</p></td>
+<td><p>85.23</p></td>
+<td><p>101.3</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\rho(kg ~ m^{-3})\)</span></p></td>
+<td><p>0.225</p></td>
+<td><p>0.456</p></td>
+<td><p>0.664</p></td>
+<td><p>1.062</p></td>
+<td><p>1.468</p></td>
+<td><p>1.734</p></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;font &gt; 
+</pre></div>
+</div>
+<section id="id3">
+<h3>Solução<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
+<p><font size="4"> Uma das primeiras aplicações da equação de estado do gás ideal foi a determinação da massa molar de gases. Se manipularmos a equação é possivel encontrar uma relação entra a massa molar e a densidade do gás:</p>
+<div class="math notranslate nohighlight">
+\[ pV = \frac{m}{M} RT \]</div>
+<p>onde m é massa do gás usada no experimento e M é a massa molar do gás.</p>
+<div class="math notranslate nohighlight">
+\[ \frac{p}{RT} = \frac{m}{V}  \]</div>
+<div class="math notranslate nohighlight">
+\[ \frac{pM}{RT} = \rho  \]</div>
+<p>Inicialmente podemos imaginar que a partir de uma medida da densidade do gás é possível determinar a massa molar. Mas devido a desvios da idealidade, este procedimento leva a erros siginificativos no valor de <span class="math notranslate nohighlight">\(M\)</span>. Como a razão <span class="math notranslate nohighlight">\(\frac{\rho}{p}\)</span> é independente da pressão para um gás ideal, podemos reescrever a relação como <span class="math notranslate nohighlight">\(\frac{\rho}{p} = \frac{M}{RT}\)</span>. Devido aos desvio da idealidade observados em condições ambiente, o processo correto para obter a massa molar de um gás, é construir um gráfico de <span class="math notranslate nohighlight">\(\frac{\rho}{p}\)</span> versus p e extrapolar para pressão nula. O valor de <span class="math notranslate nohighlight">\(\frac{\rho}{p}\)</span> quando p <span class="math notranslate nohighlight">\(\rightarrow\)</span>0 é usado para calcular <span class="math notranslate nohighlight">\(M\)</span>.<font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definindo os vetores que serão plotados e passando pressão para de KPa para Pa</span>
+
+<span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">12223</span><span class="p">,</span><span class="mi">25200</span><span class="p">,</span><span class="mi">36970</span><span class="p">,</span><span class="mi">60370</span><span class="p">,</span><span class="mi">85230</span><span class="p">,</span><span class="mi">101300</span><span class="p">])</span>  <span class="c1"># Pa</span>
+<span class="n">rho</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.225</span><span class="p">,</span><span class="mf">0.456</span><span class="p">,</span><span class="mf">0.664</span><span class="p">,</span><span class="mf">1.062</span><span class="p">,</span><span class="mf">1.468</span><span class="p">,</span><span class="mf">1.734</span><span class="p">])</span> <span class="c1"># kg/m³</span>
+
+
+<span class="n">T</span> <span class="o">=</span> <span class="mf">298.15</span> <span class="c1"># K</span>
+<span class="n">R</span> <span class="o">=</span> <span class="mf">8.314462</span>  <span class="c1"># m3 · Pa · K−1 · mol−1</span>
+
+<span class="n">rho_p</span> <span class="o">=</span>  <span class="n">rho</span> <span class="o">/</span> <span class="n">p</span>
+
+<span class="c1">#A equação obtida é uma reta que passa pela origem.</span>
+<span class="c1"># Logo, é possivel fazer uma regrassão linear e usar o coeficiente linear da regressão para calcualr M.</span>
+
+
+<span class="n">deg</span> <span class="o">=</span> <span class="mi">1</span>   <span class="c1"># definindo o grau do ajuste</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">rho_p</span><span class="p">,</span> <span class="n">deg</span><span class="p">)</span>  <span class="c1"># guarda os coeficientes do ajuste no vetor z</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>  <span class="c1"># cria um polinômio de primeiro grau e guarda seus coeficientes no vetor y. Facilita a criação de gráficos.  </span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;coeficiente angular =&#39;</span><span class="p">,</span> <span class="nb">format</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39;2.1e&#39;</span><span class="p">))</span>  <span class="c1"># O coeficiente angular é o primeiro termo do ajuste</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;coeficiente linear =&#39;</span><span class="p">,</span> <span class="nb">format</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39;2.1e&#39;</span><span class="p">))</span>   <span class="c1"># O coeficiente linear é o segundo termo do ajuste</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>coeficiente angular = -1.4e-11
+coeficiente linear = 1.9e-05
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size="4"> O fato do coeficiente angular ser próximo de zero indica a validade da equação obtida anteriormente e que a relação <span class="math notranslate nohighlight">\(\frac{\rho}{p}\)</span> é constante para o gás ideal. Se a equação do gás ideal representasse corretamente o estado gasoso, o coeficiente angular deveria ser igual a zero. Mas o fato deste coeficiente ser diferente de zero indica um desvio da idealidade nas condições do experimento.
+Para fins didáticos o gráfico de <span class="math notranslate nohighlight">\(\frac{\rho}{p}\)</span> versus p está apresentado abaixo. <font ></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#plotando o gráfico para fins didáticos</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span> <span class="c1"># estes dois parâmetros precisam aparecer antes da definição do plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">rho_p</span><span class="p">,</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">y</span><span class="p">(</span><span class="n">p</span><span class="p">),</span> <span class="s2">&quot;-&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;p/ $\rho$&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;p (Pa)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Gas_ideal_17_0.png" src="_images/Gas_ideal_17_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Calculando a Massa Molar</span>
+<span class="c1">#Relembando que o coeficiente angular fica armazenado no segundo elemento do vetor z</span>
+
+<span class="n">Mm</span> <span class="o">=</span> <span class="p">(</span><span class="n">R</span><span class="o">*</span><span class="n">T</span><span class="p">)</span> <span class="o">*</span> <span class="n">z</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Massa molar (kg/mol) =&quot;</span><span class="p">,</span> <span class="nb">format</span><span class="p">(</span><span class="n">Mm</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Massa molar (kg/mol) = 0.045878
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size="4"> A massa molar obtida é consistente com a fórmula molecular do éter dimetílico, <span class="math notranslate nohighlight">\(CH_3 O CH_3 \)</span>, aproximadamente 46 <span class="math notranslate nohighlight">\(g mol^{-1}\)</span>. <font></p>
+</section>
+</section>
+<section id="exemplo-5-determinacao-da-escala-de-temperatura-do-gas-ideal">
+<h2>Exemplo 5: Determinação da escala de temperatura do gás ideal<a class="headerlink" href="#exemplo-5-determinacao-da-escala-de-temperatura-do-gas-ideal" title="Permalink to this headline">#</a></h2>
+<p><font size="4"> A Lei de Charles também se escreve como  <span class="math notranslate nohighlight">\(V=V_0(1+\alpha \theta)\)</span> , onde <span class="math notranslate nohighlight">\(\theta\)</span> é a temperatura em graus Celsius,  <span class="math notranslate nohighlight">\(\alpha\)</span>  é uma constante, denominado coeficiente de expansão térmica, e  <span class="math notranslate nohighlight">\(V_0\)</span>  é o volume da amostra do gás a 0°C. A partir desta relação é possível mostrar que existe uma escala absoluta de temperatura.</p>
+<p>Para o nitrogênio a 0°C, obtiveram-se os seguintes valores de  <span class="math notranslate nohighlight">\(\alpha\)</span> em função da pressão:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>p/torr</p></td>
+<td><p>749.7</p></td>
+<td><p>599.6</p></td>
+<td><p>333.1</p></td>
+<td><p>98.6</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\( \alpha 10^{-3} \)</span>  (<span class="math notranslate nohighlight">\(º C^{-1}\)</span>)</p></td>
+<td><p>3.6717</p></td>
+<td><p>3.6697</p></td>
+<td><p>3.6665</p></td>
+<td><p>3.6643</p></td>
+</tr>
+</tbody>
+</table>
+<p>A partir destes dados calcule o melhor valor para o zero absoluto na escala Celsius.</p>
+<section id="id4">
+<h3>Solução<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
+<p>A Lei de Charles pode ser reescrita da seguinte maneira:</p>
+<p><span class="math notranslate nohighlight">\( V = V_0 (1 + \alpha_0 \theta)\)</span></p>
+<p><span class="math notranslate nohighlight">\(V = V_0 \alpha_0( \frac {1}{\alpha_0} + \theta)\)</span></p>
+<p><span class="math notranslate nohighlight">\(\alpha_0\)</span> é o coeficiente a 0 ºC e, como pode ser observado pela tabela, este coeficiente varia com a pressão. Como a equação do gás ideal é estritamente válida quando <span class="math notranslate nohighlight">\( p \to 0 \)</span>, neste limite <span class="math notranslate nohighlight">\(\alpha\)</span> será constante para todos os gases e pode ser usado para definir uma nova temperatura pela relação:</p>
+<p><span class="math notranslate nohighlight">\(T = ( \frac {1}{\alpha_0} + \theta)\)</span></p>
+<p>O procedimento adotado será ajustar uma equação de primeiro grau aos dados do problema e usar o coeficiente linear da regressão para obter o fator de conversão desejado. <font ></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definindo os vetores</span>
+
+<span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span> <span class="mf">749.7</span><span class="p">,</span> <span class="mf">599.6</span><span class="p">,</span> <span class="mf">333.1</span><span class="p">,</span> <span class="mf">98.6</span><span class="p">])</span> <span class="c1">#torr</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">3.6717e-3</span><span class="p">,</span> <span class="mf">3.6697e-3</span><span class="p">,</span> <span class="mf">3.6665e-3</span><span class="p">,</span><span class="mf">3.6643e-3</span><span class="p">])</span> <span class="c1"># ºC^(-1)</span>
+
+
+<span class="n">deg</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">deg</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;coeficiente angular = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 1.2e&#39;</span><span class="p">))</span>  
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;coeficiente linear (1/ºC) = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 1.2e&#39;</span><span class="p">))</span>  
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>coeficiente angular =  1.14e-08
+coeficiente linear (1/ºC) =  3.66e-03
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size="4">  É importante expressar corretamente as unidades do coeficiente linear, pois este será somado ao valor de temperatura do experimento, que foi realizado a 0 ºC. <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#O gráfico é construído para fins didáticos</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span> <span class="c1"># estes dois parâmetros precisam aparecer antes da definição do plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">y</span><span class="p">(</span><span class="n">p</span><span class="p">),</span> <span class="s2">&quot;-&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\alpha (ºC^{-1})$&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;p (torr)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Gas_ideal_23_0.png" src="_images/Gas_ideal_23_0.png" />
+</div>
+</div>
+<p><font size="4"> O gráfico construído mostra que <span class="math notranslate nohighlight">\(\alpha\)</span> é diretamente proporcional a pressão e segue uma relação linear. No entanto vemos que a variação de <span class="math notranslate nohighlight">\(\alpha\)</span> ocorre aproximadamente na sexta casa decimal, podendo ser considerado constante a pressões baixas.<font></p>
+<p><font size="4">  Voltando a relação de temperatura:</p>
+<p><span class="math notranslate nohighlight">\(T=(\frac{1}{\alpha_0}+\theta) \)</span></p>
+<p>Substituiremos nesta equação os valores: T = 0, pois desejamos saber o zero da escala absoluta;  <span class="math notranslate nohighlight">\(\theta\)</span> = 0 ºC, pois o experimento foi realizado nesta temperatura e desejamos descobrir o zero absoluto da escala.</p>
+<p><span class="math notranslate nohighlight">\(0=(\frac{1}{0.00366}+\theta) \)</span></p>
+<p><span class="math notranslate nohighlight">\( \theta=−\frac{1}{0.00366}=−273,22ºC  \)</span></p>
+<p>O zero da escala absoluta se encontra a −273,22ºC. Esta nova escala de temperatura é conhecida como escala de temperatura do gás ideal, hoje denominada como escala Kelvin. O valor calculado neste problema é bem próximo do valor atual de -273,15 ºC, indicando que o procedimento é preciso para o cálculo do zero absoluto da escala de temperaturas. <font ></p>
+</section>
+</section>
+<section id="exemplo-6-calculo-do-valor-da-constante-universal-dos-gases">
+<h2>Exemplo 6: Cálculo do valor da constante universal dos gases<a class="headerlink" href="#exemplo-6-calculo-do-valor-da-constante-universal-dos-gases" title="Permalink to this headline">#</a></h2>
+<p><font size="4"> Para 1.0000 mol de <span class="math notranslate nohighlight">\(N_2\)</span> a 0.00ºC os seguinte volumes são observados em função da pressão:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>p/atm</p></td>
+<td><p>1.000</p></td>
+<td><p>3.0000</p></td>
+<td><p>5.000</p></td>
+</tr>
+<tr class="row-odd"><td><p>V/<span class="math notranslate nohighlight">\(cm^3\)</span></p></td>
+<td><p>22405</p></td>
+<td><p>7461.4</p></td>
+<td><p>4473.1</p></td>
+</tr>
+</tbody>
+</table>
+<p>faça o gráfico de pV/nT contra p para estes três pontos e calcule R quando <span class="math notranslate nohighlight">\( p \rightarrow 0 \)</span>.</p>
+<section id="id5">
+<h3>Solução<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h3>
+<p>O procedimento sugerido no problema ilustra uma maneira de se obter a constante universal dos gases de uma forma que os desvios da idealidade sejam minimizados na condição do experimento. Como a equação do gás ideal é estritamente válida quando <span class="math notranslate nohighlight">\(p \to 0\)</span>, é possivel ajustar uma equação de primeiro grau aos dados de <span class="math notranslate nohighlight">\( \frac{pV}{nT} \)</span> versus  p e extrapolar a pressão nula para obtermos o valor de R. <font ></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definindo os vetores que serão plotados</span>
+
+<span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">3.0000</span><span class="p">,</span> <span class="mf">5.000</span><span class="p">])</span>
+<span class="n">V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span> <span class="mf">22.405</span><span class="p">,</span> <span class="mf">7.4614</span><span class="p">,</span> <span class="mf">4.4731</span><span class="p">])</span> <span class="c1"># Já alterado para litros</span>
+
+<span class="n">T</span> <span class="o">=</span> <span class="mf">273.15</span> <span class="c1"># Kelvin</span>
+
+<span class="n">pV_nT</span> <span class="o">=</span> <span class="p">(</span><span class="n">p</span> <span class="o">*</span> <span class="n">V</span><span class="p">)</span> <span class="o">/</span> <span class="n">T</span>
+
+<span class="n">deg</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">pV_nT</span><span class="p">,</span> <span class="n">deg</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Resultado da regressão linear: &#39;</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Resultado da regressão linear:   
+-3.615e-05 x + 0.08206
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size = "4"> O coeficiente linear será o valor desejado de R nas unidades de atm L/K mol.
+Para imprimir diretamente o coeficiente linear, que contem o valor de R nas unidades desejadas, fazemos: <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;R (atm L/K mol) = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.5f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>R (atm L/K mol) =  0.08206
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size="4"> Para fins didáticos é interessante verificar o comportantemento da curva <span class="math notranslate nohighlight">\( \frac{pV}{nT} \)</span> versus  p. Caso não houvesse desvios do comportamento ideal, o gráfico deveria ser uma reta constante. Mas como é observado, o coeficiente angular da reta é negativo, mostrando que não podemos usar apenas uma medida de p, V e T para estimar o valor de R.   <font ></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span> <span class="c1"># estes dois parâmetros precisam aparecer antes da definição do plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">pV_nT</span><span class="p">,</span> <span class="s2">&quot;*&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">y</span><span class="p">(</span><span class="n">p</span><span class="p">),</span> <span class="s2">&quot;-&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;pV/nT&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;p (atm)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Gas_ideal_31_0.png" src="_images/Gas_ideal_31_0.png" />
+</div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Aprendendo Físico-Química com auxílio de Phython</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Gases_Reais_v2.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Gáses Reais</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Leonardo Baptista<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

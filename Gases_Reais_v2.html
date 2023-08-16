@@ -1,0 +1,1001 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Gáses Reais &#8212; Físico-Química</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Primeira Lei da termodinâmica" href="Primeira_Lei.html" />
+    <link rel="prev" title="Gás Ideal" href="Gas_ideal.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Físico-Química</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Aprendendo Físico-Química com auxílio de Phython
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Gas_ideal.html">
+   Gás Ideal
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Gáses Reais
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Primeira_Lei.html">
+   Primeira Lei da termodinâmica
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Entropia.html">
+   Entropia
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/Gases_Reais_v2.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FGases_Reais_v2.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/Gases_Reais_v2.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-1-determinacao-do-segundo-coeficiente-do-virial-para-expansao-da-pressao">
+   Exemplo 1: Determinação do segundo coeficiente do virial para expansão da pressão
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solucao">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-2-calculo-da-temperatura-de-boyle">
+   Exemplo 2: Cálculo da temperatura de Boyle
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-3-calculo-da-temperatura-de-boyle-a-partir-de-uma-equacao-empirica-para-b-t">
+   Exemplo 3: Cálculo da temperatura de Boyle a partir de uma equação empírica para
+   <span class="math notranslate nohighlight">
+    \(B'(T)\)
+   </span>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-4-calculo-do-volume-de-uma-gas-que-obedece-a-equacao-de-van-der-waals">
+   Exemplo 4: Cálculo do volume de uma gás que obedece a equação de van der Waals
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-5-calculo-dos-coeficientes-do-virial-para-o-argonio">
+   Exemplo 5: Cálculo dos coeficientes do virial para o argônio
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Gáses Reais</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-1-determinacao-do-segundo-coeficiente-do-virial-para-expansao-da-pressao">
+   Exemplo 1: Determinação do segundo coeficiente do virial para expansão da pressão
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solucao">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-2-calculo-da-temperatura-de-boyle">
+   Exemplo 2: Cálculo da temperatura de Boyle
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-3-calculo-da-temperatura-de-boyle-a-partir-de-uma-equacao-empirica-para-b-t">
+   Exemplo 3: Cálculo da temperatura de Boyle a partir de uma equação empírica para
+   <span class="math notranslate nohighlight">
+    \(B'(T)\)
+   </span>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-4-calculo-do-volume-de-uma-gas-que-obedece-a-equacao-de-van-der-waals">
+   Exemplo 4: Cálculo do volume de uma gás que obedece a equação de van der Waals
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-5-calculo-dos-coeficientes-do-virial-para-o-argonio">
+   Exemplo 5: Cálculo dos coeficientes do virial para o argônio
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="gases-reais">
+<h1>Gáses Reais<a class="headerlink" href="#gases-reais" title="Permalink to this headline">#</a></h1>
+<p><font size = "4">O modelo do gás ideal só estritamente válido para p→ 0 e temperaturas elevadas. Além desta limitação, o modelo do gás ideal desconsidera qualquer interação intermolecular e não prevê a mudança de estado físico dos gases. Uma maneira de quantificarmos o desvio da idealidade é pelo parâmetro denominado fator de compressibilidade Z:</p>
+<div class="math notranslate nohighlight">
+\[ Z = \frac{V_m}{V_{m,id}} = \frac{pV_m}{RT} \]</div>
+<p>Nesta equação, <span class="math notranslate nohighlight">\(V_m\)</span> é o volume molar do gás real e <span class="math notranslate nohighlight">\(V_{m,id}\)</span> é o volume molar do gás ideal. Tabelas de Z(T,p) estão disponíveis para muitos gases de forma que temos uma maneira simples de corrigir desvios da idealidade. Em pressões moderadas este fator pode ser expresso como uma série de potência do volume ou pressão. Sendo esta expansão sendo chamada de <strong>expansão do virial</strong>, e os coeficientes da expansão de <strong>coeficientes do virial</strong>.  Perceba que os coeficientes da expansão em relação ao volume são diferentes dos coeficientes da expansão em relação a pressão.</p>
+<div class="math notranslate nohighlight">
+\[ Z = 1 + B'(T)p + C'(T)p^2 + D'(T)p^3 + ... \]</div>
+<div class="math notranslate nohighlight">
+\[ Z = 1 + \frac{B(T)}{V_m} + \frac{C(T)}{V_m ^2} + \frac{D(T)}{V_m ^3 } + ... \]</div>
+<p>Estas expansão são formas convenientes para se tratar o comportamento de gases, desde que esteja disponíveis os coeficientes da expansão, ou dados suficientes que nos permitam calcular os coeficientes da expansão.</p>
+<p>Como uma expressão algébrica de uma equação de estado é mais conveniente que o uso de tabelas, é importante conhecermos equações de estado que incluem efeitos da não idealidade. A equação mais simples conhecida é a equação de  van der Waals.</p>
+<p><span class="math notranslate nohighlight">\( p = \frac{RT}{V_m - b} - \frac{a}{V_m ^2} \)</span> (vdW)</p>
+<p>Esta inclui duas constantes, <strong>a</strong> e <strong>b</strong>, além de R. Estas constantes diferem para cada gás e são introduzidas a fim de resolver o problema de V → 0 quando p → ∞, e incluir as forças atrativas que atuam em cada gás. Esta equação é um polinômio de terceiro grau em relação ao volume, o que traz um problema extra para o cálculos de volume de gases que obedecem esta equação. No entanto, existe uma família de equações de estado cúbicas, a qual a equação de vdW pertence. Uma equação de estado mais exata que a equação de vdW, é a equação de Redlich-Kwong. Esta também inclui dua constantes, <strong>a</strong> e <strong>b</strong>, mas com valores diferentes das contantes da equação vdW. A equação RK é útil em uma faixa de T e p mais ampla que a equação vdW.</p>
+<p><span class="math notranslate nohighlight">\( p = \frac{RT}{V_m - b} - \frac{a}{V_m (V_m + b)T^{1/2}} \)</span> (RK) <font></p>
+<p>Para a resolução dos exercíos faremos uso das bibliotecas Numpy, Matplolib e SciPy.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Importação dos módulos necessários para resolução destes exercícios</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">simps</span> <span class="c1">#método de Simpson para integração numérica</span>
+<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">trapz</span> <span class="c1">#método do trapézio para integração numérica</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">curve_fit</span> <span class="c1">#biblioteca para ajuste de modelos matemáticos</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="exemplo-1-determinacao-do-segundo-coeficiente-do-virial-para-expansao-da-pressao">
+<h2>Exemplo 1: Determinação do segundo coeficiente do virial para expansão da pressão<a class="headerlink" href="#exemplo-1-determinacao-do-segundo-coeficiente-do-virial-para-expansao-da-pressao" title="Permalink to this headline">#</a></h2>
+<p><font size = "4">O fator de compressibilidade do <span class="math notranslate nohighlight">\(O_2(g)\)</span> a baixas pressões e 0ºC é uma função linear, como pode ser observado pelos dados abaixo. Determine <span class="math notranslate nohighlight">\(B'\)</span> para o <span class="math notranslate nohighlight">\(O_2(g)\)</span> nestas condições.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>p(bar)</p></td>
+<td><p>1.</p></td>
+<td><p>2.00</p></td>
+<td><p>3.00</p></td>
+<td><p>4.00</p></td>
+<td><p>5.00</p></td>
+</tr>
+<tr class="row-odd"><td><p>Z</p></td>
+<td><p>1.0000</p></td>
+<td><p>0.9990</p></td>
+<td><p>0.9980</p></td>
+<td><p>0.9971</p></td>
+<td><p>0.9961</p></td>
+</tr>
+</tbody>
+</table>
+<font size = "4">
+<section id="solucao">
+<h3>Solução<a class="headerlink" href="#solucao" title="Permalink to this headline">#</a></h3>
+<p>A expansão do virial truncada no segundo termo é <span class="math notranslate nohighlight">\( Z = 1 + (B' /RT) p\)</span>. Logo, um gráfico de Z em função de p terá coeficiente angular <span class="math notranslate nohighlight">\(\frac{B'}{RT}\)</span>. <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definição das variáveis</span>
+<span class="n">R</span> <span class="o">=</span> <span class="mf">0.08314</span>   <span class="c1"># bar L / K mol</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mf">273.15</span>    <span class="c1"># K</span>
+
+<span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.</span><span class="p">,</span><span class="mf">2.00</span><span class="p">,</span> <span class="mf">3.00</span><span class="p">,</span> <span class="mf">4.00</span><span class="p">,</span> <span class="mf">5.00</span><span class="p">])</span>
+<span class="n">Z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0000</span><span class="p">,</span> <span class="mf">0.9990</span><span class="p">,</span> <span class="mf">0.9980</span><span class="p">,</span> <span class="mf">0.9971</span><span class="p">,</span> <span class="mf">0.9961</span><span class="p">])</span>
+
+<span class="c1">#Regressão linear</span>
+<span class="n">deg</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">Z</span><span class="p">,</span> <span class="n">deg</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+
+<span class="c1">#Cálculo de B&#39;. Basta multiplicar o coeficiente angular por RT</span>
+
+<span class="n">Bp</span> <span class="o">=</span> <span class="n">z</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">R</span><span class="o">*</span><span class="n">T</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;B (L/mol)= &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">Bp</span> <span class="p">,</span> <span class="s1">&#39;6.3f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>B (L/mol)= -0.022
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#vamos construir o gráfico só para ilustrar a forma dele.</span>
+
+<span class="c1">#plotando o gráfico para fins didáticos</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span> <span class="c1"># estes dois parâmetros precisam aparecer antes da definição do plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="n">Z</span><span class="p">,</span><span class="s1">&#39;*&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="n">y</span><span class="p">(</span><span class="n">p</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;pressão (bar)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Z&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;function matplotlib.pyplot.show(*args, **kw)&gt;
+</pre></div>
+</div>
+<img alt="_images/Gases_Reais_v2_7_1.png" src="_images/Gases_Reais_v2_7_1.png" />
+</div>
+</div>
+<p><font size ="4"> Como esperado, no intervalo de pressões avaliado, o fator de compressibilidade segue um equação de primeiro grau em relação a pressão. Isso justifica o uso de uma regressão linear para o cálculo do segundo coeficiente do virial. <font></p>
+</section>
+</section>
+<section id="exemplo-2-calculo-da-temperatura-de-boyle">
+<h2>Exemplo 2: Cálculo da temperatura de Boyle<a class="headerlink" href="#exemplo-2-calculo-da-temperatura-de-boyle" title="Permalink to this headline">#</a></h2>
+<p><font size ="4"> A teperatura de Boyle é defina como a temperatura na qual o gás se comporta idealmente por um maior intervalo de pressões. Na temperatura de Boyle, o gráfico de Z contra p de um gás é tangente a linha do gás ideal em p = 0, e só aumentará gradualmente acima de Z = 1. Derive uma expressão para a  temperatura de Boyle usando</p>
+<div class="math notranslate nohighlight">
+\[ Z = 1 + \frac{B'}{RT}p + \frac{C'}{RT}p^2 + ... \]</div>
+<p>e determine o valor para o <span class="math notranslate nohighlight">\(O_2(g)\)</span> usando os dados abaixo.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>T(K)</p></td>
+<td><p>350</p></td>
+<td><p>400</p></td>
+<td><p>450</p></td>
+<td><p>500</p></td>
+<td><p>550</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\frac{B_v}{RT} (cm^3/mol)\)</span></p></td>
+<td><p>-7.27</p></td>
+<td><p>-1.85</p></td>
+<td><p>1.87</p></td>
+<td><p>4.65</p></td>
+<td><p>7.23</p></td>
+</tr>
+</tbody>
+</table>
+<font size = "4">
+<section id="id1">
+<h3>Solução<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<p>Truncando a séria acima no segundo termo e derivando em função de p:
+$<span class="math notranslate nohighlight">\( \frac{\partial Z}{\partial p} = \frac{B'}{RT} = \frac{B/RT}{RT} \)</span><span class="math notranslate nohighlight">\(
+Onde foi usado \)</span>B’ = \frac{B}{RT}$.</p>
+<p>Foi informado que <span class="math notranslate nohighlight">\( \frac{\partial Z}{\partial p} = 0 \)</span>, logo, na temperatura de Boyle o segundo coeficiente do viral é 0. Podemos ajustar uma função a estes dados e encontrar as raízes da função ajustada. Neste exercício ajustaremos uma função do segundo grau.</p>
+<p>O cálculo das raízes fará uso da rotina numpy.roots(coef). Onde coef são os coeficientes do polínônio ordenados do termo de maior ordem para o de menor ordem. <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Inicializando as variáveis</span>
+<span class="n">R</span> <span class="o">=</span> <span class="mf">0.08314</span>   <span class="c1"># bar L / K mol</span>
+
+
+<span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">350.</span><span class="p">,</span> <span class="mf">400.0</span><span class="p">,</span> <span class="mf">450.</span><span class="p">,</span> <span class="mf">500.</span><span class="p">,</span> <span class="mf">550.</span><span class="p">])</span>   <span class="c1"># K</span>
+<span class="n">Bv</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mf">7.27</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.85</span><span class="p">,</span> <span class="mf">1.87</span><span class="p">,</span> <span class="mf">4.65</span><span class="p">,</span> <span class="mf">7.23</span><span class="p">])</span> <span class="c1"># Segundo coeficiente na expansão do volume</span>
+
+<span class="n">Bp</span> <span class="o">=</span> <span class="n">Bv</span><span class="o">/</span><span class="p">(</span><span class="n">R</span><span class="o">*</span><span class="n">T</span><span class="o">*</span><span class="mi">1000</span><span class="p">)</span> <span class="c1"># Segundo coeficiente na expansão da pressão</span>
+
+<span class="c1">#Regressão </span>
+<span class="n">deg</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">Bp</span><span class="p">,</span> <span class="n">deg</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+
+<span class="c1">#Calcula e imprime as raízes da função.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Raízes da função = &#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">roots</span><span class="p">(</span><span class="n">z</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Raízes da função =  [676.10774971 426.56601066]
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size ="4"> Como é esperado, a função apresenta duas raízes reais. No entanto, só existe um valor para temperatura de Boyle. Para decidirmos qual raíz é o valor correto da temperatura de Boyle, é preciso inspecionar o gráfico de B versus p. Esta inspeção além de ajudar a decidir qual o valor correto da temperatura de Boyle, mostrará porque foi ajustado uma equação de segundo grau aos dados do problema e não uma equação de primeiro grau. <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#vamos construir o gráfico para analisar qual das raízes fornece a temperatura de Boyle.</span>
+
+<span class="c1">#plotando o gráfico para fins didáticos</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span> <span class="c1"># estes dois parâmetros precisam aparecer antes da definição do plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="n">Bp</span><span class="p">,</span><span class="s1">&#39;*&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="n">y</span><span class="p">(</span><span class="n">T</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Temperatura (K)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Bp cm³/mol&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;function matplotlib.pyplot.show(*args, **kw)&gt;
+</pre></div>
+</div>
+<img alt="_images/Gases_Reais_v2_13_1.png" src="_images/Gases_Reais_v2_13_1.png" />
+</div>
+</div>
+<p><font size = "4"> A análise do gráfico mostra que a segunda raíz corresponde a temperatura de Boyle: 426.6 K. Foi escolhida esta raíz porque os dados experimentais interceptam o valor zero de <span class="math notranslate nohighlight">\(B'\)</span> em aproximadamente 425 K. Também é possível observar que os dados do problema se ajustam melhor a uma equação de segundo grau do que a uma reta. <font></p>
+</section>
+</section>
+<section id="exemplo-3-calculo-da-temperatura-de-boyle-a-partir-de-uma-equacao-empirica-para-b-t">
+<h2>Exemplo 3: Cálculo da temperatura de Boyle a partir de uma equação empírica para <span class="math notranslate nohighlight">\(B'(T)\)</span><a class="headerlink" href="#exemplo-3-calculo-da-temperatura-de-boyle-a-partir-de-uma-equacao-empirica-para-b-t" title="Permalink to this headline">#</a></h2>
+<p><font size = "4">O segundo coeficiente do virial do metano pode ser obtido, de forma aproximada através da equação empírica <span class="math notranslate nohighlight">\(B(T) = a + be^{-c/T²}\)</span>, em que a=-0,1993 <span class="math notranslate nohighlight">\(bar^{-1}\)</span>, b=0,2002 <span class="math notranslate nohighlight">\(bar^{-1}\)</span>, c = 1131<span class="math notranslate nohighlight">\(K^2\)</span>, com 300K&lt; T &lt; 600 K. Qual o valor de temperatura do Boyle para o metano? <font></p>
+<font size ="4">
+<section id="id2">
+<h3>Solução<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
+<p>Sabe-se que o valor do coeficiente virial é dependente da temperatura. Na temperatura de Boyle, o segundo coeficiente viral é nulo, B=0. Logo, temos o seguinte resultado:</p>
+<p><span class="math notranslate nohighlight">\(0 = a + be^{-c/T^2}\)</span></p>
+<p><span class="math notranslate nohighlight">\(T_B = \sqrt{\frac{-c}{ln(-a/b)}}\)</span> <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Definindo variáveis</span>
+
+<span class="n">a</span><span class="o">=-</span><span class="mf">0.1993</span>     <span class="c1">#bar^-1</span>
+<span class="n">b</span><span class="o">=</span> <span class="mf">0.2002</span>     <span class="c1">#bar^-1</span>
+<span class="n">c</span><span class="o">=</span> <span class="mi">1131</span>       <span class="c1">#K^2</span>
+
+<span class="c1">#Calculado Tb</span>
+<span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="o">-</span><span class="n">c</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="o">-</span><span class="n">a</span><span class="o">/</span><span class="n">b</span><span class="p">)))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Temperatura (K) = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="s1">&#39;6.4f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Temperatura (K) = 501.0177
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="exemplo-4-calculo-do-volume-de-uma-gas-que-obedece-a-equacao-de-van-der-waals">
+<h2>Exemplo 4: Cálculo do volume de uma gás que obedece a equação de van der Waals<a class="headerlink" href="#exemplo-4-calculo-do-volume-de-uma-gas-que-obedece-a-equacao-de-van-der-waals" title="Permalink to this headline">#</a></h2>
+<font size = "4">
+Estime o volume molar do $CO_2$, a 500 K e 100 atm, admitindo que o gás se comporta como um gás de van der Waals. <font><font size = "4">
+<section id="id3">
+<h3>Solução<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
+<p>É necessário encontrar uma expressão para o volume molar resolvendo a equação de van der Waals. A equação pode ser escrita da seguinte forma:</p>
+<p><span class="math notranslate nohighlight">\((p + \frac{a}{V_m^2})(V_m-b)=RT\)</span></p>
+<p>À partir da primeira equação a seguinte equação polinomial pode ser obtida:</p>
+<p><span class="math notranslate nohighlight">\( pV_m - pb + \frac{a}{V_m} -\frac{ab}{V_m^2} = RT\)</span></p>
+<p><span class="math notranslate nohighlight">\(pV_m^3 - pbV_m^2 + aV_m -ab = RTV_m^2\)</span></p>
+<p><span class="math notranslate nohighlight">\( pV_m^3 - (pb+RT)V_m^2 + aV_m -ab = 0 \)</span></p>
+<p>As raízes da última equação devem ser calculadas para obtermos o volume do <span class="math notranslate nohighlight">\(CO_2\)</span>. <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Definindo as variáveis segundo dados da literatura.</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="mf">3.610</span>       <span class="c1"># dm^6 atm mol^-1</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mf">4.29e-2</span>     <span class="c1"># dm^3 mol^-1</span>
+<span class="n">R</span> <span class="o">=</span> <span class="mf">0.082057</span>    <span class="c1">#L · atm · K−1 · mol−1  </span>
+<span class="n">T</span> <span class="o">=</span> <span class="mi">500</span>         <span class="c1"># K</span>
+<span class="n">p</span> <span class="o">=</span> <span class="mi">100</span>         <span class="c1"># atm</span>
+
+<span class="c1"># 1) Criar um vetor com os coeficientes do polinômio</span>
+<span class="c1"># os valores dos coeficientes foram calculados dentro do vetor </span>
+<span class="c1"># coeficientes ordenados a partir do coeficiente de maior ordem para o de menor ordem</span>
+
+<span class="n">coef</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">p</span><span class="p">,</span> <span class="o">-</span><span class="p">(</span><span class="n">p</span><span class="o">*</span><span class="n">b</span><span class="o">+</span><span class="n">R</span><span class="o">*</span><span class="n">T</span><span class="p">),</span> <span class="n">a</span><span class="p">,</span> <span class="o">-</span><span class="n">a</span><span class="o">*</span><span class="n">b</span><span class="p">])</span>
+
+<span class="c1"># 2) Calcular as raízes, no caso de mais de uma raíz real, o valor correto será próximo a volume do gás ideal</span>
+
+<span class="n">raiz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">roots</span><span class="p">(</span><span class="n">coef</span><span class="p">)</span>
+
+<span class="c1"># Imprimindo as raízes</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Raíz 1 = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">raiz</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.5e&#39;</span><span class="p">))</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Raíz 2 = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">raiz</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.5e&#39;</span><span class="p">))</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Raíz 3 = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">raiz</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.5e&#39;</span><span class="p">))</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Raíz 1 =  3.66141e-01+0.00000e+00j
+Raíz 2 =  4.35218e-02+4.83282e-02j
+Raíz 3 =  4.35218e-02-4.83282e-02j
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size = "4">O volume molar é 0,366 L, pois só existe uma raíz real. <font></p>
+</section>
+</section>
+<section id="exemplo-5-calculo-dos-coeficientes-do-virial-para-o-argonio">
+<h2>Exemplo 5: Cálculo dos coeficientes do virial para o argônio<a class="headerlink" href="#exemplo-5-calculo-dos-coeficientes-do-virial-para-o-argonio" title="Permalink to this headline">#</a></h2>
+<p><font size ="4">Uma substância elementar e bem conhecida como o argônio ainda é objeto de bastante pesquisa. Stewart e Jacobsen publicaram uma revisão das propriedades termodinâmicas do argônio, entre as quais a seguinte isoterma a 300K.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>p (MPa)</p></td>
+<td><p>0.4000</p></td>
+<td><p>0.5000</p></td>
+<td><p>0.6000</p></td>
+<td><p>0.8000</p></td>
+<td><p>1.000</p></td>
+<td><p>1.500</p></td>
+<td><p>2.000</p></td>
+<td><p>2.500</p></td>
+<td><p>3.000</p></td>
+<td><p>4.000</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(V_m\)</span> (dm³/mol)</p></td>
+<td><p>6.2208</p></td>
+<td><p>4.9736</p></td>
+<td><p>4.1423</p></td>
+<td><p>3.1031</p></td>
+<td><p>2.4795</p></td>
+<td><p>1.6483</p></td>
+<td><p>1.2328</p></td>
+<td><p>0.98357</p></td>
+<td><p>0.81746</p></td>
+<td><p>0.60998</p></td>
+</tr>
+</tbody>
+</table>
+<p>a) Calcule o segundo coeficiente virial B, na temperatura informada. B)Estime o terceiro coeficiente virial,C, na temperatura mencionada. <font></p>
+<font size = "4">
+<section id="id4">
+<h3>Solução<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
+<p>Podemos escrever a equação de estado da seguinte forma:</p>
+<div class="math notranslate nohighlight">
+\[ \frac{pV_m}{RT} = 1 + \frac{B}{V_m} + \frac{C}{V_m^2} + ...\]</div>
+<p>Em primeira aproximação pode ser feito uma gráfico de <span class="math notranslate nohighlight">\( \frac{pV_m}{RT}\)</span> versus <span class="math notranslate nohighlight">\( \frac{1}{V_m} \)</span> e depois ser ajustada uma função de primeiro grau aos dados. O  coeficiente angular será o segundo coeficiente do virial. O terceiro coeficiente do virial pode ser obtido pelo ajuste de uma função do segundo grau. <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definindo variáveis</span>
+
+<span class="n">T</span> <span class="o">=</span> <span class="mi">300</span>         <span class="c1">#K</span>
+<span class="n">R</span> <span class="o">=</span> <span class="mf">8.314e-3</span>    <span class="c1">#dm3 · MPa · K−1 · mol−1   </span>
+
+
+<span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span> <span class="p">([</span><span class="mf">0.4000</span><span class="p">,</span><span class="mf">0.5000</span><span class="p">,</span> <span class="mf">0.6000</span><span class="p">,</span> <span class="mf">0.8000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.500</span><span class="p">,</span> <span class="mf">2.000</span><span class="p">,</span> <span class="mf">2.500</span><span class="p">,</span> <span class="mf">3.000</span><span class="p">,</span> <span class="mf">4.000</span><span class="p">])</span>        <span class="c1"># MPa</span>
+<span class="n">vm</span> <span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">6.2208</span><span class="p">,</span><span class="mf">4.9736</span><span class="p">,</span><span class="mf">4.1423</span><span class="p">,</span><span class="mf">3.1031</span><span class="p">,</span><span class="mf">2.4795</span><span class="p">,</span><span class="mf">1.6483</span><span class="p">,</span><span class="mf">1.2328</span><span class="p">,</span><span class="mf">0.98357</span><span class="p">,</span><span class="mf">0.81746</span><span class="p">,</span><span class="mf">0.60998</span><span class="p">])</span>        <span class="c1"># dm^-3</span>
+
+<span class="n">Coef</span> <span class="o">=</span> <span class="n">p</span><span class="o">*</span><span class="n">vm</span> <span class="o">/</span> <span class="p">(</span><span class="n">R</span> <span class="o">*</span> <span class="n">T</span><span class="p">)</span>
+
+<span class="c1"># Cálculo de 1/Vm para plotar o  gráfico de interseção </span>
+
+<span class="n">InversoVm</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="n">vm</span>
+
+<span class="n">deg</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">InversoVm</span><span class="p">,</span> <span class="n">Coef</span><span class="p">,</span> <span class="n">deg</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+
+<span class="c1"># O segundo coeficiente do virial está relacionado ao coeficiente linear da regressão</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;coeficiente angular =&#39;</span><span class="p">,</span> <span class="nb">format</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">))</span>  
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;coeficiente linear =&#39;</span><span class="p">,</span> <span class="nb">format</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">))</span> 
+
+<span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;B (L/mol)= &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>coeficiente angular = -0.013239
+coeficiente linear = 0.999541
+B (L/mol)= -0.013239
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size ="4"> De acordo com os valores acima, a equação da reta é y = -0.013239x + 0,999541.
+A interseção em y é próximo ao valor de 1. De acordo com o valor da reta, temos <strong>B = -0.013239</strong> L/mol. <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Encontrando o Terceiro Coeficiente da Equação do Virial - C</span>
+
+<span class="n">deg</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">z1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">InversoVm</span><span class="p">,</span> <span class="n">Coef</span><span class="p">,</span> <span class="n">deg</span><span class="p">)</span>
+<span class="n">y1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">(</span><span class="n">z1</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Valor de C (L^6 mol^{-2})=&#39;</span><span class="p">,</span> <span class="nb">format</span><span class="p">(</span><span class="n">z1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">))</span>  
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Valor de B (L/mol) =&#39;</span><span class="p">,</span> <span class="nb">format</span><span class="p">(</span><span class="n">z1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">))</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Valor de C (L^6 mol^{-2})= 0.001063
+Valor de B (L/mol) = -0.015026
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size = "4">Observe que o segundo coeficiente do virial é modificado de acordo com a função ajustada.
+Vamos comparar os ajustes olhando para o gráfico que contem os dois ajustes. Observe que as duas equações obtidas se ajustam de forma adequada aos dados do problema, mas a equação de primeiro grau apresenta um maior erro no ajuste<font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#plotando o gráfico para fins didáticos</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span> <span class="c1"># estes dois parâmetros precisam aparecer antes da definição do plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">InversoVm</span><span class="p">,</span> <span class="n">Coef</span><span class="p">,</span> <span class="s2">&quot;*&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">InversoVm</span><span class="p">,</span> <span class="n">y</span><span class="p">(</span><span class="n">InversoVm</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Primeiro Grau&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">InversoVm</span><span class="p">,</span> <span class="n">y1</span><span class="p">(</span><span class="n">InversoVm</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Segundo Grau&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;PV/RT&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;1/Vm (dm³/mol)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">handlelength</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;best&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Gases_Reais_v2_28_0.png" src="_images/Gases_Reais_v2_28_0.png" />
+</div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="Gas_ideal.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Gás Ideal</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Primeira_Lei.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Primeira Lei da termodinâmica</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Leonardo Baptista<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

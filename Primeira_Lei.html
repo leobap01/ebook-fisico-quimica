@@ -1,0 +1,1887 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Primeira Lei da Termodinâmica &#8212; Físico-Química</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Leitura Complementar Sobre a Primeira Lei da Termodinâmica:" href="Primeira_Lei_parte2.html" />
+    <link rel="prev" title="Gáses Reais" href="Gases_Reais_v2.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Físico-Química</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Aprendendo Físico-Química com auxílio de Phython
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Gas_ideal.html">
+   Gás Ideal
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Gases_Reais_v2.html">
+   Gáses Reais
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Primeira Lei da Termodinâmica
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Primeira_Lei_parte2.html">
+   Leitura Complementar Sobre a Primeira Lei da Termodinâmica:
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Entropia.html">
+   Entropia
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/Primeira_Lei.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FPrimeira_Lei.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/Primeira_Lei.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fundamentos-teoricos">
+   Fundamentos teóricos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-1-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-ideal">
+   Exemplo 1: Cálculo do trabalho em uma expansão reversível de um gás ideal
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solucao">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-2-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-de-van-der-waals">
+   Exemplo 2: Cálculo do trabalho em uma expansão reversível de um gás de van der Waals
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-3-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-que-obedece-uma-expansao-do-virial">
+   Exemplo 3: Cálculo do trabalho em uma expansão reversível de um gás que obedece uma expansão do virial
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-4-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-de-redlich-kwong">
+   Exemplo 4: Cálculo do trabalho em uma expansão reversível de um gás de Redlich-Kwong
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-5-calculo-do-trabalho-associado-a-uma-reacao-quimica">
+   Exemplo 5: Cálculo do trabalho associado a uma reação química
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercicio-6-calculos-envolvendo-aquecimento-de-um-gas-ideal">
+   Exercício 6: Cálculos envolvendo aquecimento de um gás ideal
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-7-calculos-da-primeira-lei-envolvendo-o-aquecimento-de-um-gas-ideal">
+   Exemplo 7: Cálculos da primeira Lei envolvendo o aquecimento de um gás ideal
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-8-calculo-da-entalpia-quando-c-p-e-funcao-da-temperatura">
+   Exemplo 8: Cálculo da entalpia quando
+   <span class="math notranslate nohighlight">
+    \(C_p\)
+   </span>
+   é função da temperatura
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-9-calculos-envolvendo-a-capacidade-calorifica-quando-esta-e-uma-funcao-da-temperatura">
+   Exemplo 9: Cálculos envolvendo a capacidade calorífica, quando esta é uma função da temperatura
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solucao-do-problema-a-p-cte">
+     Solução do problema a p = cte
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solucao-do-problema-a-v-cte">
+     Solução do problema a V = cte
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-10-calculo-da-entalpia-em-diferentes-temperaturas">
+   Exemplo 10: Cálculo da entalpia em diferentes temperaturas
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-11-obtencao-do-polinomio-da-capacidade-calorifica-por-ajuste-polinomial">
+   Exemplo 11: Obtenção do polinômio da capacidade calorífica por ajuste polinomial
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-12-obtendo-funcoes-para-cp-t">
+   Exemplo 12: Obtendo funções para Cp(T)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-13-calculando-delta-ho-t-quando-cp-e-funcao-da-temperatura">
+   Exemplo 13: Calculando
+   <span class="math notranslate nohighlight">
+    \( \Delta Hº(T)\)
+   </span>
+   quando Cp é função da temperatura
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Primeira Lei da Termodinâmica</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fundamentos-teoricos">
+   Fundamentos teóricos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-1-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-ideal">
+   Exemplo 1: Cálculo do trabalho em uma expansão reversível de um gás ideal
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solucao">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-2-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-de-van-der-waals">
+   Exemplo 2: Cálculo do trabalho em uma expansão reversível de um gás de van der Waals
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-3-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-que-obedece-uma-expansao-do-virial">
+   Exemplo 3: Cálculo do trabalho em uma expansão reversível de um gás que obedece uma expansão do virial
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-4-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-de-redlich-kwong">
+   Exemplo 4: Cálculo do trabalho em uma expansão reversível de um gás de Redlich-Kwong
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-5-calculo-do-trabalho-associado-a-uma-reacao-quimica">
+   Exemplo 5: Cálculo do trabalho associado a uma reação química
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercicio-6-calculos-envolvendo-aquecimento-de-um-gas-ideal">
+   Exercício 6: Cálculos envolvendo aquecimento de um gás ideal
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-7-calculos-da-primeira-lei-envolvendo-o-aquecimento-de-um-gas-ideal">
+   Exemplo 7: Cálculos da primeira Lei envolvendo o aquecimento de um gás ideal
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-8-calculo-da-entalpia-quando-c-p-e-funcao-da-temperatura">
+   Exemplo 8: Cálculo da entalpia quando
+   <span class="math notranslate nohighlight">
+    \(C_p\)
+   </span>
+   é função da temperatura
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-9-calculos-envolvendo-a-capacidade-calorifica-quando-esta-e-uma-funcao-da-temperatura">
+   Exemplo 9: Cálculos envolvendo a capacidade calorífica, quando esta é uma função da temperatura
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solucao-do-problema-a-p-cte">
+     Solução do problema a p = cte
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solucao-do-problema-a-v-cte">
+     Solução do problema a V = cte
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-10-calculo-da-entalpia-em-diferentes-temperaturas">
+   Exemplo 10: Cálculo da entalpia em diferentes temperaturas
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-11-obtencao-do-polinomio-da-capacidade-calorifica-por-ajuste-polinomial">
+   Exemplo 11: Obtenção do polinômio da capacidade calorífica por ajuste polinomial
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-12-obtendo-funcoes-para-cp-t">
+   Exemplo 12: Obtendo funções para Cp(T)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-13-calculando-delta-ho-t-quando-cp-e-funcao-da-temperatura">
+   Exemplo 13: Calculando
+   <span class="math notranslate nohighlight">
+    \( \Delta Hº(T)\)
+   </span>
+   quando Cp é função da temperatura
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="primeira-lei-da-termodinamica">
+<h1>Primeira Lei da Termodinâmica<a class="headerlink" href="#primeira-lei-da-termodinamica" title="Permalink to this headline">#</a></h1>
+<section id="fundamentos-teoricos">
+<h2>Fundamentos teóricos<a class="headerlink" href="#fundamentos-teoricos" title="Permalink to this headline">#</a></h2>
+<p><font size="4"> Imagine um sistema fechado, por exemplo o refrigerante dentro de uma garrafa ou um cilindro de gás. Este sistema quando em repouso e na ausência de campos externos, apresenta  uma determinada energia, denominada energia interna (U). Esta energia está relacionada a energia cinética e potencial das partículas que compõe o sistema. Se desejamos causar alguma alteração no sistema, as únicas maneiras de se fazer isso é esquentando ou resfriando o sistema, ou realizando trabalho.</p>
+<p>O primeiro método é intuitivo e pode ser feito por fazer o sistema entrar em contato com um corpo em temperatura mais alta ou mais baixa. Quando isso acontecer, haverá fluxo de calor (Q) do corpo mais quente para o corpo mais frio. Quando o sistema esfriar, significa que este perdeu calor para as vizinhanças, logo sofreu um processo exotérmico (Q &lt; 0). No entanto, quando o sistema esquentar, este recebeu calor das vizinhanças, logo, passou por um processo endotérmico (Q &gt; 0).</p>
+<p>No caso do sistema fechado, realizar trabalho significa a princípio  provocar uma mudança de volume do sistema contra uma pressão externa. Este trabalho é visto como uma elevação ou abaixamento de uma massa nas vizinhanças. Se houver uma expansão do sistema, elevando uma massa nas vizinhanças, é dito que foi realizado trabalho nas vizinhanças e este é positivo (W  &gt; 0). Caso haja uma contração do sistema, é dito que foi realizado trabalho sobre o sistema e este é negativo (W &lt; 0).  Matematicamente o trabalho de expansão pode ser definido como:</p>
+<p><span class="math notranslate nohighlight">\(dW = -p_{ex}dV\)</span></p>
+<p>Desta maneira podemos escrever que energia interna de um sistema fechado obedeça a relação:</p>
+<p><span class="math notranslate nohighlight">\(U = Q + W\)</span></p>
+<p>ou na forma diferencial</p>
+<p><span class="math notranslate nohighlight">\(dU = dQ + dW\)</span></p>
+<p>Trabalho e calor são propriedades intrínsecas da transformação que o sistema sofreu, logo, dependem do caminho da transformação. Enquanto que U depende apenas do estado final e inicial do sistema, por isso é chamado de função de estado termodinâmico. Por consequência, em um sistema isolado que passa por uma transformação cíclica</p>
+<p><span class="math notranslate nohighlight">\(dU = 0\)</span>
+<font></p>
+<p>Os seguintes módulos precisam ser carregados para resolução dos exercícios:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#bibliotecas necessárias para resolução de exercícios</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">curve_fit</span>
+<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">quad</span> <span class="c1"># rotina para integraçã ode funções pelo método da quadratura</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="exemplo-1-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-ideal">
+<h2>Exemplo 1: Cálculo do trabalho em uma expansão reversível de um gás ideal<a class="headerlink" href="#exemplo-1-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-ideal" title="Permalink to this headline">#</a></h2>
+<p><font size="4"> Considere a compressão reverssível de 1.0 mol de um gás ideal, de 22.4 L para 10.0L mantendo T constante a 0ºC. Calcule o trabalho realizado neste processo. Repita os cáclulos para uma segunda compressão de 10.0 L até 1.0 L mantendo a temperatura a 0ºC.</p>
+<section id="solucao">
+<h3>Solução<a class="headerlink" href="#solucao" title="Permalink to this headline">#</a></h3>
+<p>O trabalho reversível é o trabalho teórico máximo que o sistema pode realizar. Este trabalho é teórico pois considera que o trabalho é feito em <em>n</em> etapas infinitesimais. O valor do trabalho dependerá do sistema e da equação de estado que descreve este sistema. Por este motivo, em primeiro lugar é preciso encontrar um expressão para o trabalho p-V de um gás ideal. No trabalho reversível podemos considerar que a pressão de oposição se iguala a pressão do sistema, sendo esta calculada pela equação de estado. Desta forma podemos obter o trabalho reversível de uma gás ideal da seguinte forma:</p>
+<div class="math notranslate nohighlight">
+\[ dW = -pdV \]</div>
+<div class="math notranslate nohighlight">
+\[ p = nRT/V \]</div>
+<div class="math notranslate nohighlight">
+\[ \int dW = -nRT \int _{V_1} ^{V_2} \frac{dV}{V} \]</div>
+<div class="math notranslate nohighlight">
+\[ W = -nRT ln(V_2/V_1) \]</div>
+<p><font size="4"> O problema é dividido em duas etapas. Logo, será calculado o trabalho para primeira compressão, seguido do cálculo do trabalho para segunda compressão. O trabalho total é a soma do trabalho realizado em cada etapa individual. <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Primeira compressão</span>
+<span class="c1">#Definição das variáveis</span>
+
+<span class="n">R</span> <span class="o">=</span> <span class="mf">8.314</span>          <span class="c1"># J/K mol</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mf">1.0</span>            <span class="c1"># mol</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mf">273.15</span>         <span class="c1"># K</span>
+<span class="n">V1</span> <span class="o">=</span> <span class="mf">22.4</span>          <span class="c1"># L</span>
+<span class="n">V2</span> <span class="o">=</span> <span class="mf">10.0</span>            
+
+<span class="c1"># Cálculo</span>
+
+<span class="n">W1</span> <span class="o">=</span> <span class="o">-</span><span class="n">n</span><span class="o">*</span><span class="n">R</span><span class="o">*</span><span class="n">T</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">V2</span><span class="o">/</span><span class="n">V1</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;W (J/mol)= &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">W1</span> <span class="p">,</span> <span class="s1">&#39;6.3f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>W (J/mol)= 1831.482
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Segunda Compressão</span>
+
+<span class="n">V3</span> <span class="o">=</span> <span class="mf">1.0</span>       <span class="c1"># L</span>
+
+<span class="c1"># Cálculo</span>
+
+<span class="n">W2</span> <span class="o">=</span> <span class="o">-</span><span class="n">n</span><span class="o">*</span><span class="n">R</span><span class="o">*</span><span class="n">T</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">V3</span><span class="o">/</span><span class="n">V2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;W (J/mol)= &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">W2</span> <span class="p">,</span> <span class="s1">&#39;6.3f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>W (J/mol)= 5229.100
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size="4"> O trabalho total é a soma dos trabalhos realizados em cada etapa. Neste ponto é ilustrativo comparar o trabalho total realizado em duas etapas, com o trabalho realizado em uma única etapa de 22.4 L até 1 L. <font ></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Trabalho total em 2 etapas</span>
+
+<span class="n">Wtotal</span> <span class="o">=</span> <span class="n">W1</span> <span class="o">+</span> <span class="n">W2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;W em duas etapas(J/mol)= &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">Wtotal</span> <span class="p">,</span> <span class="s1">&#39;6.3f&#39;</span><span class="p">))</span>
+
+<span class="c1"># Trabalho total em uma etapa</span>
+
+<span class="n">W</span> <span class="o">=</span> <span class="o">-</span><span class="n">n</span><span class="o">*</span><span class="n">R</span><span class="o">*</span><span class="n">T</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">V3</span><span class="o">/</span><span class="n">V1</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;W em uma única etapa (J/mol)= &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">W</span> <span class="p">,</span> <span class="s1">&#39;6.3f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>W em duas etapas(J/mol)= 7060.581
+W em uma única etapa (J/mol)= 7060.581
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size="4"> Apesar dos resultados serem iguais, o trabalho <strong>não é</strong> uma função de estado termodinâmico, logo, seu valor não depende apenas do estado final e inicial. A princípio os resultados poderiam ser diferentes. <font></p>
+</section>
+</section>
+<section id="exemplo-2-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-de-van-der-waals">
+<h2>Exemplo 2: Cálculo do trabalho em uma expansão reversível de um gás de van der Waals<a class="headerlink" href="#exemplo-2-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-de-van-der-waals" title="Permalink to this headline">#</a></h2>
+<p><font size="4"> Repita o exercício anterior para o <span class="math notranslate nohighlight">\(O_2\)</span>, assumindo que este se comporta como um gás de van der Waals.</p>
+<section id="id1">
+<h3>Solução<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<p>Novamente nosso problema se resume a encontrar uma equação com a qual podemos calcular o trabalho feito por um gás de van der Waals.</p>
+<div class="math notranslate nohighlight">
+\[ dW = -pdV \]</div>
+<p>A equação de estado para um gás de van der Waals é:</p>
+<div class="math notranslate nohighlight">
+\[ p = \frac{RT}{V_m-b} - \frac{a}{V^2_m} \]</div>
+<p>Substituindo esta equação na definição do trabalho p-V, encontraremos a expressão desejada.</p>
+<div class="math notranslate nohighlight">
+\[ \int dW = - \int _{V_1} ^{V_2} \left (\frac{RT}{V_m-b} - \frac{a}{V^2_m} \right)dV \]</div>
+<div class="math notranslate nohighlight">
+\[ W = -RT ln \left( \frac{V_{m,2} -b}{V_{m,1} -b} \right) -a \left( \frac{1}{V_{m,2}} - \frac{1}{V_{m,1}} \right) \]</div>
+<p><font size="4"> Assim como no problema anterior será calculado o trabalho para primeira compressão, seguido do cálculo do trabalho para segunda compressão. O trabalho total é a soma do trabalho realizado em cada etapa individual. <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Primeira compressão</span>
+<span class="c1">#Definiçãodas variáveis</span>
+
+<span class="n">R</span> <span class="o">=</span> <span class="mf">8.314</span>          <span class="c1"># J/K mol</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mf">1.0</span>            <span class="c1"># mol</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mf">273.15</span>         <span class="c1"># K</span>
+<span class="n">V1</span> <span class="o">=</span> <span class="mf">22.4e-3</span>       <span class="c1"># m^3</span>
+<span class="n">V2</span> <span class="o">=</span> <span class="mf">10.0e-3</span>            
+<span class="n">a</span> <span class="o">=</span> <span class="mf">0.1380</span>         <span class="c1"># m^3 Pa / mol^2</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mf">0.0319e-3</span>      <span class="c1"># m^3 / mol </span>
+
+<span class="c1">#Cálculo</span>
+
+<span class="n">W1</span> <span class="o">=</span> <span class="o">-</span><span class="n">R</span><span class="o">*</span><span class="n">T</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">((</span><span class="n">V2</span><span class="o">-</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">V1</span><span class="o">-</span><span class="n">b</span><span class="p">))</span> <span class="o">-</span><span class="n">a</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">V2</span> <span class="o">-</span> <span class="mi">1</span><span class="o">/</span><span class="n">V1</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;W (J/mol)= &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">W1</span> <span class="p">,</span> <span class="s1">&#39;6.3f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>W (J/mol)= 1827.862
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Segunda Compressão</span>
+
+<span class="n">V3</span> <span class="o">=</span> <span class="mf">1.0e-3</span>    <span class="c1"># m^3</span>
+
+<span class="n">W2</span> <span class="o">=</span> <span class="o">-</span><span class="n">R</span><span class="o">*</span><span class="n">T</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">((</span><span class="n">V3</span><span class="o">-</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">V2</span><span class="o">-</span><span class="n">b</span><span class="p">))</span> <span class="o">-</span><span class="n">a</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">V3</span> <span class="o">-</span> <span class="mi">1</span><span class="o">/</span><span class="n">V2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;W (J/mol)= &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">W2</span> <span class="p">,</span> <span class="s1">&#39;6.3f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>W (J/mol)= 5171.268
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size="4"> Pode-se verificar que o uso da equação de van der Waals leva a resultados distintos aos obtidos com a equação do gás ideal. Para fins didáticos, a comparação anterior do trabalho realizado em  em dois estágios com o trabalho em um estágio será refeita. <font ></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Trabalho total em 2 etapas</span>
+
+<span class="n">Wtotal</span> <span class="o">=</span> <span class="n">W1</span> <span class="o">+</span> <span class="n">W2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;W em duas etapas(J/mol)= &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">Wtotal</span> <span class="p">,</span> <span class="s1">&#39;6.3f&#39;</span><span class="p">))</span>
+
+<span class="c1"># Trabalho total em uma etapa</span>
+
+<span class="n">W</span> <span class="o">=</span> <span class="o">-</span><span class="n">R</span><span class="o">*</span><span class="n">T</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">((</span><span class="n">V3</span><span class="o">-</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">V1</span><span class="o">-</span><span class="n">b</span><span class="p">))</span> <span class="o">-</span><span class="n">a</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">V3</span> <span class="o">-</span> <span class="mi">1</span><span class="o">/</span><span class="n">V1</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;W em uma única etapa (J/mol)= &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">W</span> <span class="p">,</span> <span class="s1">&#39;6.3f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>W em duas etapas(J/mol)= 6999.130
+W em uma única etapa (J/mol)= 6999.130
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="exemplo-3-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-que-obedece-uma-expansao-do-virial">
+<h2>Exemplo 3: Cálculo do trabalho em uma expansão reversível de um gás que obedece uma expansão do virial<a class="headerlink" href="#exemplo-3-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-que-obedece-uma-expansao-do-virial" title="Permalink to this headline">#</a></h2>
+<p><font size = "4"> A equação de estado dos gases pode ser escrita na forma de uma expansão do virial, <span class="math notranslate nohighlight">\( pV_m = RT \left( 1 + \frac{B}{V_{m,}} + \frac{C}{V^2_{m}} + ...\right)\)</span>. Repita os exercícios anteriores para compressão do <span class="math notranslate nohighlight">\(O_2\)</span> e compare os resultados. Dados: B = <span class="math notranslate nohighlight">\( -22,0 \times 10^{-6} m^3 mol^{-1}\)</span>, C = <span class="math notranslate nohighlight">\( 1100 \times 10^{-12} m^6 mol^{-2}\)</span>.</p>
+<section id="id2">
+<h3>Solução<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
+<p>Em primeiro lugar é preciso encontrar um expressão para o trabalho p-V de um gás que obedece a equação do virial.</p>
+<div class="math notranslate nohighlight">
+\[ dW = -pdV \]</div>
+<div class="math notranslate nohighlight">
+\[ p = \frac{nRT}{V} \left( 1 + \frac{B}{V_{m,}} + \frac{C}{V^2_{m}} + ...\right) \]</div>
+<div class="math notranslate nohighlight">
+\[ \int dW  = - \frac{nRT}{V} \int _{V_1} ^{V_2} \left( 1 + \frac{B}{V_{m,}} + \frac{C}{V^2_{m}} + ...\right) dV \]</div>
+<div class="math notranslate nohighlight">
+\[ W  = - nRT \left( ln(V_2/V_1) - B \left( \frac{1}{V_2} - \frac{1}{V_1} \right ) - \frac{C}{2} \left( \frac{1}{V^2 _2} - \frac{1}{V^2 _1} \right )\right) \]</div>
+<p><font size="4"> Note que o procedimento é o mesmo em todos os casos: Substituir o valor da pressão na equação do trabalho utilizando a equação de estado desejada. Posteriormente resolução da equação diferenção pela integração em ambos os lados. De posse da expressão analítca calcular o trabalho realizado. <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Primeira compressão</span>
+<span class="c1">#Definição das variáveis</span>
+
+<span class="n">R</span> <span class="o">=</span> <span class="mf">8.314</span>          <span class="c1"># J/K mol</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mf">1.0</span>            <span class="c1"># mol</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mf">273.15</span>         <span class="c1"># K</span>
+<span class="n">V1</span> <span class="o">=</span> <span class="mf">22.4e-3</span>        <span class="c1"># m^3</span>
+<span class="n">V2</span> <span class="o">=</span> <span class="mf">10.0e-3</span>            
+<span class="n">B</span> <span class="o">=</span> <span class="o">-</span><span class="mf">22.0e-6</span>        <span class="c1"># m**3 / mol </span>
+<span class="n">C</span> <span class="o">=</span> <span class="mf">1100e-12</span>        <span class="c1"># m**6 / mol**2</span>
+
+<span class="c1">#Cálculo</span>
+
+<span class="n">W1</span> <span class="o">=</span> <span class="o">-</span><span class="n">R</span><span class="o">*</span><span class="n">T</span><span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">V2</span><span class="o">/</span><span class="n">V1</span><span class="p">)</span> <span class="o">-</span> <span class="n">B</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">V2</span> <span class="o">-</span> <span class="mi">1</span><span class="o">/</span><span class="n">V1</span><span class="p">)</span><span class="o">-</span><span class="n">C</span><span class="o">/</span><span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">V2</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span><span class="o">/</span><span class="n">V1</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;W (J/mol)= &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">W1</span> <span class="p">,</span> <span class="s1">&#39;6.3f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>W (J/mol)= 1828.726
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Segunda Compressão</span>
+
+<span class="n">V3</span> <span class="o">=</span> <span class="mf">1.0e-3</span>    <span class="c1"># m^3</span>
+
+<span class="n">W2</span> <span class="o">=</span> <span class="o">-</span><span class="n">R</span><span class="o">*</span><span class="n">T</span><span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">V3</span><span class="o">/</span><span class="n">V2</span><span class="p">)</span> <span class="o">-</span> <span class="n">B</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">V3</span> <span class="o">-</span> <span class="mi">1</span><span class="o">/</span><span class="n">V2</span><span class="p">)</span><span class="o">-</span><span class="n">C</span><span class="o">/</span><span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">V3</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span><span class="o">/</span><span class="n">V2</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;W (J/mol)= &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">W2</span> <span class="p">,</span> <span class="s1">&#39;6.3f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>W (J/mol)= 5185.371
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Trabalho total em 2 etapas</span>
+
+<span class="n">Wtotal</span> <span class="o">=</span> <span class="n">W1</span> <span class="o">+</span> <span class="n">W2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;W em duas etapas(J/mol)= &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">Wtotal</span> <span class="p">,</span> <span class="s1">&#39;6.3f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>W em duas etapas(J/mol)= 7014.097
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="exemplo-4-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-de-redlich-kwong">
+<h2>Exemplo 4: Cálculo do trabalho em uma expansão reversível de um gás de Redlich-Kwong<a class="headerlink" href="#exemplo-4-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-de-redlich-kwong" title="Permalink to this headline">#</a></h2>
+<p><font size ="4" >O estado de um gás pode ser descrito pela equação de Redlich-Kwong, <span class="math notranslate nohighlight">\( \left (p +\frac{a}{V_m(V_m +b)T^{1/2}} \right) (V_m - b) = RT \)</span>. Repita os exercícios anteriores para compressão do <span class="math notranslate nohighlight">\(O_2\)</span> e compare os resultados. Dados: a = 17,16 <span class="math notranslate nohighlight">\(L^2 K^{1/2} atm. mol^{-2}\)</span>, b = <span class="math notranslate nohighlight">\(0,0221 L. mol^{-1}\)</span>.</p>
+<section id="id3">
+<h3>Solução<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
+<p>Novamente nosso problema se resume a encontrar uma equação com a qual podemos calcular o trabalho feito por um gás que obedece a equação de Redlich-Kwong.</p>
+<div class="math notranslate nohighlight">
+\[ dW = -pdV \]</div>
+<div class="math notranslate nohighlight">
+\[ p = \frac{RT}{V_m-b} - \frac{a}{V_m(V_m +b)T^{1/2}} \]</div>
+<div class="math notranslate nohighlight">
+\[ \int dW = - \int _{V_1} ^{V_2} \left ( \frac{RT}{V_m-b} - \frac{a}{V_m(V_m +b)T^{1/2}} \right) dV \]</div>
+<p>A segunda integral da direita pode ser resolvida pelo método das frações parciais, ou usar diretamente o resultado:</p>
+<p><span class="math notranslate nohighlight">\( \int \frac{1}{x(x+b)} dx = \frac{1}{b} ln \left( \frac{x}{x+b} \right) \)</span></p>
+<div class="math notranslate nohighlight">
+\[ W = -RT ln \left( \frac{V_{m,2} -b}{V_{m,1} -b} \right) -\frac{a}{bT^{1/2}} ln \left( \frac{V_2(V_1+b)}{V_1(V_2+b)} \right) \]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Primeira compressão</span>
+<span class="c1">#Definição das variáveis</span>
+
+<span class="n">R</span> <span class="o">=</span> <span class="mf">8.314</span>          <span class="c1"># J/K mol</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mf">1.0</span>            <span class="c1"># mol</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mf">273.15</span>         <span class="c1"># K</span>
+<span class="n">V1</span> <span class="o">=</span> <span class="mf">22.4e-3</span>       <span class="c1"># m^3</span>
+<span class="n">V2</span> <span class="o">=</span> <span class="mf">10.0e-3</span>            
+<span class="n">a</span> <span class="o">=</span> <span class="mf">17.16</span><span class="o">*</span><span class="mf">101.3e-3</span>        <span class="c1"># m**6 K^0,5 Pa / mol^2 </span>
+<span class="n">b</span> <span class="o">=</span> <span class="mf">0.0221e-3</span>             <span class="c1"># m**3 / mol</span>
+
+<span class="c1">#Cálculo</span>
+
+<span class="n">W1</span> <span class="o">=</span> <span class="o">-</span><span class="n">R</span><span class="o">*</span><span class="n">T</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">((</span><span class="n">V2</span><span class="o">-</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">V1</span><span class="o">-</span><span class="n">b</span><span class="p">))</span> <span class="o">+</span> <span class="n">a</span><span class="o">/</span><span class="p">(</span><span class="n">b</span><span class="o">*</span><span class="n">T</span><span class="o">**</span><span class="mf">0.5</span><span class="p">)</span> <span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">V2</span><span class="o">/</span><span class="n">V1</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">((</span><span class="n">V2</span><span class="o">-</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">V1</span><span class="o">-</span><span class="n">b</span><span class="p">)))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;W (J/mol)= &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">W1</span> <span class="p">,</span> <span class="s1">&#39;6.3f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>W (J/mol)= 1840.096
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Cálculo da segunda compressão</span>
+
+<span class="n">V3</span> <span class="o">=</span> <span class="mf">1.0e-3</span>    <span class="c1"># m^3</span>
+
+<span class="n">W2</span> <span class="o">=</span> <span class="o">-</span><span class="n">R</span><span class="o">*</span><span class="n">T</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">((</span><span class="n">V3</span><span class="o">-</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">V2</span><span class="o">-</span><span class="n">b</span><span class="p">))</span> <span class="o">+</span> <span class="n">a</span><span class="o">/</span><span class="p">(</span><span class="n">b</span><span class="o">*</span><span class="n">T</span><span class="o">**</span><span class="mf">0.5</span><span class="p">)</span> <span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">V3</span><span class="o">/</span><span class="n">V2</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">((</span><span class="n">V3</span><span class="o">-</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">V2</span><span class="o">-</span><span class="n">b</span><span class="p">)))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;W (J/mol)= &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">W2</span> <span class="p">,</span> <span class="s1">&#39;6.3f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>W (J/mol)= 5370.655
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Trabalho total em 2 etapas</span>
+
+<span class="n">Wtotal</span> <span class="o">=</span> <span class="n">W1</span> <span class="o">+</span> <span class="n">W2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;W em duas etapas(J/mol)= &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">Wtotal</span> <span class="p">,</span> <span class="s1">&#39;6.3f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>W em duas etapas(J/mol)= 7210.751
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size ="4"> A comparação do valor calculado para o trabalho considerando quatro equações de estado distintas mostra que o resultado final depende da equação de estado escolhida. Equações de estado mais complexas que as usadas nestes exercícios são conhecidas e a escolha da equação a ser utilizada  dependerá das condições do problema, tipo de transformação que está sendo estudada e a precisão desejada. <font></p>
+</section>
+</section>
+<section id="exemplo-5-calculo-do-trabalho-associado-a-uma-reacao-quimica">
+<h2>Exemplo 5: Cálculo do trabalho associado a uma reação química<a class="headerlink" href="#exemplo-5-calculo-do-trabalho-associado-a-uma-reacao-quimica" title="Permalink to this headline">#</a></h2>
+<p><font size = "4"> Uma reação química ocorre num vaso de seção reta uniforme de 50 cm², provido de um pistão. Em virtude de reação, o pistão se desloca 15 cm contra a pressão externa de 1 atm. Calcule o trabalho feito pelo sistema.</p>
+<section id="id4">
+<h3>Solução<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
+<p>O trabalho é <span class="math notranslate nohighlight">\( W = -\int p_{ext} dV = - p_{ext} \Delta V \)</span>, onde a variação do volume é dado pela distância de deslocamento do pistão multiplicado pela área seção reta do mesmo. Perceba que neste caso é usado a pressão externa e não a equaçã ode estado de um gás. É feito desta maneira porque o problema informa que a expansão ocorre contra uma pressão de oposição constante.<font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definindo variáveis</span>
+
+<span class="n">A</span><span class="o">=</span> <span class="mf">0.0050</span>     <span class="c1">#m² (Valor já convertido de cm² para m²) </span>
+<span class="n">x</span> <span class="o">=</span> <span class="mf">0.15</span>      <span class="c1">#m (Valor já convertido de cm para m)</span>
+<span class="n">P</span> <span class="o">=</span> <span class="mi">101325</span>    <span class="c1">#Pa (Valor convertido de 1 atm para Pascal)</span>
+
+<span class="c1">#Cálculos (Como o pistão se desloca contra a pressão externa, o valor do trabalho será negativo)</span>
+
+<span class="n">Volume</span> <span class="o">=</span> <span class="n">A</span><span class="o">*</span><span class="n">x</span>
+
+<span class="n">W</span><span class="o">=</span> <span class="o">-</span> <span class="n">P</span><span class="o">*</span><span class="n">Volume</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Trabalho (J)=&quot;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">W</span><span class="p">,</span><span class="s1">&#39;6.3f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Trabalho (J)=-75.994
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size ="4"> O trabalho negativo indica que o sistema realizou trabalho sobre as vizinhanças associado a sua expansão. <font></p>
+</section>
+</section>
+<section id="exercicio-6-calculos-envolvendo-aquecimento-de-um-gas-ideal">
+<h2>Exercício 6: Cálculos envolvendo aquecimento de um gás ideal<a class="headerlink" href="#exercicio-6-calculos-envolvendo-aquecimento-de-um-gas-ideal" title="Permalink to this headline">#</a></h2>
+<p><font size = "4">Uma amostra de 1,00 mol de um gás ideal monoatômico, Cv = 3/2R, inicialmente a <span class="math notranslate nohighlight">\(p_1\)</span> = 1,00 atm e <span class="math notranslate nohighlight">\(T_1\)</span> = 300 K, é aquecida reversivelmente, até 400 K, a volume constante. Calcule a pressão final, ΔU, Q e W.</p>
+<section id="id5">
+<h3>Solução<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h3>
+<p>Para este caso, W = 0, pois V = cte, e dU = dQ. Sabemos que:</p>
+<div class="math notranslate nohighlight">
+\[ \Delta U = \int_{T_1}^{T_2} C_V dT \]</div>
+<p>Por consequência:</p>
+<div class="math notranslate nohighlight">
+\[ Q = \int_{T_1}^{T_2} C_V dT \]</div>
+<p>Como Cv é constante, o problema se torna:</p>
+<div class="math notranslate nohighlight">
+\[ Q = C_V \Delta T \]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Definindo variáveis</span>
+
+<span class="n">p</span> <span class="o">=</span> <span class="mi">1</span>   <span class="c1">#atm</span>
+
+<span class="n">T1</span> <span class="o">=</span> <span class="mi">300</span>    <span class="c1">#K</span>
+<span class="n">T2</span> <span class="o">=</span> <span class="mi">400</span>    <span class="c1">#K</span>
+<span class="n">R</span><span class="o">=</span><span class="mf">8.3145</span>    <span class="c1">#J K-¹ mol-¹</span>
+<span class="n">Cv</span><span class="o">=</span> <span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="n">R</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">1</span>       <span class="c1">#mol</span>
+
+<span class="c1"># Primeiro passo - Integração: dU = ∫ Cv*dT</span>
+
+<span class="n">ΔU</span> <span class="o">=</span> <span class="n">Cv</span><span class="o">*</span><span class="p">(</span><span class="n">T2</span><span class="o">-</span><span class="n">T1</span><span class="p">)</span>       <span class="c1">#Após a integração.</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;ΔU (J/mol) = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">ΔU</span><span class="p">,</span><span class="s1">&#39;6.2f&#39;</span><span class="p">))</span>
+
+<span class="n">Q</span> <span class="o">=</span> <span class="n">ΔU</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Q (J/mol) = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">Q</span><span class="p">,</span><span class="s1">&#39;6.2f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ΔU (J/mol) = 1247.17
+Q (J/mol) = 1247.17
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="exemplo-7-calculos-da-primeira-lei-envolvendo-o-aquecimento-de-um-gas-ideal">
+<h2>Exemplo 7: Cálculos da primeira Lei envolvendo o aquecimento de um gás ideal<a class="headerlink" href="#exemplo-7-calculos-da-primeira-lei-envolvendo-o-aquecimento-de-um-gas-ideal" title="Permalink to this headline">#</a></h2>
+<p><font size = "4">Quando se aquecem 2 mols de <span class="math notranslate nohighlight">\(CO_2\)</span>, à pressão constante de 1,25 atm, sua temperatura passa de 250 K a 277 K. A capacidade calorífica molar do <span class="math notranslate nohighlight">\(CO_2\)</span> a pressão constante, <span class="math notranslate nohighlight">\(C_{p,m}\)</span>, é 37,11 JK-¹ mol-¹. Calcule Q, ΔH e ΔU.</p>
+<section id="id6">
+<h3>Solução<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h3>
+<p>Sabe-se que nessas condições de pressão constante Q = <span class="math notranslate nohighlight">\( \Delta H \)</span>. Portanto, temos realizar apenas uma integração:</p>
+<div class="math notranslate nohighlight">
+\[ \Delta H = Q= \int_{250}^{277} C_p dT\]</div>
+<p>Como é um gás ideal, <span class="math notranslate nohighlight">\( C_p - C_V = nR \)</span>, precisaremos integrar a seguinte equação</p>
+<div class="math notranslate nohighlight">
+\[ \Delta U =  \int_{250}^{277} (C_p - 2R) dT     \]</div>
+<p>Como foi informado <span class="math notranslate nohighlight">\(C_{p,m}\)</span>, e o problema se refere a 2 mols de <span class="math notranslate nohighlight">\(CO_2\)</span>, o valor de <span class="math notranslate nohighlight">\(C_{p}\)</span> a ser utilizado no problema é 74,22 JK-¹ mol-¹. <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Definindo variáveis</span>
+
+<span class="n">p</span> <span class="o">=</span> <span class="mf">1.25</span>    <span class="c1">#atm</span>
+<span class="n">T1</span> <span class="o">=</span> <span class="mi">250</span>    <span class="c1">#K</span>
+<span class="n">T2</span> <span class="o">=</span> <span class="mi">270</span>    <span class="c1">#K</span>
+<span class="n">cp</span> <span class="o">=</span> <span class="mf">74.22</span>  <span class="c1">#J K-¹ mol-¹ </span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">2</span>       <span class="c1">#mol</span>
+<span class="n">R</span> <span class="o">=</span> <span class="mf">8.314</span>   <span class="c1"># J K-¹ mol-¹</span>
+
+
+<span class="c1">#Cálculo da entalpia</span>
+<span class="n">ΔH</span> <span class="o">=</span> <span class="n">n</span> <span class="o">*</span> <span class="n">cp</span> <span class="o">*</span> <span class="p">(</span><span class="n">T2</span><span class="o">-</span><span class="n">T1</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ΔH (J) = &quot;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">ΔH</span><span class="p">,</span><span class="s1">&#39;6.2f&#39;</span><span class="p">))</span>
+
+<span class="c1">#Cálculo da quantidade de calor</span>
+<span class="n">Q</span> <span class="o">=</span> <span class="n">ΔH</span> 
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Q (J) = &quot;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">Q</span><span class="p">,</span><span class="s1">&#39;6.2f&#39;</span><span class="p">))</span>
+
+<span class="c1"># Como temos somente o Cp, podemos achar o cv através da relação: nR = Cp - Cv</span>
+
+<span class="n">Cv</span> <span class="o">=</span> <span class="n">cp</span> <span class="o">-</span> <span class="n">n</span><span class="o">*</span><span class="n">R</span>
+
+<span class="c1">#Cálculo da energia interna</span>
+<span class="n">ΔU</span> <span class="o">=</span> <span class="n">n</span> <span class="o">*</span> <span class="n">Cv</span> <span class="o">*</span> <span class="p">(</span><span class="n">T2</span> <span class="o">-</span> <span class="n">T1</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ΔU (J) = &quot;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">ΔU</span><span class="p">,</span><span class="s1">&#39;6.4f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ΔH (J) = 2968.80
+Q (J) = 2968.80
+ΔU (J) = 2303.6800
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="exemplo-8-calculo-da-entalpia-quando-c-p-e-funcao-da-temperatura">
+<h2>Exemplo 8: Cálculo da entalpia quando <span class="math notranslate nohighlight">\(C_p\)</span> é função da temperatura<a class="headerlink" href="#exemplo-8-calculo-da-entalpia-quando-c-p-e-funcao-da-temperatura" title="Permalink to this headline">#</a></h2>
+<p><font size ="4">Qual a variação da entalpia molar do <span class="math notranslate nohighlight">\(N_2\)</span> quando este gás é aquecido de 25°C até 100°C? Considere <span class="math notranslate nohighlight">\(C_{p,m} (J K^{-1} mol^{-1}) = 28,58 + 3,77 \times 10^{-3} T - \frac{0,50 \times 10^5}{T^2}\)</span>.</p>
+<section id="id7">
+<h3>Solução<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h3>
+<p>Este problema é solucionado resolvendo a seguinte equação:</p>
+<div class="math notranslate nohighlight">
+\[\Delta Hº_m = \int_{T_1 }^{T_2 } C_{p,m}dT \]</div>
+<div class="math notranslate nohighlight">
+\[\Delta Hº_m = \int_{T_1 }^{T_2 } (28,58 + 3,77 \times 10^{-3} T - \frac{0,50 \times 10^5}{T^2} )dT \]</div>
+<div class="math notranslate nohighlight">
+\[\Delta Hº_m = (28,58(T_2 - T_1 )+ \frac{3,77 \times 10^{-3}}{2} (T_2 ^2 - T_1 ^2 )+ 0,50 \times 10^5 \times \left( \frac{1}{T_2} -\frac{1}{T_1} \right)dT \]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Definindo variáveis </span>
+
+<span class="n">T1</span> <span class="o">=</span> <span class="mi">298</span>        <span class="c1">#K</span>
+<span class="n">T2</span> <span class="o">=</span> <span class="mi">373</span>        <span class="c1">#K</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mf">28.58</span>   
+<span class="n">b</span> <span class="o">=</span> <span class="mf">3.771e-3</span>    <span class="c1">#K-1</span>
+<span class="n">c</span><span class="o">=</span> <span class="o">-</span><span class="mf">0.50e5</span>      <span class="c1">#K²</span>
+
+<span class="c1"># a, b e c são valores tabelados e que variam de acordo com cada composto estudado</span>
+
+<span class="c1"># Escrevendo o resultado analítico da integral:</span>
+
+
+<span class="n">DeltaH</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="p">(</span><span class="n">T2</span><span class="o">-</span><span class="n">T1</span><span class="p">))</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="n">b</span><span class="o">*</span><span class="p">(</span><span class="n">T2</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">T1</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span> <span class="o">-</span> <span class="n">c</span><span class="o">*</span><span class="p">((</span><span class="mi">1</span><span class="o">/</span><span class="n">T2</span><span class="p">)</span><span class="o">-</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">T1</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot; Diferença de entalpia (J K-¹ mol-¹) =&quot;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">DeltaH</span><span class="p">,</span><span class="s1">&#39;6.4e&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Diferença de entalpia (J K-¹ mol-¹) =2.2047e+03
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="exemplo-9-calculos-envolvendo-a-capacidade-calorifica-quando-esta-e-uma-funcao-da-temperatura">
+<h2>Exemplo 9: Cálculos envolvendo a capacidade calorífica, quando esta é uma função da temperatura<a class="headerlink" href="#exemplo-9-calculos-envolvendo-a-capacidade-calorifica-quando-esta-e-uma-funcao-da-temperatura" title="Permalink to this headline">#</a></h2>
+<p><font size = "4">A capacidade calorífica a pressão constante de uma amostra de gás ideal varia com a temperatura de acordo com a expressão <span class="math notranslate nohighlight">\(C_p (J ~K^{-1}) = 20,17 + 0,3655 (T/K)\)</span>. Calcule Q, W e ΔH, quando a temperatura é elevada de 25°C a 200°C (i) a pressão constante e (ii) a volume constante.</p>
+<section id="solucao-do-problema-a-p-cte">
+<h3>Solução do problema a p = cte<a class="headerlink" href="#solucao-do-problema-a-p-cte" title="Permalink to this headline">#</a></h3>
+<p>Sabe-se que nessas condições de pressão constante Q = <span class="math notranslate nohighlight">\( \Delta H \)</span>. Portanto, temos que realizar apenas uma integração:</p>
+<div class="math notranslate nohighlight">
+\[ \Delta H = Q= \int_{T_1}^{T_2} C_p dT\]</div>
+<div class="math notranslate nohighlight">
+\[ \Delta H = Q =  \int_{298 K}^{473 K} 20,17 + 0,3665(T/K)   dT  \]</div>
+<p>O trabalho é calculado a partir da primeira Lei da Termodinâmica: <span class="math notranslate nohighlight">\( \Delta U = Q + W \)</span>.
+Como é um gás ideal, <span class="math notranslate nohighlight">\( C_p - C_V = nR \)</span>, precisaremos integrar a seguinte equação, assumindo 1 mol de gás ideal:</p>
+<div class="math notranslate nohighlight">
+\[ \Delta U =  \int_{298 K}^{473 K} (20,17 + 0,3665(T/K) -R)   dT  \]</div>
+</section>
+<section id="solucao-do-problema-a-v-cte">
+<h3>Solução do problema a V = cte<a class="headerlink" href="#solucao-do-problema-a-v-cte" title="Permalink to this headline">#</a></h3>
+<p>A volume constante W = 0, logo, o cálculo da entalpia se dará pela seguinte integração :</p>
+<div class="math notranslate nohighlight">
+\[ \Delta H = \int_{T_1}^{T_2} C_p dT\]</div>
+<div class="math notranslate nohighlight">
+\[ \Delta H =  \int_{298 K}^{473 K} 20,17 + 0,3665(T/K)   dT  \]</div>
+<p>O calor será calculado a partir da primeira Lei da Termodinâmica: <span class="math notranslate nohighlight">\( \Delta U = Q  \)</span>.
+Como é um gás ideal, <span class="math notranslate nohighlight">\( C_p - C_V = nR \)</span>, precisaremos integrar a seguinte equação, assumindo 1 mol de gás ideal:</p>
+<div class="math notranslate nohighlight">
+\[ \Delta U =  \int_{298 K}^{473 K} (20,17 + 0,3665(T/K) -R)   dT  \]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Definindo variáveis</span>
+
+<span class="n">T2</span> <span class="o">=</span> <span class="mi">473</span>    <span class="c1">#K  </span>
+<span class="n">T1</span> <span class="o">=</span> <span class="mi">298</span>    <span class="c1">#K  </span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">1</span>       <span class="c1">#mol</span>
+<span class="n">R</span> <span class="o">=</span> <span class="mf">8.3145</span>  <span class="c1">#J-¹mol-¹</span>
+
+<span class="c1"># (i) = Pressão Constante</span>
+<span class="c1"># cálculo do calor</span>
+<span class="n">Q</span> <span class="o">=</span> <span class="p">(</span><span class="mf">20.17</span> <span class="o">*</span> <span class="p">(</span><span class="n">T2</span> <span class="o">-</span> <span class="n">T1</span><span class="p">))</span> <span class="o">+</span> <span class="p">((</span><span class="mf">0.5</span><span class="o">*</span><span class="mf">0.3665</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">T2</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">T1</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a) Q (J) = &quot;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">Q</span><span class="p">,</span><span class="s1">&#39;6.2f&#39;</span><span class="p">))</span>
+
+<span class="c1">#Como temos a pressão constante, sabe-se que Q = ΔH. Portanto:</span>
+
+<span class="n">ΔH</span> <span class="o">=</span> <span class="n">Q</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;a) ΔH (J)= &quot;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">ΔH</span><span class="p">,</span><span class="s1">&#39;6.2f&#39;</span><span class="p">))</span>
+
+
+<span class="c1"># Calculando trabalho: </span>
+
+<span class="n">DeltaU</span> <span class="o">=</span> <span class="p">(</span><span class="mf">20.17</span><span class="o">-</span><span class="n">R</span> <span class="o">*</span> <span class="p">(</span><span class="n">T2</span> <span class="o">-</span> <span class="n">T1</span><span class="p">))</span> <span class="o">+</span> <span class="p">(</span><span class="mf">0.5</span><span class="o">*</span><span class="mf">0.3665</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">T2</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">T1</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">W</span> <span class="o">=</span> <span class="n">DeltaU</span> <span class="o">-</span> <span class="n">Q</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a) W (J) = &quot;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">W</span><span class="p">,</span><span class="s1">&#39;6.2f&#39;</span><span class="p">))</span>
+
+
+<span class="c1">#(ii) Volume Constante</span>
+
+<span class="c1">#cálculo da entalpia</span>
+
+<span class="n">ΔH</span> <span class="o">=</span> <span class="mf">20.17</span> <span class="o">*</span> <span class="p">(</span><span class="n">T2</span> <span class="o">-</span> <span class="n">T1</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="mf">0.5</span><span class="o">*</span><span class="mf">0.3665</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">T2</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">T1</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;b) ΔH (J)= &quot;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">ΔH</span><span class="p">,</span><span class="s1">&#39;6.2f&#39;</span><span class="p">))</span>
+
+
+<span class="c1"># O trabalho depende da variação de volume, portanto:</span>
+
+<span class="n">W1</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;b) W (J) = &quot;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">W1</span><span class="p">,</span><span class="s1">&#39;6.2f&#39;</span><span class="p">))</span>
+
+<span class="c1">#Calculando o calor.</span>
+<span class="c1">#Primeiro é obtido a variação da energia interna</span>
+
+<span class="n">DeltaU</span> <span class="o">=</span> <span class="p">(</span><span class="mf">20.17</span><span class="o">-</span><span class="n">R</span> <span class="o">*</span> <span class="p">(</span><span class="n">T2</span> <span class="o">-</span> <span class="n">T1</span><span class="p">))</span> <span class="o">+</span> <span class="p">(</span><span class="mf">0.5</span><span class="o">*</span><span class="mf">0.3665</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">T2</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">T1</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">Q</span> <span class="o">=</span> <span class="n">DeltaU</span>
+
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;b) Q (J) = &quot;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">Q</span><span class="p">,</span><span class="s1">&#39;6.2f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a) Q (J) = 28254.76
+a) ΔH (J)= 28254.76
+a) W (J) = -4964.62
+b) ΔH (J)= 28254.76
+b) W (J) =   0.00
+b) Q (J) = 23290.14
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size ="4">  As propriedades termodinâmicas variam de acordo com o tipo de transformação que o sistema sofre. A entalpia só se igual a quantidade de calor quando a transformação é isobárica, em outras situação Q pode diferir do valor de <span class="math notranslate nohighlight">\(\Delta H\)</span>. Na ausência de trabalho diferente de expansão, só haverá trabalho se houver variação no volume do sistema. <font></p>
+</section>
+</section>
+<section id="exemplo-10-calculo-da-entalpia-em-diferentes-temperaturas">
+<h2>Exemplo 10: Cálculo da entalpia em diferentes temperaturas<a class="headerlink" href="#exemplo-10-calculo-da-entalpia-em-diferentes-temperaturas" title="Permalink to this headline">#</a></h2>
+<p><font size ="4">A entalpia padrão de formação do <span class="math notranslate nohighlight">\(H_2 O(g)\)</span> a 298K  é -241,82 kJ/mol. Estime seu valor a 100°C dadas as seguintes capacidades caloríficas molares, a pressão constante: <span class="math notranslate nohighlight">\(H_2 O(g):33,58 ~J K^{-1} mol^{-1}; H_2 (g): 28,84 ~J K^{-1} mol^{-1}; O_2(g): 29,37 ~J K^{-1} mol^{-1}\)</span>. Admita que as capacidades caloríficas sejam independentes da temperatura.</p>
+<section id="id8">
+<h3>Solução<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h3>
+<p>É possível estimar a variação de entalpia em uma determinada temperatura a partir da entalpia e capacidades caloríficas em uma temperatura de referência. Nestes casos, é aplicada a Lei de Kirchhoff:</p>
+<div class="math notranslate nohighlight">
+\[ \int d\Delta H = \int_{T_1}^{T_2} \Delta C_{p} dT\]</div>
+<div class="math notranslate nohighlight">
+\[ \Delta H(T_2) -  \Delta H(T_1) = \int_{T_1}^{T_2} \Delta C_{p} dT\]</div>
+<p>Onde <span class="math notranslate nohighlight">\(\Delta C_{p}\)</span> é a diferença das capacidades caloríficas entre produtos e reagentes. A reação de formação da água é:</p>
+<div class="math notranslate nohighlight">
+\[ H_2(g) + \frac{1}{2} O_2(g) \rightarrow H_2 O(g) \]</div>
+<div class="math notranslate nohighlight">
+\[ \Delta C_{p} = C_{p}(H_2 O) - (C_p (H_2(g)) + \frac{1}{2} C_p (O_2(g)) \]</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;font&gt;
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Definindo variáveis</span>
+<span class="n">T1</span> <span class="o">=</span> <span class="mi">298</span>          <span class="c1">#K</span>
+<span class="n">T2</span> <span class="o">=</span> <span class="mi">373</span>          <span class="c1">#K</span>
+<span class="n">cpH20</span> <span class="o">=</span> <span class="mf">33.58</span>     <span class="c1"># J K-¹ mol-¹</span>
+<span class="n">cpH2</span> <span class="o">=</span> <span class="mf">28.84</span>      <span class="c1"># J K-¹ mol-¹</span>
+<span class="n">cpO2</span> <span class="o">=</span> <span class="mf">29.37</span>      <span class="c1"># J K-¹ mol-¹</span>
+<span class="n">HH20</span> <span class="o">=</span> <span class="o">-</span><span class="mi">241820</span>    <span class="c1"># J/mol</span>
+
+<span class="c1">#Cálculos</span>
+
+<span class="c1">#Reação:  H2(g) + 1/2* O2(g) ----&gt; H2O (g)</span>
+
+<span class="n">DeltaCp</span> <span class="o">=</span> <span class="n">cpH20</span> <span class="o">-</span> <span class="p">(</span><span class="n">cpH2</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="n">cpO2</span><span class="p">))</span>
+
+<span class="n">DeltaH2</span> <span class="o">=</span> <span class="n">HH20</span> <span class="o">+</span> <span class="n">DeltaCp</span><span class="o">*</span><span class="p">(</span><span class="n">T2</span><span class="o">-</span><span class="n">T1</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Entalpia-padrão de formação a 373K (J)=&quot;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">DeltaH2</span><span class="p">,</span><span class="s1">&#39;6.2f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Entalpia-padrão de formação a 373K (J)=-242565.88
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="exemplo-11-obtencao-do-polinomio-da-capacidade-calorifica-por-ajuste-polinomial">
+<h2>Exemplo 11: Obtenção do polinômio da capacidade calorífica por ajuste polinomial<a class="headerlink" href="#exemplo-11-obtencao-do-polinomio-da-capacidade-calorifica-por-ajuste-polinomial" title="Permalink to this headline">#</a></h2>
+<p><font size ="4">Os dados a seguir mostram como a capacidade calorífica molar padrão, a pressão constante, do dióxido de enxofre varia com a temperatura. De quanto aumenta a entalpia molar padrão do <span class="math notranslate nohighlight">\(SO_{2(g)}\)</span> quando a temperatura varia de 298,15 até 1500 K?</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>T/K</p></td>
+<td><p>300</p></td>
+<td><p>500</p></td>
+<td><p>700</p></td>
+<td><p>900</p></td>
+<td><p>1100</p></td>
+<td><p>1300</p></td>
+<td><p>1500</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(C_{p,m} (J K^{-1} mol^{-1})\)</span></p></td>
+<td><p>39,909</p></td>
+<td><p>46,490</p></td>
+<td><p>50,829</p></td>
+<td><p>53,407</p></td>
+<td><p>54,993</p></td>
+<td><p>56,033</p></td>
+<td><p>56,759</p></td>
+</tr>
+</tbody>
+</table>
+<section id="id9">
+<h3>Solução<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h3>
+<p>Em primeiro lugar é preciso encontrar uma equação que relacione Cp com temperatura, pois esta é função de T no intervalo de valores estudado. A princípio uma regressão polinomial será usada para encontrar a relação entre Cp e T. Em muito dos casos um polinômio de terceiro grau é suficiente para resolver este tipo de problema. <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Escrevendo T e Cp como vetores</span>
+
+<span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">300</span><span class="p">,</span><span class="mi">500</span><span class="p">,</span><span class="mi">700</span><span class="p">,</span><span class="mi">900</span><span class="p">,</span><span class="mi">1100</span><span class="p">,</span><span class="mi">1300</span><span class="p">,</span><span class="mi">1500</span><span class="p">])</span>
+<span class="n">cp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">39.909</span><span class="p">,</span><span class="mf">46.490</span><span class="p">,</span><span class="mf">50.829</span><span class="p">,</span><span class="mf">53.407</span><span class="p">,</span><span class="mf">54.993</span><span class="p">,</span><span class="mf">56.033</span><span class="p">,</span><span class="mf">56.759</span><span class="p">])</span>
+
+
+<span class="c1">#Regressão de um polinômio de terceiro grau</span>
+
+<span class="n">deg</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">cp</span><span class="p">,</span> <span class="n">deg</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+
+<span class="c1">#impressão dos resultados da regressão</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;Cp(T)= &#39;</span> <span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cp(T)=             3             2
+1.091e-08 x - 4.368e-05 x + 0.06222 x + 24.9
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Construção do gráfico para visualizar a qualidade do ajuste</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span> <span class="c1"># estes dois parâmetros precisam aparecer antes da definição do plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">cp</span> <span class="p">,</span> <span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;$C_p$ experimental&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">y</span><span class="p">(</span><span class="n">T</span><span class="p">),</span> <span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;Polinômio de terceiro grau&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;best&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Cp (J/K mol)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;T (K)&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Primeira_Lei_44_0.png" src="_images/Primeira_Lei_44_0.png" />
+</div>
+</div>
+<p><font size ="4"> O gráfico confirma que um polinônio de terceiro grau é suficiente para descrever a dependência de <span class="math notranslate nohighlight">\(C_p\)</span> com a temperatura nas condições do problema.A partir do polinômio obtido é possível calcular a variação da entalpia pela integração da capacidade calorífica.</p>
+<div class="math notranslate nohighlight">
+\[ \Delta H = \int_{T_1}^{T_2} C_p dT\]</div>
+<div class="math notranslate nohighlight">
+\[ \Delta H = \int_{T_1}^{T_2} (aT^3 + bT^2 + cT + d) dT\]</div>
+<p>O polinômio foi escrito na ordem em que os coeficientes são guardados no vetor z. A resolução da integral resulta em:</p>
+<div class="math notranslate nohighlight">
+\[ \Delta H = (\frac{a}{4}(T_2^4 - T_1^4 )  + \frac{b}{3}(T_2^3 - T_1^3 ) + \frac{c}{2}(T_2^2 - T_1^2 ) + d(T_2 - T_1) \]</div>
+<font><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Realizar a integração da função obtida no intervalo de temperaturas do problema.</span>
+<span class="c1"># O resultado analítico da integração está escrito abaixo</span>
+
+<span class="n">T2</span> <span class="o">=</span> <span class="mi">1500</span> <span class="c1">#K</span>
+<span class="n">T1</span> <span class="o">=</span> <span class="mf">298.15</span>   <span class="c1">#K</span>
+
+
+<span class="n">DeltaH</span> <span class="o">=</span> <span class="n">z</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">4</span><span class="o">*</span><span class="p">(</span><span class="n">T2</span><span class="o">**</span><span class="mi">4</span> <span class="o">-</span> <span class="n">T1</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span> <span class="o">+</span> <span class="n">z</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">3</span><span class="o">*</span><span class="p">(</span><span class="n">T2</span><span class="o">**</span><span class="mi">3</span><span class="o">-</span><span class="n">T1</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="n">z</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">T2</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">T1</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">z</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="n">T2</span><span class="o">-</span><span class="n">T1</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;DeltaH (J)=&quot;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">DeltaH</span><span class="p">,</span><span class="s1">&#39;6.2f&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>DeltaH (J)=62199.43
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="exemplo-12-obtendo-funcoes-para-cp-t">
+<h2>Exemplo 12: Obtendo funções para Cp(T)<a class="headerlink" href="#exemplo-12-obtendo-funcoes-para-cp-t" title="Permalink to this headline">#</a></h2>
+<p><font size ="4"> Os dados a seguir mostram como a capacidade calorífica molar padrão a pressão constante da amônia varia com a temperatura. Ajuste uma expressão com a forma <span class="math notranslate nohighlight">\( C_{p,m} = a + bT + \frac{c}{T^2}\)</span> aos dados, e determine os valores de a, b e c. Verifique se não seria melhor expressar os dados na forma <span class="math notranslate nohighlight">\(C_{p,m} = \alpha + \beta T + \gamma T^2\)</span>, e determine os valores desses coeficientes.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>T/K</p></td>
+<td><p>300</p></td>
+<td><p>400</p></td>
+<td><p>500</p></td>
+<td><p>600</p></td>
+<td><p>700</p></td>
+<td><p>800</p></td>
+<td><p>900</p></td>
+<td><p>1000</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cp,m (J K-¹mol-¹)</p></td>
+<td><p>35,678</p></td>
+<td><p>38,674</p></td>
+<td><p>41,994</p></td>
+<td><p>45,229</p></td>
+<td><p>48,269</p></td>
+<td><p>51,112</p></td>
+<td><p>53,769</p></td>
+<td><p>56,244     <font></p></td>
+</tr>
+</tbody>
+</table>
+<font size ="4">
+<section id="id10">
+<h3>Solução<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h3>
+<p>O ajuste da primeira função será feito usando a rotina scipy.optimize.curve_fit para fazermos uma regressão não linear usando o método dos mínimos quadrados. Inicialmente deve ser definido a função que desejamos ajustar aos dados fornecidos no problema, usando a sintaxe python padrão, e posteriormente proceder com o ajuste. Para comparamos a qualidade de ambos os ajustes, a equação de segundo grau sugerida será ajustada aos dados usando o mesmo procedimento. <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Definindo T e Cp como vetores</span>
+
+<span class="n">T</span><span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span> <span class="p">([</span><span class="mi">300</span><span class="p">,</span><span class="mi">400</span><span class="p">,</span><span class="mi">500</span><span class="p">,</span><span class="mi">600</span><span class="p">,</span><span class="mi">700</span><span class="p">,</span><span class="mi">800</span><span class="p">,</span><span class="mi">900</span><span class="p">,</span><span class="mi">1000</span><span class="p">])</span>
+<span class="n">cp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span> <span class="p">([</span><span class="mf">35.678</span><span class="p">,</span><span class="mf">38.674</span><span class="p">,</span><span class="mf">41.994</span><span class="p">,</span><span class="mf">45.229</span><span class="p">,</span><span class="mf">48.269</span><span class="p">,</span><span class="mf">51.112</span><span class="p">,</span><span class="mf">53.769</span><span class="p">,</span><span class="mf">56.244</span><span class="p">])</span>
+
+
+<span class="c1"># Definir a função que será ajustada usando o formato</span>
+<span class="c1"># python para descrever funções</span>
+
+<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
+
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">*</span><span class="n">T</span> <span class="o">+</span> <span class="n">c</span><span class="o">/</span><span class="n">T</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="c1"># ajuste da função usando mínimos quadrados</span>
+<span class="c1"># popt são os parâmetros do modelo obtidos após ajuste</span>
+<span class="c1"># pcov é a matriz de covariância de popt. A partir dela pode ser calculado o desvio padrão </span>
+<span class="c1"># de cada parâmetro do ajuste</span>
+<span class="n">popt</span><span class="p">,</span> <span class="n">pcov</span> <span class="o">=</span> <span class="n">curve_fit</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">cp</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Cºp,m = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">popt</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.3e&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; +&#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">popt</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.3e&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;T &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">popt</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.5e&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;/T²&#39;</span><span class="p">)</span>   
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cºp,m =  2.880e+01 + 2.790e-02T -1.49041e+05/T²
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># ajustando um polinômio de segunda grau</span>
+
+<span class="c1"># Definir a função que será ajustada usando o formato</span>
+<span class="c1"># python para descrever funções</span>
+
+<span class="k">def</span> <span class="nf">func2</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
+
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">*</span><span class="n">T</span> <span class="o">+</span> <span class="n">c</span><span class="o">*</span><span class="n">T</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="c1"># ajuste da função usando mínimos quadrados</span>
+<span class="c1"># popt são os parâmetros do modelo obtidos após ajuste</span>
+<span class="c1"># pcov é a matriz de covariância de popt. A partir dela pode ser calculado o desvio padrão </span>
+<span class="c1"># de cada parâmetro do ajuste</span>
+<span class="n">popt2</span><span class="p">,</span> <span class="n">pcov2</span> <span class="o">=</span> <span class="n">curve_fit</span><span class="p">(</span><span class="n">func2</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">cp</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Cºp,m = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">popt2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.3e&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; +&#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">popt2</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.3e&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;T &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">popt2</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.5e&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;T²&#39;</span><span class="p">)</span>   
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cºp,m =  2.464e+01 + 3.818e-02T -6.49464e-06T²
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Vamos construir os gráficos para ver a diferença nos ajustes</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span> <span class="c1"># estes dois parâmetros precisam aparecer antes da definição do plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">cp</span> <span class="p">,</span> <span class="s2">&quot;*&quot;</span><span class="p">)</span> <span class="c1">#insere os pontos</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">func</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="o">*</span><span class="n">popt</span><span class="p">),</span> <span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Primeiro ajuste&#39;</span><span class="p">)</span> <span class="c1">#faz a curva do primeiro ajuste</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="n">func2</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="o">*</span><span class="n">popt2</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Segundo ajuste&#39;</span><span class="p">)</span> <span class="c1">#faz a curva do segundo ajuste ajuste</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;best&#39;</span><span class="p">)</span> <span class="c1">#mostra as legendas</span>
+
+<span class="c1">#título dos eixos</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;cp (J K-¹mol-¹)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;T (K)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Primeira_Lei_51_0.png" src="_images/Primeira_Lei_51_0.png" />
+</div>
+</div>
+<p><font size = "4"> Uma análise visual dos ajustes mostra que ambas as funções são equivalentes. Mas um teste estatístico pode indicar qual das funções se ajusta melhor aos dados experimentais. Como a rotina scipy.optimize.curve_fit retorna a matriz de covariância, é possível calcular o desvio padrão de cada ajuste. Os elementos da diagonal da matriz de covariância fornecem o variância dos parâmetros estimados. A raíz quadrada destes parâmetros fornece o desvio padrão dos parâmetros estimados. <font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">perr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">pcov</span><span class="p">))</span> <span class="c1"># calcula o desvio padrão do primeiro ajuste</span>
+
+<span class="n">perr2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">pcov2</span><span class="p">))</span> <span class="c1"># calcula o desvio padrão do segundo ajuste</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;desvio padrão do primeiro ajuste = &#39;</span><span class="p">,</span><span class="n">perr</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;desvio padrão do segundo ajuste  = &#39;</span><span class="p">,</span><span class="n">perr2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>desvio padrão do primeiro ajuste =  [8.20143143e-01 9.11188677e-04 6.48021586e+04]
+desvio padrão do segundo ajuste  =  [4.36659308e-01 1.45459699e-03 1.10590957e-06]
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size ="4"> Os dois ajustes são distintos, mas analisando o desvio padrão dos dois primeiros coeficientes é possível verificar um menor desvio padrão no ajuste da equação de segundo grau. Logo, seria melhor o uso de uma equação quadrática no lugar da primeira equação. <font></p>
+</section>
+</section>
+<section id="exemplo-13-calculando-delta-ho-t-quando-cp-e-funcao-da-temperatura">
+<h2>Exemplo 13: Calculando <span class="math notranslate nohighlight">\( \Delta Hº(T)\)</span> quando Cp é função da temperatura<a class="headerlink" href="#exemplo-13-calculando-delta-ho-t-quando-cp-e-funcao-da-temperatura" title="Permalink to this headline">#</a></h2>
+<p><font size="4"> Às vezes é mais adequado exprimir a dependência que a capacidade calorífica tem em relação à temperatura pela expressão empírica <span class="math notranslate nohighlight">\(C_{p,m} = \alpha + \beta T + \gamma T^2\)</span>. Utilize esta expressão para determinar a entalpia padrão de combustão do metano a 350 K. Use os seguintes dados obtidos a 298 K:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Coeficientes</p></td>
+<td><p><span class="math notranslate nohighlight">\(\alpha (J K^{-1} mol^{-1})\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\( \beta (mJ K^{-2} mol^{-1})\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\( \gamma (\mu J K^{-3} mol^{-1})\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(CH_{4(g)}\)</span></p></td>
+<td><p>14,16</p></td>
+<td><p>75,5</p></td>
+<td><p>–17,99</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(CO_{2 (g)}\)</span></p></td>
+<td><p>26,86</p></td>
+<td><p>6,97</p></td>
+<td><p>-0,82</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(O_{2 (g)}\)</span></p></td>
+<td><p>25,72</p></td>
+<td><p>12,98</p></td>
+<td><p>-3,862</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(H_2O_{(g)}\)</span></p></td>
+<td><p>30,36</p></td>
+<td><p>9,61</p></td>
+<td><p>1,184</p></td>
+</tr>
+</tbody>
+</table>
+<section id="id11">
+<h3>Solução<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h3>
+<p>É possível estimar a variação de entalpia em uma determinada temperatura a partir da entalpia e capacidades caloríficas em uma temperatura de referência. Nestes casos, é aplicada a Lei de Kirchhoff:</p>
+<div class="math notranslate nohighlight">
+\[ \int d\Delta H = \int_{T_1}^{T_2} \Delta C_{p} dT\]</div>
+<div class="math notranslate nohighlight">
+\[ \Delta H(T_2) -  \Delta H(T_1) = \int_{T_1}^{T_2} \Delta C_{p} dT\]</div>
+<p>Onde <span class="math notranslate nohighlight">\(\Delta C_{p}\)</span> é a diferença das capacidades caloríficas entre produtos e reagentes. Neste caso, devemos calcular inicialmente a entalpia de combustão a 298K a partir de dados tabelados e depois aplicar a Lei de Kirchhoff. <font></p>
+<p><font size ="4"> Determinando o ΔH (298):</p>
+<div class="math notranslate nohighlight">
+\[ CH_4(g)  + 2O_2(g)  \rightarrow CO_2(g)  + 2H_2 O(g) \]</div>
+<p>Os dados de entalpia de formação das espécies individuais podem ser obtidas na literatura:</p>
+<p><span class="math notranslate nohighlight">\( \Delta H_f (CH_44)= -75.0 ~kJ mol^{-1}\)</span></p>
+<p><span class="math notranslate nohighlight">\( \Delta H_f (O_2)= 0.0 ~kJ mol^{-1}\)</span></p>
+<p><span class="math notranslate nohighlight">\( \Delta H_f (CO_2)= -394.0 ~kJ mol^{-1}\)</span></p>
+<p><span class="math notranslate nohighlight">\( \Delta H_f (H_2O)= -286.0 ~kJ mol^{-1}\)</span></p>
+<p><span class="math notranslate nohighlight">\( \Delta H(298) = ( \Delta H_f(CO_2) + 2\Delta H_f(H_2 O)) - \Delta H_f(CH_4) \)</span></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definindo variáveis</span>
+
+<span class="n">T2</span><span class="o">=</span> <span class="mi">350</span>    <span class="c1">#K</span>
+<span class="n">T1</span><span class="o">=</span> <span class="mi">298</span>    <span class="c1">#K </span>
+
+<span class="c1">#Calculando Denta H a 298K</span>
+
+<span class="n">DeltaH298</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mi">394</span><span class="o">+</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="mi">286</span><span class="p">))</span> <span class="o">-</span> <span class="p">(</span><span class="o">-</span><span class="mi">75</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ΔH(298)=&quot;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">DeltaH298</span><span class="p">,</span><span class="s1">&#39;6.1f&#39;</span><span class="p">)</span><span class="o">+</span> <span class="s2">&quot;kJ/mol&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ΔH(298)=-891.0kJ/mol
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size ="4"> Agora será calculado a diferença na capacidade calorífica agrupando os termos de mesma ordem:</p>
+<p><span class="math notranslate nohighlight">\( \Delta \alpha = ( \alpha(CO_2) + 2\alpha (H_2 O)) - \alpha (CH_4) - 2\alpha (O_2)\)</span></p>
+<p><span class="math notranslate nohighlight">\( \Delta \beta = ( \beta (CO_2) + 2\beta (H_2 O)) - \beta (CH_4) - 2\beta (O_2) \)</span></p>
+<p><span class="math notranslate nohighlight">\( \Delta \gamma = ( \gamma (CO_2) + 2\gamma (H_2 O)) - \gamma (CH_4) - \gamma (O_2)\)</span></p>
+<p><span class="math notranslate nohighlight">\( \Delta C_p = \Delta \alpha + \Delta \beta T + \Delta \gamma T^2 \)</span></p>
+<p>A partir do valor de <span class="math notranslate nohighlight">\( \Delta C_p \)</span> é possível obter a variação da entalpia na tempertura desejada.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Faremos agora a diferença entre os coeficientes </span>
+
+
+<span class="c1"># Para CH4:</span>
+
+<span class="n">a1</span> <span class="o">=</span> <span class="mf">14.16</span>       <span class="c1"># J K-¹mol-¹</span>
+<span class="n">b1</span> <span class="o">=</span> <span class="mf">75.5e-3</span>     <span class="c1"># J K-² mol-¹    </span>
+<span class="n">c1</span> <span class="o">=</span> <span class="o">-</span><span class="mf">17.99e-6</span>   <span class="c1"># J K-³ mol-¹     </span>
+
+<span class="c1">#Para CO2:</span>
+
+<span class="n">a2</span> <span class="o">=</span> <span class="mf">26.86</span>        <span class="c1">#J K-¹mol-¹</span>
+<span class="n">b2</span> <span class="o">=</span> <span class="mf">6.97e-3</span>      <span class="c1"># J K-² mol-¹  </span>
+<span class="n">c2</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.82e-6</span>     <span class="c1"># J K-³ mol-¹</span>
+
+
+<span class="c1">#Para O2:</span>
+
+<span class="n">a3</span> <span class="o">=</span> <span class="mf">25.7</span>         <span class="c1"># J K-¹mol-¹</span>
+<span class="n">b3</span> <span class="o">=</span> <span class="mf">12.98e-3</span>     <span class="c1"># J K-² mol-¹  </span>
+<span class="n">c3</span> <span class="o">=</span> <span class="o">-</span><span class="mf">3.862e-6</span>    <span class="c1"># J K-³ mol-¹</span>
+
+<span class="c1">#Para H2O:</span>
+
+<span class="n">a4</span> <span class="o">=</span> <span class="mf">30.36</span>    <span class="c1">#J K-¹mol-¹</span>
+<span class="n">b4</span> <span class="o">=</span> <span class="mf">9.61e-3</span>  <span class="c1">#J K-¹mol-¹</span>
+<span class="n">c4</span> <span class="o">=</span> <span class="mf">1.184e-6</span> <span class="c1">#J K-¹mol-¹</span>
+
+<span class="c1"># ΔCp = Cp produtos - Cp reagentes</span>
+
+<span class="c1"># ΔCp = Cp (CO2) + 2Cp (H2O) - {Cp(CH4) + 2Cp (O2)} </span>
+
+
+<span class="n">Da</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">a4</span> <span class="o">+</span> <span class="n">a2</span> <span class="o">-</span> <span class="n">a1</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="n">a3</span>
+
+<span class="n">Db</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">b4</span> <span class="o">+</span> <span class="n">b2</span> <span class="o">-</span> <span class="n">b1</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="n">b3</span>
+
+<span class="n">Dc</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">c4</span> <span class="o">+</span> <span class="n">c2</span> <span class="o">-</span> <span class="n">c1</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="n">c3</span>
+
+
+
+<span class="c1">#Integração de ΔCp em função da Temperatura.</span>
+
+<span class="c1"># ΔH (350) = ΔHc(298) + [∫ΔCp dT] </span>
+
+<span class="c1"># resultado analítico da integração</span>
+
+<span class="n">DH</span> <span class="o">=</span> <span class="n">DeltaH298</span><span class="o">*</span><span class="mi">1000</span> <span class="o">+</span> <span class="n">Da</span><span class="o">*</span><span class="p">(</span><span class="n">T2</span><span class="o">-</span><span class="n">T1</span><span class="p">)</span> <span class="o">+</span> <span class="n">Db</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">T2</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">T1</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">Da</span><span class="o">/</span><span class="mi">3</span><span class="o">*</span><span class="p">(</span><span class="n">T2</span><span class="o">**</span><span class="mi">3</span><span class="o">-</span><span class="n">T1</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Variação de Entalpia em 350 K = &quot;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">DH</span><span class="o">/</span><span class="mi">1000</span><span class="p">,</span><span class="s1">&#39;6.2f&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;kJ/mol&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Variação de Entalpia em 350 K = 119568.61kJ/mol
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="Gases_Reais_v2.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Gáses Reais</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Primeira_Lei_parte2.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Leitura Complementar Sobre a Primeira Lei da Termodinâmica:</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Leonardo Baptista<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
