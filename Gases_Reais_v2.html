@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Gáses Reais &#8212; Físico-Química</title>
+    <title>Gases Reais &#8212; Físico-Química</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -54,7 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Primeira Lei da termodinâmica" href="Primeira_Lei.html" />
+    <link rel="next" title="Primeira Lei da Termodinâmica" href="Primeira_Lei.html" />
     <link rel="prev" title="Gás Ideal" href="Gas_ideal.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -123,12 +123,17 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Gáses Reais
+   Gases Reais
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Primeira_Lei.html">
-   Primeira Lei da termodinâmica
+   Primeira Lei da Termodinâmica
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Primeira_Lei_parte2.html">
+   Leitura Complementar Sobre a Primeira Lei da Termodinâmica:
   </a>
  </li>
  <li class="toctree-l1">
@@ -414,7 +419,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Gáses Reais</h1>
+                <h1>Gases Reais</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -498,7 +503,7 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="gases-reais">
-<h1>Gáses Reais<a class="headerlink" href="#gases-reais" title="Permalink to this headline">#</a></h1>
+<h1>Gases Reais<a class="headerlink" href="#gases-reais" title="Permalink to this headline">#</a></h1>
 <p><font size = "4">O modelo do gás ideal só estritamente válido para p→ 0 e temperaturas elevadas. Além desta limitação, o modelo do gás ideal desconsidera qualquer interação intermolecular e não prevê a mudança de estado físico dos gases. Uma maneira de quantificarmos o desvio da idealidade é pelo parâmetro denominado fator de compressibilidade Z:</p>
 <div class="math notranslate nohighlight">
 \[ Z = \frac{V_m}{V_{m,id}} = \frac{pV_m}{RT} \]</div>
@@ -650,9 +655,10 @@ title="Print to PDF"
 <font size = "4">
 <section id="id1">
 <h3>Solução<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
-<p>Truncando a séria acima no segundo termo e derivando em função de p:
-$<span class="math notranslate nohighlight">\( \frac{\partial Z}{\partial p} = \frac{B'}{RT} = \frac{B/RT}{RT} \)</span><span class="math notranslate nohighlight">\(
-Onde foi usado \)</span>B’ = \frac{B}{RT}$.</p>
+<p>Truncando a séria acima no segundo termo e derivando em função de p:</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\partial Z}{\partial p} = \frac{B'}{RT} = \frac{B/RT}{RT} \]</div>
+<p>Onde foi usado <span class="math notranslate nohighlight">\(B' = \frac{B}{RT}\)</span>.</p>
 <p>Foi informado que <span class="math notranslate nohighlight">\( \frac{\partial Z}{\partial p} = 0 \)</span>, logo, na temperatura de Boyle o segundo coeficiente do viral é 0. Podemos ajustar uma função a estes dados e encontrar as raízes da função ajustada. Neste exercício ajustaremos uma função do segundo grau.</p>
 <p>O cálculo das raízes fará uso da rotina numpy.roots(coef). Onde coef são os coeficientes do polínônio ordenados do termo de maior ordem para o de menor ordem. <font></p>
 <div class="cell docutils container">
@@ -744,7 +750,7 @@ Onde foi usado \)</span>B’ = \frac{B}{RT}$.</p>
 <section id="exemplo-4-calculo-do-volume-de-uma-gas-que-obedece-a-equacao-de-van-der-waals">
 <h2>Exemplo 4: Cálculo do volume de uma gás que obedece a equação de van der Waals<a class="headerlink" href="#exemplo-4-calculo-do-volume-de-uma-gas-que-obedece-a-equacao-de-van-der-waals" title="Permalink to this headline">#</a></h2>
 <font size = "4">
-Estime o volume molar do $CO_2$, a 500 K e 100 atm, admitindo que o gás se comporta como um gás de van der Waals. <font><font size = "4">
+Estime o volume molar do $ CO_2 $, a 500 K e 100 atm, admitindo que o gás se comporta como um gás de van der Waals. <font><font size = "4">
 <section id="id3">
 <h3>Solução<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
 <p>É necessário encontrar uma expressão para o volume molar resolvendo a equação de van der Waals. A equação pode ser escrita da seguinte forma:</p>
@@ -969,7 +975,7 @@ Vamos comparar os ajustes olhando para o gráfico que contem os dois ajustes. Ob
     <a class='right-next' id="next-link" href="Primeira_Lei.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Primeira Lei da termodinâmica</p>
+        <p class="prev-next-title">Primeira Lei da Termodinâmica</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
