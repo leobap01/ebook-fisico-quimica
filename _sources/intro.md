@@ -8,3 +8,14 @@ O principal objetivo deste e-book trabalho é mostrar que é possível ensinar f
 
 ```{tableofcontents}
 ```
+
+## Bibliografia
+
+- Físico-Química, Atkins, Peter and de Paula, Júlio,2006, 8ª ed. Oxford University Press
+- Físico-Química, Levine, Ira N, 2009, 6ª ed. McGraw-Hill
+- Fundamentos de Físico-Química, Castellan, Gilbert, 2001, 1º ed. LTC editora
+- Physical and Chemical Equilibrium for Chemical Engineers, Nevers, Noel de, 2012, 2ª ed Wiley
+- Schaum's Solved Problems Series - 2000 Solved Problems in Physical Chemistry,Metz, Clyde R., 1990, McGraw-Hill
+
+```{bibliography}
+```

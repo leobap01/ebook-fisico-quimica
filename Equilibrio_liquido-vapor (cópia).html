@@ -54,7 +54,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Equilíbrio de fases envolvendo substâncias puras." href="Eq_Fases_puros.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -114,7 +113,7 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Gas_ideal.html">
    Gás Ideal
@@ -155,8 +154,8 @@ const thebe_selector_output = ".output, .cell_output"
    Equilíbrio de fases envolvendo substâncias puras.
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Equilibrio_liquido-vapor.html">
    Equilíbrio Líquido-Vapor
   </a>
  </li>
@@ -219,7 +218,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/Equilibrio_liquido-vapor.ipynb"
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/Equilibrio_liquido-vapor (cópia).ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -279,7 +278,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FEquilibrio_liquido-vapor.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FEquilibrio_liquido-vapor (cópia).html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -307,7 +306,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/Equilibrio_liquido-vapor.ipynb"
+        <a href="_sources/Equilibrio_liquido-vapor (cópia).ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -376,6 +375,13 @@ title="Print to PDF"
    Solução
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercicio-em-substituicao-ao-sexto-teste-data-da-entrega-07-de-abril-ate-20-horas">
+   <strong>
+    Exercício em substituição ao sexto teste. Data da entrega: 07 de abril, até 20 horas.
+   </strong>
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -403,6 +409,13 @@ title="Print to PDF"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#solucao">
    Solução
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercicio-em-substituicao-ao-sexto-teste-data-da-entrega-07-de-abril-ate-20-horas">
+   <strong>
+    Exercício em substituição ao sexto teste. Data da entrega: 07 de abril, até 20 horas.
+   </strong>
   </a>
  </li>
 </ul>
@@ -496,6 +509,85 @@ Volume molar do vapor (cm^3) = 1789.003
 </div>
 </div>
 </section>
+<section id="exercicio-em-substituicao-ao-sexto-teste-data-da-entrega-07-de-abril-ate-20-horas">
+<h2><strong>Exercício em substituição ao sexto teste. Data da entrega: 07 de abril, até 20 horas.</strong><a class="headerlink" href="#exercicio-em-substituicao-ao-sexto-teste-data-da-entrega-07-de-abril-ate-20-horas" title="Permalink to this headline">#</a></h2>
+<ol class="simple">
+<li><p>Repita o exercício anterior para o gás de van der Waals</p></li>
+<li><p>Resolva o exercício 8.15b. É o mesmo processo anterior, mas usando a equação de estado de Soave-Redlich-Kwong</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Questão 2</span>
+<span class="c1">#variáveis</span>
+<span class="n">R</span><span class="o">=</span><span class="mf">82.06</span> <span class="c1"># atm cm³/K mol</span>
+<span class="n">T</span><span class="o">=</span><span class="mf">298.15</span> <span class="c1"># K</span>
+<span class="n">Tc</span><span class="o">=</span><span class="mf">369.8</span> <span class="c1"># K</span>
+<span class="n">Pc</span><span class="o">=</span><span class="mf">41.9</span> <span class="c1"># atm</span>
+
+
+<span class="n">w</span><span class="o">=</span><span class="mf">0.153</span>
+<span class="n">m</span><span class="o">=</span><span class="mf">0.480</span><span class="o">+</span><span class="mf">1.574</span><span class="o">*</span><span class="n">w</span><span class="o">-</span><span class="mf">0.176</span><span class="o">*</span><span class="n">w</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">a</span><span class="o">=</span><span class="mf">0.42748</span><span class="o">*</span><span class="p">((</span><span class="n">R</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">Tc</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">Pc</span><span class="p">))</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">m</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="p">(</span><span class="n">T</span><span class="o">/</span><span class="n">Tc</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;O valor de a(T) é&#39;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;O resultado bateu com o livro&#39;</span><span class="p">)</span>
+
+
+<span class="n">b</span> <span class="o">=</span> <span class="mf">0.08664</span><span class="o">*</span><span class="n">R</span><span class="o">*</span><span class="n">Tc</span><span class="o">/</span><span class="n">Pc</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;b=&#39;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>O valor de a(T) é 10820137.007199321
+O resultado bateu com o livro
+b= 62.74842654701671
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Variáveis</span>
+
+
+<span class="c1">#a= 10082000</span>
+
+<span class="c1"># definindo o sistema de equações</span>
+
+
+<span class="k">def</span> <span class="nf">equations</span><span class="p">(</span><span class="nb">vars</span><span class="p">):</span>
+    <span class="n">pvap</span><span class="p">,</span> <span class="n">Vl</span><span class="p">,</span> <span class="n">Vv</span> <span class="o">=</span> <span class="nb">vars</span>
+    
+    <span class="n">eq1</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">Vv</span> <span class="o">-</span> <span class="n">Vl</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">R</span><span class="o">*</span><span class="n">T</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">((</span><span class="n">Vv</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">Vl</span> <span class="o">-</span> <span class="n">b</span><span class="p">))</span> <span class="o">-</span> <span class="n">a</span><span class="o">/</span><span class="n">b</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">((</span><span class="n">Vv</span><span class="o">*</span><span class="p">(</span><span class="n">Vl</span><span class="o">+</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">Vl</span><span class="o">*</span><span class="p">(</span><span class="n">Vv</span> <span class="o">+</span><span class="n">b</span><span class="p">)))))</span> <span class="o">-</span> <span class="n">pvap</span>
+    
+    <span class="n">eq2</span> <span class="o">=</span> <span class="n">R</span><span class="o">*</span><span class="n">T</span><span class="o">/</span><span class="p">(</span><span class="n">Vv</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span> <span class="o">-</span> <span class="n">a</span><span class="o">/</span><span class="p">(</span><span class="n">Vv</span><span class="o">*</span><span class="p">(</span><span class="n">Vv</span> <span class="o">+</span> <span class="n">b</span><span class="p">))</span> <span class="o">-</span> <span class="n">pvap</span> 
+    
+    <span class="n">eq3</span> <span class="o">=</span> <span class="n">R</span><span class="o">*</span><span class="n">T</span><span class="o">/</span><span class="p">(</span><span class="n">Vl</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span> <span class="o">-</span> <span class="n">a</span><span class="o">/</span><span class="p">(</span><span class="n">Vl</span><span class="o">*</span><span class="p">(</span><span class="n">Vl</span> <span class="o">+</span> <span class="n">b</span><span class="p">))</span> <span class="o">-</span> <span class="n">pvap</span>
+    
+    <span class="k">return</span> <span class="p">[</span><span class="n">eq1</span><span class="p">,</span> <span class="n">eq2</span><span class="p">,</span> <span class="n">eq3</span><span class="p">]</span>
+
+<span class="c1">#Resolveremos com lest_squares, pois desta maneira podermos incluir algumas restrições.</span>
+<span class="c1">#Usaremos as seguintes restrições:</span>
+<span class="c1"># 1 atm &lt; pvap &lt; pc</span>
+<span class="c1"># b &lt; Vl &lt; Vc</span>
+<span class="c1"># Vc &lt; Vv</span>
+
+
+<span class="n">res</span> <span class="o">=</span> <span class="n">least_squares</span><span class="p">(</span><span class="n">equations</span><span class="p">,</span> <span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1789</span><span class="p">),</span> <span class="n">bounds</span><span class="o">=</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">65</span><span class="p">,</span> <span class="mi">200</span> <span class="p">),(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">3000</span> <span class="p">))</span> <span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Solução com least_squares= &#39;</span> <span class="p">,</span> <span class="o">+</span>  <span class="n">res</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Solução com least_squares=  [   9.49074576   97.73094636 2137.76040267]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -525,13 +617,6 @@ Volume molar do vapor (cm^3) = 1789.003
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="Eq_Fases_puros.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Equilíbrio de fases envolvendo substâncias puras.</p>
-        </div>
-    </a>
 </div>
             </footer>
         </div>
