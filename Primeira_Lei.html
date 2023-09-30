@@ -147,8 +147,18 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="sistema_equacoes.html">
+   Leitura Complementar
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="Eq_Fases_puros.html">
    Equilíbrio de fases envolvendo substâncias puras.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Equilibrio_liquido-vapor.html">
+   Equilíbrio Líquido-Vapor
   </a>
  </li>
 </ul>
@@ -1380,8 +1390,9 @@ b) Q (J) = 23290.14
 <p>Onde <span class="math notranslate nohighlight">\(\Delta C_{p}\)</span> é a diferença das capacidades caloríficas entre produtos e reagentes. A reação de formação da água é:</p>
 <div class="math notranslate nohighlight">
 \[ H_2(g) + \frac{1}{2} O_2(g) \rightarrow H_2 O(g) \]</div>
-<p>$<span class="math notranslate nohighlight">\( \Delta C_{p} = C_{p}(H_2 O) - (C_p (H_2(g)) + \frac{1}{2} C_p (O_2(g)) \)</span>$ <font></p>
-<div class="cell docutils container">
+<div class="math notranslate nohighlight">
+\[ \Delta C_{p} = C_{p}(H_2 O) - (C_p (H_2(g)) + \frac{1}{2} C_p (O_2(g)) \]</div>
+<font><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Definindo variáveis</span>
 <span class="n">T1</span> <span class="o">=</span> <span class="mi">298</span>          <span class="c1">#K</span>
@@ -1605,7 +1616,7 @@ b) Q (J) = 23290.14
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># ajustando um polinômio de segunda grau</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># ajustando um polinômio de segundo grau</span>
 
 <span class="c1"># Definir a função que será ajustada usando o formato</span>
 <span class="c1"># python para descrever funções</span>
@@ -1739,7 +1750,7 @@ desvio padrão do segundo ajuste  =  [4.36659308e-01 1.45459699e-03 1.10590957e-
 <span class="n">T2</span><span class="o">=</span> <span class="mi">350</span>    <span class="c1">#K</span>
 <span class="n">T1</span><span class="o">=</span> <span class="mi">298</span>    <span class="c1">#K </span>
 
-<span class="c1">#Calculando Denta H a 298K</span>
+<span class="c1">#Calculando Delta H a 298K</span>
 
 <span class="n">DeltaH298</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mi">394</span><span class="o">+</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="mi">286</span><span class="p">))</span> <span class="o">-</span> <span class="p">(</span><span class="o">-</span><span class="mi">75</span><span class="p">)</span>
 

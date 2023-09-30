@@ -1,0 +1,51 @@
+Traceback (most recent call last):
+  File "/home/leobap/.local/lib/python3.8/site-packages/jupyter_cache/executors/utils.py", line 51, in single_nb_execution
+    executenb(
+  File "/home/leobap/.local/lib/python3.8/site-packages/nbclient/client.py", line 1204, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/home/leobap/.local/lib/python3.8/site-packages/nbclient/util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/home/leobap/.local/lib/python3.8/site-packages/nbclient/util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+    return future.result()
+  File "/home/leobap/.local/lib/python3.8/site-packages/nbclient/client.py", line 663, in async_execute
+    await self.async_execute_cell(
+  File "/home/leobap/.local/lib/python3.8/site-packages/nbclient/client.py", line 965, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/home/leobap/.local/lib/python3.8/site-packages/nbclient/client.py", line 862, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+#b)
+
+x=xI[:2]
+p=pI[:2]
+
+def henry(x):
+    
+    return K*x
+
+popt, pcov = curve_fit(henry, x, p)
+
+
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mValueError[0m                                Traceback (most recent call last)
+[0;32m<ipython-input-8-8ab40ddcbf73>[0m in [0;36m<module>[0;34m[0m
+[1;32m      8[0m     [0;32mreturn[0m [0mK[0m[0;34m*[0m[0mx[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      9[0m [0;34m[0m[0m
+[0;32m---> 10[0;31m [0mpopt[0m[0;34m,[0m [0mpcov[0m [0;34m=[0m [0mcurve_fit[0m[0;34m([0m[0mhenry[0m[0;34m,[0m [0mx[0m[0;34m,[0m [0mp[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     11[0m [0;34m[0m[0m
+
+[0;32m/usr/lib/python3/dist-packages/scipy/optimize/minpack.py[0m in [0;36mcurve_fit[0;34m(f, xdata, ydata, p0, sigma, absolute_sigma, check_finite, bounds, method, jac, **kwargs)[0m
+[1;32m    681[0m         [0margs[0m[0;34m,[0m [0mvarargs[0m[0;34m,[0m [0mvarkw[0m[0;34m,[0m [0mdefaults[0m [0;34m=[0m [0m_getargspec[0m[0;34m([0m[0mf[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    682[0m         [0;32mif[0m [0mlen[0m[0;34m([0m[0margs[0m[0;34m)[0m [0;34m<[0m [0;36m2[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 683[0;31m             [0;32mraise[0m [0mValueError[0m[0;34m([0m[0;34m"Unable to determine number of fit parameters."[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    684[0m         [0mn[0m [0;34m=[0m [0mlen[0m[0;34m([0m[0margs[0m[0;34m)[0m [0;34m-[0m [0;36m1[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    685[0m     [0;32melse[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mValueError[0m: Unable to determine number of fit parameters.
+ValueError: Unable to determine number of fit parameters.
+
