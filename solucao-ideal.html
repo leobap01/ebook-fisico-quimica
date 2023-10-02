@@ -54,6 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Equilíbrio Líquido-Vapor" href="Equilibrio_liquido-vapor.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -113,7 +114,7 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Gas_ideal.html">
    Gás Ideal
@@ -157,6 +158,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="Equilibrio_liquido-vapor.html">
    Equilíbrio Líquido-Vapor
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Equilíbrio de fases em misturas
   </a>
  </li>
 </ul>
@@ -499,17 +505,18 @@ title="Print to PDF"
 <h1>Equilíbrio de fases em misturas<a class="headerlink" href="#equilibrio-de-fases-em-misturas" title="Permalink to this headline">#</a></h1>
 <section id="fundamentos-teoricos">
 <h2>Fundamentos Teóricos<a class="headerlink" href="#fundamentos-teoricos" title="Permalink to this headline">#</a></h2>
-<p>Quando um soluto é adicionado em um solvente, este leva ao abaixamento do potencial químico do solvente, afetando assim as propriedades físicas do solvente. Como primeira aproximação, podemos assumir a formação de uma solução ideal. Neste caso, <span class="math notranslate nohighlight">\( \Delta_{mis}G\)</span> e <span class="math notranslate nohighlight">\(\Delta_{mis}S\)</span> podem ser calculados pelas equações:</p>
+<p><font size ="4"> Quando um soluto é adicionado a um solvente, este leva ao abaixamento do potencial químico do solvente, afetando assim suas propriedades físicas. Como primeira aproximação, podemos assumir a formação de uma solução ideal. Neste caso, <span class="math notranslate nohighlight">\( \Delta_{mis}G\)</span> e <span class="math notranslate nohighlight">\(\Delta_{mis}S\)</span> podem ser calculados pelas equações:</p>
 <p><span class="math notranslate nohighlight">\( \Delta_{mis}G = RT \sum_{i} n_i lnx_i \)</span></p>
 <p><span class="math notranslate nohighlight">\( \Delta_{mis}S = -R \sum_{i} n_i lnx_i \)</span></p>
 <p>De forma que em uma solução ideal <span class="math notranslate nohighlight">\( \Delta_{mis}H = 0\)</span>  e <span class="math notranslate nohighlight">\( \Delta_{mis}V = 0 \)</span></p>
-<p>Em uma solução ideal soluto e solvente obedecerão a Lei de Raoult, e a pressão de vapor de cada espécie que faz parte da solução dependerá apenas da composição e pressão de vapor dos componentes puros:</p>
+<p>Em uma solução ideal soluto e solvente obedecerão a Lei de Raoult, e a pressão de vapor de cada espécie participante da solução dependerá apenas da composição e pressão de vapor dos componentes puros:</p>
 <p><span class="math notranslate nohighlight">\( p_i = x_i p_i^* \)</span>     Lei de Raoult</p>
 <p>onde <span class="math notranslate nohighlight">\(p_i^* \)</span> é a pressã ode vapor da espécie pura.</p>
-<p>No entanto poucos sistemas formam soluções ideais. No entanto, em soluções muito diluídas verifica-se que solvente continua a obedecer a Lei de Raoult. Em contrapartida o soluto, por estar em um ambiente químico em que interage majoritariamente com moléculas do solvente, terá sua pressão de vapor calculada pela Lei de Henry:</p>
-<p><span class="math notranslate nohighlight">\( p_A = x_A p_A^* \)</span>     Lei de Raoult
-<span class="math notranslate nohighlight">\( p_i = K_i p_i^* \)</span>     Lei de Henry</p>
-<p>onde <span class="math notranslate nohighlight">\(K_i\)</span> é a constante de Lei de henry que é função do solvente e temperatura. Esta constante substitui a pressã ode vapor do soluto como constante de proposrcionalidade na Lei de Raoult. Uma solução com estas características é chama de solução diluída ideal.</p>
+<p>No entanto poucos sistemas formam soluções ideais. Mas em soluções muito diluídas verifica-se que solvente continua a obedecer a Lei de Raoult. Em contrapartida o soluto, por estar em um ambiente químico em que interage majoritariamente com moléculas do solvente, terá sua pressão de vapor calculada pela Lei de Henry:</p>
+<p><span class="math notranslate nohighlight">\( p_A = x_A p_A^* \)</span>     Lei de Raoult</p>
+<p><span class="math notranslate nohighlight">\( p_i = K_i p_i^* \)</span>     Lei de Henry</p>
+<p>onde <span class="math notranslate nohighlight">\(K_i\)</span> é a constante de Lei de Henry que é função do solvente e temperatura. Esta constante substitui a pressão de vapor do soluto como constante de proporcionalidade na Lei de Raoult. Uma solução com estas características é chama de solução diluída ideal.
+<font></p>
 <p>A resolução dos exercícios a seguir só necessitam do módulo Numpy.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -521,18 +528,18 @@ title="Print to PDF"
 </section>
 <section id="exemplo-1">
 <h2>Exemplo 1<a class="headerlink" href="#exemplo-1" title="Permalink to this headline">#</a></h2>
-<p>Estime a fração molar de vapor d’água no ar atmosférico em equilíbrio com água líquida a 20ºC e 1 atm.</p>
+<p><font size = "4">Estime a fração molar de vapor d’água no ar atmosférico em equilíbrio com água líquida a 20ºC e 1 atm. <font></p>
 </section>
 <section id="solucao">
 <h2>Solução<a class="headerlink" href="#solucao" title="Permalink to this headline">#</a></h2>
-<p>A resolução deste exercídio fará uso da Lei de Raoult:</p>
+<p><font size ="4"> A resolução deste exercídio fará uso da Lei de Raoult:</p>
 <div class="math notranslate nohighlight">
 \[ p_{H_2 O} = x_{H_2 O}p_{vap} ^*\]</div>
 <div class="math notranslate nohighlight">
 \[ y_{H_2 O}p_{total} = x_{H_2 O}p_{vap} ^*\]</div>
 <p>Nestas condições: <span class="math notranslate nohighlight">\(p_{vap} ^* = 0.023 atm\)</span>
 Assume-se que o ar é composto de oxigênio e nitrogênio e que estes são pouco solúveis em água: <span class="math notranslate nohighlight">\(x_{H_2 O} = 1\)</span></p>
-<div class="cell docutils container">
+<font><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">P</span> <span class="o">=</span> <span class="mf">1.</span>          <span class="c1">#[atm]</span>
 <span class="n">p_vap</span> <span class="o">=</span> <span class="mf">0.023</span>     <span class="c1">#[atm]</span>
@@ -559,11 +566,11 @@ Umidade relativa nestas condições  100.000000
 </section>
 <section id="exemplo-2">
 <h2>Exemplo 2<a class="headerlink" href="#exemplo-2" title="Permalink to this headline">#</a></h2>
-<p>Estime a concentração de oxigênio dissolvido em água quando água e ar atmosférico estão em equilíbrio a 20 ºC e 1 atm. Utilize os resultados do exemplo anterior. Dados: <span class="math notranslate nohighlight">\( \rho (H_2O)= 998.2  g/L \)</span> e  <span class="math notranslate nohighlight">\(H(O_2) = 40100 atm \)</span> a 1 atm e 20ºC</p>
+<p><font size ="4"> Estime a concentração de oxigênio dissolvido em água quando água e ar atmosférico estão em equilíbrio a 20 ºC e 1 atm. Utilize os resultados do exemplo anterior. Dados: <span class="math notranslate nohighlight">\( \rho (H_2O)= 998.2 ~ g/L \)</span> e  <span class="math notranslate nohighlight">\(H(O_2) = 40100 ~atm \)</span> a 1 atm e 20ºC. <font></p>
 </section>
 <section id="id1">
 <h2>Solução<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
-<p>De acordo com o exercício anterior, <span class="math notranslate nohighlight">\(y_{(H_2 O)} = 0.023\)</span>. O ar seco é composto por 21% de <span class="math notranslate nohighlight">\(O_2\)</span> e 79% de <span class="math notranslate nohighlight">\(N_2\)</span>, logo, <span class="math notranslate nohighlight">\( y_{(N_2 )} +  y_{(O_2 )} = 1 - y_{(H_2 O)}\)</span>. Devemos assumir que a solução aquosa é majoritariamente água, devido a baixa solubilidade dos gases.</p>
+<p><font size ="4">De acordo com o exercício anterior, <span class="math notranslate nohighlight">\(y_{(H_2 O)} = 0.023\)</span>. O ar seco é composto por 21% de <span class="math notranslate nohighlight">\(O_2\)</span> e 79% de <span class="math notranslate nohighlight">\(N_2\)</span>, logo, <span class="math notranslate nohighlight">\( y_{(N_2 )} +  y_{(O_2 )} = 1 - y_{(H_2 O)}\)</span>. Devemos assumir que a solução aquosa é majoritariamente água, devido a baixa solubilidade dos gases. <font></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Inicialização ads variáveis do problema</span>
@@ -597,11 +604,11 @@ Umidade relativa nestas condições  100.000000
 </section>
 <section id="exemplo-3">
 <h2>Exemplo 3<a class="headerlink" href="#exemplo-3" title="Permalink to this headline">#</a></h2>
-<p>Repita o primeiro exercício, mas levando em consideração os três equilíbrios existentes simultaneamente:a) Equilíbrio líquido-vapor da água, b) Dissolução de <span class="math notranslate nohighlight">\(O_2\)</span> do ar em água e c) Dissolução de <span class="math notranslate nohighlight">\(N_2\)</span> do ar em água. Dado:  <span class="math notranslate nohighlight">\(H(N_2) = 80400 \)</span> atm a 1 atm e 20ºC.</p>
+<p><font size ="4">Repita o primeiro exercício, mas levando em consideração os três equilíbrios existentes simultaneamente:a) Equilíbrio líquido-vapor da água, b) Dissolução de <span class="math notranslate nohighlight">\(O_2\)</span> do ar em água e c) Dissolução de <span class="math notranslate nohighlight">\(N_2\)</span> do ar em água. Dado:  <span class="math notranslate nohighlight">\(H(N_2) = 80400 \)</span> atm a 1 atm e 20ºC.<font></p>
 </section>
 <section id="id2">
 <h2>Solução<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
-<p>Para resolver o problema devemos montar um sistema de equações lineares que descreve o problema. Os três equilíbrios existentes são:</p>
+<p><font size ="4">Para resolver o problema devemos montar um sistema de equações lineares que descreve o problema. Os três equilíbrios existentes são:</p>
 <div class="math notranslate nohighlight">
 \[ y_{agua}P = x_{agua}p_{vap}(H_2 O) \]</div>
 <div class="math notranslate nohighlight">
@@ -615,20 +622,13 @@ Umidade relativa nestas condições  100.000000
 \[ x_{agua} + x_{O_2} + x_{N_2} = 1 \]</div>
 <div class="math notranslate nohighlight">
 \[ \frac{y_{O_2}}{y_{N_2}} = 0.21/0.79 = 0.266 \]</div>
-<p>A resolução deste sistema pode ser feita pela regra de Cramer: <span class="math notranslate nohighlight">\( A = A^{-1} B \)</span>. Escrevendo as equações acima no formato de um sistema de equações, temos:</p>
+<p>A resolução deste sistema pode ser feita pela <a class="reference internal" href="sistema_equacoes.html"><span class="doc std std-doc">regra de Cramer</span></a>: <span class="math notranslate nohighlight">\( A = A^{-1} B \)</span>. Escrevendo as equações acima no formato de um sistema de equações, temos:</p>
 <div class="math notranslate nohighlight">
-\[ x_{agua}p_{vap}(H_2 O) + 0x_{O_2} + 0x_{N_2} - y_{agua}P + 0y_{O_2} + 0y_{N_2}= 0\]</div>
-<div class="math notranslate nohighlight">
-\[ 0x_{agua} + x_{O_2}H_{O_2} + 0x_{N_2} + 0y_{agua} -y_{O_2}P + 0y_{N_2} = 0 \]</div>
-<div class="math notranslate nohighlight">
-\[ 0x_{agua} + 0x_{O_2} + x_{N_2}H_{N_2} + 0y_{agua} +0y_{O_2}P - y_{N_2}P = 0 \]</div>
-<div class="math notranslate nohighlight">
-\[ 0x_{agua} + 0x_{O_2} + 0x_{N_2} + y_{agua} + y_{O_2} + y_{N_2} = 1 \]</div>
-<div class="math notranslate nohighlight">
-\[ x_{agua} + x_{O_2} + x_{N_2} + 0y_{agua} + 0y_{O_2} + 0y_{N_2}= 1 \]</div>
-<div class="math notranslate nohighlight">
-\[ 0x_{agua} + 0x_{O_2} + 0x_{N_2} + 0y_{agua} + 079y_{O_2} - 0.21y_{N_2} = 0 \]</div>
-<div class="cell docutils container">
+\[\begin{split} 
+\begin{cases} x_{agua}p_{vap}(H_2 O) + 0x_{O_2} + 0x_{N_2} - y_{agua}P + 0y_{O_2} + 0y_{N_2}= 0 \\ 0x_{agua} + x_{O_2}H_{O_2} + 0x_{N_2} + 0y_{agua} -y_{O_2}P + 0y_{N_2} = 0 \\ 0x_{agua} + 0x_{O_2} + x_{N_2}H_{N_2} + 0y_{agua} +0y_{O_2}P - y_{N_2}P = 0 \\  0x_{agua} + 0x_{O_2} + 0x_{N_2} + y_{agua} + y_{O_2} + y_{N_2} = 1 \\ x_{agua} + x_{O_2} + x_{N_2} + 0y_{agua} + 0y_{O_2} + 0y_{N_2}= 1 \\ 0x_{agua} + 0x_{O_2} + 0x_{N_2} + 0y_{agua} + 079y_{O_2} - 0.21y_{N_2} = 0 \end{cases} 
+\end{split}\]</div>
+<p>Antes de usar a regra de Cramer, o sistema de equação deve ser cosntruído completando os termos faltantes. Por esta razão aparecem vários termos nulos no sistema.</p>
+<font><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Inicializando as variáveis:</span>
 
@@ -643,10 +643,6 @@ Umidade relativa nestas condições  100.000000
 <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">0.023</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">40100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="p">,</span><span class="mi">80400</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span> <span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span> <span class="p">,</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.79</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.21</span><span class="p">]])</span>
 
 <span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">],[</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">],[</span><span class="mi">0</span><span class="p">]])</span>
-
-<span class="c1">#X = np.linalg.inv(A)</span>
-
-<span class="c1">#C = np.dot(X, B) # produto das duas matrizes</span>
 
 <span class="n">C</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
 
@@ -678,11 +674,11 @@ Umidade relativa nestas condições  100.000000
 </section>
 <section id="exemplo-4">
 <h2>Exemplo 4<a class="headerlink" href="#exemplo-4" title="Permalink to this headline">#</a></h2>
-<p>Estime a pressão de vapor e a composição do vapor em equilíbrio com o líquido de composição 80%, em mol, de benzeno e 20% de tolueno a 20ºC, assumindo que a solução é ideal. Use a equação de Antoine para calcular a pressão de vapor das substâncias puras.</p>
+<p><font size ="4">Estime a pressão de vapor e a composição do vapor em equilíbrio com o líquido de composição 80%, em mol, de benzeno e 20% de tolueno a 20ºC, assumindo que a solução é ideal. Use a equação de Antoine para calcular a pressão de vapor das substâncias puras.<font></p>
 </section>
 <section id="id3">
 <h2>Solução<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
-<p>Uma solução ideal é aquela que solvente e soluto obedecem a Lei de Raoult. Para isso é necessário saber a pressão de vapor das substâncias puras, que será cálculada pela equação de Antoine: <span class="math notranslate nohighlight">\( log(p(torr)) = A - \frac{B}{T(ºC)+C} \)</span>.
+<p><font size ="4">Uma solução ideal é aquela que solvente e soluto obedecem a Lei de Raoult. Para isso é necessário saber a pressão de vapor das substâncias puras, que será cálculada pela equação de Antoine: <span class="math notranslate nohighlight">\( log(p(torr)) = A - \frac{B}{T(ºC)+C} \)</span>.
 Os parâmetros A, B e C são tabelados para cada substância.</p>
 <p>Benzeno:
 A = 6.90565
@@ -691,7 +687,8 @@ C = 220.79</p>
 <p>Tolueno:
 A = 6.95334
 B = 1343.943
-C = 219.377</p>
+C = 219.377
+<font></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Inicializando as variáveis</span>
@@ -740,14 +737,15 @@ C = 219.377</p>
 </section>
 <section id="exemplo-5">
 <h2>Exemplo 5<a class="headerlink" href="#exemplo-5" title="Permalink to this headline">#</a></h2>
-<p>Em qual temperatura a mistura anterior de benzeno e tolueno terá pressão de vapor de uma atmosfera? Assuma qua a solução é ideal.</p>
+<p><font size ="4">Em qual temperatura a mistura anterior de benzeno e tolueno terá pressão de vapor de uma atmosfera? Assuma qua a solução é ideal.<font></p>
 </section>
 <section id="id4">
 <h2>Solução<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h2>
-<p>Podemos escrever a lei de Raoult para mistura:</p>
+<p><font size="4">Podemos escrever a lei de Raoult para mistura:</p>
 <div class="math notranslate nohighlight">
 \[ (y_{benzeno} + y_{tolueno}) P = x_{benzeno}p_{vap}(b) + x_{tolueno}p_{vap}(t) \]</div>
-<p>É possível calcular a composição do vapor que que tem pressão de 1 atm, a partir do valor da pressão de vapor de cada substância pura, pois esta é função da temperatura. No entanto, as equações usadas para o cálculo da pressão de vapor são equações logarítmicas e equações contendo dois logaritmos diferentes não tem solução analítica. Logo, este é um problema de tentativa e erro, que é resolvido facilmente com auxílio de computadores.</p>
+<p><br />
+É possível calcular a composição do vapor que que tem pressão de 1 atm, a partir do valor da pressão de vapor de cada substância pura, pois esta é função da temperatura. No entanto, as equações usadas para o cálculo da pressão de vapor são equações logarítmicas e equações contendo dois logaritmos diferentes não tem solução analítica. Logo, este é um problema de tentativa e erro, que é resolvido facilmente com auxílio de computadores. <font></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">P</span> <span class="o">=</span> <span class="mf">760.</span>            <span class="c1">#[mm Hg]</span>
@@ -794,14 +792,15 @@ C = 219.377</p>
 </section>
 <section id="exemplo-6">
 <h2>Exemplo 6<a class="headerlink" href="#exemplo-6" title="Permalink to this headline">#</a></h2>
-<p>O sangue de um mergulhador está saturado com nitrogênio a 5 atm de pressão e fração molar de 0.79. Assim que o mergulhador se direciona a superfície, seu sangue precisa expelir o nitrogênio a medida que seu corpo entra em equlíbrio com a atmosfera. Quanto nitrogênio o corpo deve expelir? Assuma que o mergulhador pese 55 kg, que 75% de seu corpo seja água, com temperatura corporal de 37 ºC, e que a solubilidade do nitrogênio nos fluidos corporais é a mesma que em água pura. Dados: <span class="math notranslate nohighlight">\( H(N_2) = 10.05 \times 10^4\)</span> atm a 37ºC.</p>
+<p><font size="4">O sangue de um mergulhador está saturado com nitrogênio a 5 atm de pressão e fração molar de 0.79. Assim que o mergulhador se direciona a superfície, seu sangue precisa expelir o nitrogênio a medida que seu corpo entra em equlíbrio com a atmosfera. Quanto nitrogênio o corpo deve expelir? Assuma que o mergulhador pese 55 kg, que 75% de seu corpo seja água, com temperatura corporal de 37 ºC, e que a solubilidade do nitrogênio nos fluidos corporais é a mesma que em água pura. Dados: <span class="math notranslate nohighlight">\( H(N_2) = 10.05 \times 10^4\)</span> atm a 37ºC.<font></p>
 </section>
 <section id="id5">
 <h2>Solução<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h2>
-<p>O número de mols de nitrogênio expelido do corpo do mergulhador é  proporcional diferença entre a fração molar de nitrogênio dissolvido a 5 atm e a fração molar a 1 atm. É necessário calcular a quantidade de matéria dos fluidos corporais e multiplicá-lo pela fração de nitrogênio expelida pelo corpo para encontrar a quantidade total de nitrogênio expelido.</p>
+<p><font size ="4">O número de mols de nitrogênio expelido do corpo do mergulhador é  proporcional diferença entre a fração molar de nitrogênio dissolvido a 5 atm e a fração molar a 1 atm. É necessário calcular a quantidade de matéria dos fluidos corporais e multiplicá-lo pela fração de nitrogênio expelida pelo corpo para encontrar a quantidade total de nitrogênio expelido.</p>
 <div class="math notranslate nohighlight">
 \[ N_2(expelido) = n_{fluidos} (x_{N_2, 5atm} - x_{N_2, 1atm} )\]</div>
-<p>Consideraremos que a fração molar de <span class="math notranslate nohighlight">\(N_2\)</span> (0.79), não é alterada com a variação e pressão.</p>
+<p><br />
+Consideraremos que a fração molar de <span class="math notranslate nohighlight">\(N_2\)</span> (0.79), não é alterada com a variação e pressão. <font></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">P_1</span> <span class="o">=</span> <span class="mf">5.</span>                <span class="c1">#[atm]</span>
@@ -838,8 +837,8 @@ C = 219.377</p>
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "None/None",
+            ref: "gh-pages",
         },
         codeMirrorConfig: {
             theme: "abcdef",
@@ -861,6 +860,13 @@ C = 219.377</p>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="Equilibrio_liquido-vapor.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Equilíbrio Líquido-Vapor</p>
+        </div>
+    </a>
 </div>
             </footer>
         </div>
