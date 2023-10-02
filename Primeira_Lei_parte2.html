@@ -212,35 +212,6 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/Primeira_Lei_parte2.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
-  
-
-<span class="headerbtn__icon-container">
-  
-    <img src="_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -263,7 +234,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book"
+        <a href="https://leobap01.github.io/ebook-fisico-quimica/"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -280,7 +251,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FPrimeira_Lei_parte2.html&body=Your%20issue%20content%20here."
+        <a href="https://leobap01.github.io/ebook-fisico-quimica//issues/new?title=Issue%20on%20page%20%2FPrimeira_Lei_parte2.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -389,6 +360,18 @@ title="Print to PDF"
    Sugestão de exercício:
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-2-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-a-partir-de-dados-experimentais">
+   Exemplo 2: Cálculo do trabalho em uma expansão reversível de um gás a partir de dados experimentais
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
     </nav>
@@ -430,6 +413,18 @@ title="Print to PDF"
    Sugestão de exercício:
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-2-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-a-partir-de-dados-experimentais">
+   Exemplo 2: Cálculo do trabalho em uma expansão reversível de um gás a partir de dados experimentais
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
                         </nav>
@@ -452,6 +447,8 @@ title="Print to PDF"
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">curve_fit</span>
 <span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">quad</span>
+<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">simps</span>
+<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">trapz</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </pre></div>
 </div>
@@ -577,6 +574,71 @@ erro da integração = 1.699e-08
 <section id="sugestao-de-exercicio">
 <h2>Sugestão de exercício:<a class="headerlink" href="#sugestao-de-exercicio" title="Permalink to this headline">#</a></h2>
 <p><font size ="4">Resolva os exemplos 8 e 9 do capítulo anterior usando o método de integração numérica e compare os resultados obtidos com a solução analítica do problema. <font></p>
+</section>
+<section id="exemplo-2-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-a-partir-de-dados-experimentais">
+<h2>Exemplo 2: Cálculo do trabalho em uma expansão reversível de um gás a partir de dados experimentais<a class="headerlink" href="#exemplo-2-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-a-partir-de-dados-experimentais" title="Permalink to this headline">#</a></h2>
+<p><font size ="4"> Um gás sofre uma expansão de 1,0 L, 5,00 atm e 500 K até o estado final de 0,5 atm, 4,0 L e 108 K. Durante a expansão o seguintes dados p-V foram medidos:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>p(atm)</p></td>
+<td><p>5,000</p></td>
+<td><p>2,5404</p></td>
+<td><p>1,5713</p></td>
+<td><p>1,0825</p></td>
+<td><p>0,7983</p></td>
+<td><p>0,5000</p></td>
+</tr>
+<tr class="row-odd"><td><p>Vm(L/mol)</p></td>
+<td><p>1,00</p></td>
+<td><p>1,50</p></td>
+<td><p>2,00</p></td>
+<td><p>2,50</p></td>
+<td><p>3,00</p></td>
+<td><p>4,00</p></td>
+</tr>
+</tbody>
+</table>
+<font><section id="id1">
+<h3>Solução<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<p><font size ="4"> Assim como no Exemplo 1, o cálculo do trabalho é feito pela resolução da integral</p>
+<div class="math notranslate nohighlight">
+\[ dW = -pdV \]</div>
+<p>Logo, o trabalho é a área sob a curva do gráfico de p contra V. A biblioteca SciPy possibilita o uso da Regra do Trapézio e da Regra de Simpson para integração numérica sem que haja necessidade do ajuste de uma função polinomial posterior ao cálculo da integral. Para utilizar esta função é preciso definir o intervalo de valores desejados na forma de um vetor, e posteriormente proceder com integração numérica.</p>
+<p>Sintaxe a ser usada: resultado = simps(y, x) ou resultado = trapz(y, x)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span><span class="mf">2.5</span><span class="p">,</span><span class="mf">1.5</span><span class="p">,</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">0.8</span><span class="p">,</span><span class="mf">0.5</span><span class="p">])</span><span class="o">*</span><span class="mf">101.3e3</span> <span class="c1"># Pa</span>
+
+<span class="n">Vm</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mf">1.5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mf">2.5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span><span class="o">*</span><span class="mf">1e-3</span> <span class="c1">#m³/mol</span>
+
+<span class="n">Ws</span> <span class="o">=</span> <span class="o">-</span><span class="n">simps</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">Vm</span><span class="p">)</span>  <span class="c1"># integração usando a regra de Simpson</span>
+
+<span class="n">Wt</span> <span class="o">=</span> <span class="o">-</span><span class="n">trapz</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">Vm</span><span class="p">)</span>  <span class="c1"># integração usando a regra de Trapézio</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Trabalho calculado pela regra de Simpson (J/mol) = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">Ws</span><span class="p">,</span> <span class="s1">&#39;6.3e&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Trabalho calculado pela regra de Trapézio (J/mol) = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">Wt</span><span class="p">,</span> <span class="s1">&#39;6.3e&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Trabalho calculado pela regra de Simpson (J/mol) = -4.556e+02
+Trabalho calculado pela regra de Trapézio (J/mol) = -4.660e+02
+</pre></div>
+</div>
+</div>
+</div>
+<p><font size ="4"> Perceba que os resultados são similares e a resolução do problema se torna muito simples com estas duas metodologias. A escolha do método de integração numérica dependerá dos dados fornecidos pelo problema, pois cada método apresenta prós e contras. <font></p>
+</section>
 </section>
 </section>
 
