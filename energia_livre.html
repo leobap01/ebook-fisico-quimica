@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Leitura Complementar: Como resolver sistema de equações em python &#8212; Físico-Química</title>
+    <title>Energia Livre &#8212; Físico-Química</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -54,8 +54,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Equilíbrio de fases envolvendo substâncias puras." href="Eq_Fases_puros.html" />
-    <link rel="prev" title="Equilíbrio Químico em Misturas de Gases Ideais" href="Equilibrio_Quimico_gases_ideais.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -115,7 +113,7 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Gas_ideal.html">
    Gás Ideal
@@ -146,8 +144,8 @@ const thebe_selector_output = ".output, .cell_output"
    Equilíbrio Químico em Misturas de Gases Ideais
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="sistema_equacoes.html">
    Leitura Complementar: Como resolver sistema de equações em python
   </a>
  </li>
@@ -256,7 +254,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://leobap01.github.io/ebook-fisico-quimica//issues/new?title=Issue%20on%20page%20%2Fsistema_equacoes.html&body=Your%20issue%20content%20here."
+        <a href="https://leobap01.github.io/ebook-fisico-quimica//issues/new?title=Issue%20on%20page%20%2Fenergia_livre.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -284,7 +282,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/sistema_equacoes.ipynb"
+        <a href="_sources/energia_livre.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -343,25 +341,22 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#ex-resolva-o-sistema-de-equacoes-abaixo">
-   Ex.) Resolva o sistema de equações abaixo:
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Energia Livre
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#solucao">
-   Solução
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-1-calculo-de-g-durante-uma-expansao">
+   Exemplo 1: Cálculo de G durante uma expansão
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   Ex.) Resolva o sistema de equações abaixo:
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id2">
-   Solução
-  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solucao">
+     Solução
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -372,7 +367,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Leitura Complementar: Como resolver sistema de equações em python</h1>
+                <h1>Energia Livre</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -382,25 +377,22 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#ex-resolva-o-sistema-de-equacoes-abaixo">
-   Ex.) Resolva o sistema de equações abaixo:
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Energia Livre
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#solucao">
-   Solução
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-1-calculo-de-g-durante-uma-expansao">
+   Exemplo 1: Cálculo de G durante uma expansão
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   Ex.) Resolva o sistema de equações abaixo:
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id2">
-   Solução
-  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solucao">
+     Solução
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -412,123 +404,87 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="leitura-complementar-como-resolver-sistema-de-equacoes-em-python">
-<h1>Leitura Complementar: Como resolver sistema de equações em python<a class="headerlink" href="#leitura-complementar-como-resolver-sistema-de-equacoes-em-python" title="Permalink to this headline">#</a></h1>
-<p><font size="4"> Muitos problemas de equilíbrio químico envolvem a resolução de equações de sistemas lineares e não lineares. Os  exemplos servirão como base para resolução de exercícios de equilíbrio químico, como por exemplo no cálculo da composição de equilibrio de reações químicas, resolvendo um sistema de equações não lineares. Os exemplo resolvidos motram várias maneiras de  se resolver sistemas de equações em python. <font ></p>
-<p><font size="4"> Para resolução dos exemplos serão utilizados as bibliotecas Numpy e SciPy. <font></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="energia-livre">
+<h1>Energia Livre<a class="headerlink" href="#energia-livre" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Módulos necessários para resolver sistema de equações</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#bibliotecas necessárias para resolução de exercícios</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">fsolve</span>
-<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">least_squares</span>
+<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">curve_fit</span>
+<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">quad</span>
+<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">simps</span>
+<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">trapz</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p><font size ="4"> O caso mais simples são sistemas lineares. Nestes casos, a resolução do sistema pode ser feita pela regra de Cramer: <span class="math notranslate nohighlight">\( A = A^{-1} B \)</span>. Basta escrever as equações no formato de um sistema de equações e resolvê-lo usando a rotina np.linalg.solve(A, B). Onde A e B são duas matrizes e a instrução linalg.solve() calculará a solução do sistema de equações lineares.  <font></p>
-<section id="ex-resolva-o-sistema-de-equacoes-abaixo">
-<h2>Ex.) Resolva o sistema de equações abaixo:<a class="headerlink" href="#ex-resolva-o-sistema-de-equacoes-abaixo" title="Permalink to this headline">#</a></h2>
-<font size ="4">
-<div class="math notranslate nohighlight">
-\[ x + 2y = 1 \]</div>
-<div class="math notranslate nohighlight">
-\[ 3x + 5y = 2 \]</div>
-<font>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="exemplo-1-calculo-de-g-durante-uma-expansao">
+<h1>Exemplo 1: Cálculo de G durante uma expansão<a class="headerlink" href="#exemplo-1-calculo-de-g-durante-uma-expansao" title="Permalink to this headline">#</a></h1>
+<p><font size ="4"> Determine <span class="math notranslate nohighlight">\(\Delta G\)</span> para compressão de 1,00 mol de uma amostra de <span class="math notranslate nohighlight">\(O_2\)</span> a 0ºC, de 1,00 bar até o 10,0 bar a partir dos seguintes dados de p-V:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>p(bar)</p></td>
+<td><p>1,000</p></td>
+<td><p>1,500</p></td>
+<td><p>2,000</p></td>
+<td><p>3,000</p></td>
+<td><p>4,000</p></td>
+<td><p>6,000</p></td>
+<td><p>8,000</p></td>
+<td><p>10,00</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(V_m\)</span>(L/mol)</p></td>
+<td><p>27,711</p></td>
+<td><p>15,133</p></td>
+<td><p>11,344</p></td>
+<td><p>7,555</p></td>
+<td><p>5,661</p></td>
+<td><p>3,767</p></td>
+<td><p>2,820</p></td>
+<td><p>2,251</p></td>
+</tr>
+</tbody>
+</table>
 <section id="solucao">
 <h2>Solução<a class="headerlink" href="#solucao" title="Permalink to this headline">#</a></h2>
-<p><font size = "4">Em primeiro lugar é preciso definir o sistema de equaçõesa ser resolvido. Isto é feito escrevendo as funções forma que sejam calculadas na forma de uma equação matricial:</p>
-<p><span class="math notranslate nohighlight">\( A = A^{-1} B \)</span>, onde:</p>
+<p>A dependência de G com a pressão é dado pela seguinte relação: <span class="math notranslate nohighlight">\( \left ( \frac{\partial G_m}{\partial p} \right )_T = V_m \)</span></p>
+<p>A resolução desta equação diferencial por separação de variáveis leva a integral:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split} A = \begin{bmatrix}1 &amp; 2\\
-3 &amp; 5\\
-\end{bmatrix} \end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split} B = \begin{bmatrix}1 \\
-2 \\
-\end{bmatrix} \end{split}\]</div>
-<font>
+\[ \Delta G_m = \int_{p_1} ^{p_2} V_m dp \]</div>
+<p><br />
+Logo, o valor de <span class="math notranslate nohighlight">\( \Delta G_m \)</span> é a área abaixo da curva p-V, que pode ser calculado por algum método de integração numérica.
+<font></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Definição das matrizes</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.000</span><span class="p">,</span><span class="mf">1.500</span><span class="p">,</span><span class="mf">2.000</span><span class="p">,</span><span class="mf">3.000</span><span class="p">,</span><span class="mf">4.000</span><span class="p">,</span><span class="mf">6.000</span><span class="p">,</span><span class="mf">8.000</span><span class="p">,</span><span class="mf">10.00</span><span class="p">])</span><span class="o">*</span><span class="mf">1e5</span> <span class="c1">#Pa</span>
+<span class="n">V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">27.711</span><span class="p">,</span><span class="mf">15.133</span><span class="p">,</span><span class="mf">11.344</span><span class="p">,</span><span class="mf">7.555</span><span class="p">,</span><span class="mf">5.661</span><span class="p">,</span><span class="mf">3.767</span><span class="p">,</span><span class="mf">2.820</span><span class="p">,</span><span class="mf">2.251</span><span class="p">])</span><span class="o">*</span><span class="mf">1e-3</span> <span class="c1">#m³/mol</span>
 
-<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]])</span>
+<span class="n">G</span> <span class="o">=</span> <span class="n">simps</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">V</span><span class="p">)</span>  <span class="c1"># integração usando a regra de Simpson</span>
 
-<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
-
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.3f&#39;</span><span class="p">),</span> <span class="s1">&#39;y = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.3f&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\u0394</span><span class="s1">G (J/mol) = &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="s1">&#39;6.3e&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>x = -1.000 y =  1.000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ΔG (J/mol) = -5.785e+03
 </pre></div>
 </div>
 </div>
 </div>
-</section>
-<section id="id1">
-<h2>Ex.) Resolva o sistema de equações abaixo:<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
-<font size ="4">
-<div class="math notranslate nohighlight">
-\[ 4x^2 + y^2  = 1 \]</div>
-<div class="math notranslate nohighlight">
-\[ x^2 + 9y^2  = 1 \]</div>
-<font>
-</section>
-<section id="id2">
-<h2>Solução<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
-<p><font size = "4"> Novamente a primeira coisa a ser feita é definir o sistema de equações a ser resolvido. Isto é feito escrevendo as funções forma que sejam calculadas suas raízes no formato do python. Neste exemplo deve-se escrever da forma:</p>
-<div class="math notranslate nohighlight">
-\[ 4x^2 + y^2 - 1 = 0 \]</div>
-<div class="math notranslate nohighlight">
-\[ x^2 + 9y^2 -1 = 0 \]</div>
-<font>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definição das funções</span>
-
-<span class="k">def</span> <span class="nf">equations</span><span class="p">(</span><span class="nb">vars</span><span class="p">):</span>
-    <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="nb">vars</span>
-    <span class="n">eq1</span> <span class="o">=</span> <span class="mi">4</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span>
-    <span class="n">eq2</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">9</span><span class="o">*</span><span class="n">y</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span>
-    <span class="k">return</span> <span class="p">[</span><span class="n">eq1</span><span class="p">,</span> <span class="n">eq2</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p><font size ="4"> Existem duas maneiras de se resolver este sistema. Uma faz uso da rotina least_squares, que faz uso dos mínimos quadrados para encontrar a solução impondo restrições as variáveis. A outra forma é usar a rotina fsolve que busca as raízes das funções definidas. Em ambos os casos é necessário informar uma estimativa inicial para os valores que devem ser calculados. A sintaxe das duas instruções é muito similar. <font></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Resolvendo com fsolv. Os números entre parênteses são o chute inicial para x e y.</span>
-
-<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span>  <span class="n">fsolve</span><span class="p">(</span><span class="n">equations</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Solução com fsolve= &#39;</span> <span class="o">+</span>  <span class="nb">format</span><span class="p">(</span><span class="n">x</span> <span class="p">,</span> <span class="s1">&#39; 6.5f&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">y</span> <span class="p">,</span> <span class="s1">&#39; 6.5f&#39;</span><span class="p">))</span>
-
-<span class="nb">print</span><span class="p">()</span>
-
-<span class="c1">#Resolvendo com lest_squares. Os números entre parênteses são o chute inicial para x e y.</span>
-
-<span class="n">res</span> <span class="o">=</span> <span class="n">least_squares</span><span class="p">(</span><span class="n">equations</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Solução com least_squares= &#39;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.5f&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">,</span> <span class="s1">&#39; 6.5f&#39;</span><span class="p">))</span>
-
-  
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Solução com fsolve=  0.47809 0.29277
-
-Solução com least_squares=  0.47809 0.29277
-</pre></div>
-</div>
-</div>
-</div>
-<p><font size ="4"> Como pode ser observado os resultados são iguais. A escolha do método de resolução dependerá do problema em questão e se existe a necessidade de impor restrições a variáveis do problema. <font></p>
 </section>
 </section>
 
@@ -559,20 +515,6 @@ Solução com least_squares=  0.47809 0.29277
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="Equilibrio_Quimico_gases_ideais.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Equilíbrio Químico em Misturas de Gases Ideais</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="Eq_Fases_puros.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Equilíbrio de fases envolvendo substâncias puras.</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
 </div>
             </footer>
         </div>

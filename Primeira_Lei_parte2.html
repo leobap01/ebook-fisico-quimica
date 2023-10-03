@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Leitura Complementar Sobre a Primeira Lei da Termodinâmica: &#8212; Físico-Química</title>
+    <title>Primeira Lei da Termodinâmica: Resolvendo problemas via integração numérica &#8212; Físico-Química</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -133,7 +133,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Leitura Complementar Sobre a Primeira Lei da Termodinâmica:
+   Primeira Lei da Termodinâmica: Resolvendo problemas via integração numérica
   </a>
  </li>
  <li class="toctree-l1">
@@ -148,7 +148,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="sistema_equacoes.html">
-   Leitura Complementar
+   Leitura Complementar: Como resolver sistema de equações em python
   </a>
  </li>
  <li class="toctree-l1">
@@ -159,6 +159,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="Equilibrio_liquido-vapor.html">
    Equilíbrio Líquido-Vapor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="solucao-ideal.html">
+   Equilíbrio de fases em misturas
   </a>
  </li>
 </ul>
@@ -339,11 +344,6 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#resolvendo-problemas-via-integracao-numerica">
-   Resolvendo problemas via integração numérica
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#exemplo-1-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-considerando-diferentes-equacoes-de-estado">
    Exemplo 1: Cálculo do trabalho em uma expansão reversível de um gás considerando diferentes equações de estado
   </a>
@@ -381,7 +381,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Leitura Complementar Sobre a Primeira Lei da Termodinâmica:</h1>
+                <h1>Primeira Lei da Termodinâmica: Resolvendo problemas via integração numérica</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -391,11 +391,6 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#resolvendo-problemas-via-integracao-numerica">
-   Resolvendo problemas via integração numérica
-  </a>
- </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#exemplo-1-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-considerando-diferentes-equacoes-de-estado">
    Exemplo 1: Cálculo do trabalho em uma expansão reversível de um gás considerando diferentes equações de estado
@@ -435,10 +430,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="leitura-complementar-sobre-a-primeira-lei-da-termodinamica">
-<h1>Leitura Complementar Sobre a Primeira Lei da Termodinâmica:<a class="headerlink" href="#leitura-complementar-sobre-a-primeira-lei-da-termodinamica" title="Permalink to this headline">#</a></h1>
-<section id="resolvendo-problemas-via-integracao-numerica">
-<h2>Resolvendo problemas via integração numérica<a class="headerlink" href="#resolvendo-problemas-via-integracao-numerica" title="Permalink to this headline">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="primeira-lei-da-termodinamica-resolvendo-problemas-via-integracao-numerica">
+<h1>Primeira Lei da Termodinâmica: Resolvendo problemas via integração numérica<a class="headerlink" href="#primeira-lei-da-termodinamica-resolvendo-problemas-via-integracao-numerica" title="Permalink to this headline">#</a></h1>
 <p><font size = "4">Como percebido nos exemplos anteriores, dependendo da equação de estado utilizada, pode ser necessário a resolução de integrais complicadas. Por este motivo, muitos problemas em termodinâmica são resolvidos por integração numérica dentro do intervalo de valores desejados. A linguagem Python contem uma série de bibliotecas e métodos computacionais que permitem a resolução de uma integral definida numericamente sem previamente resolvê-la manualmente. Este método será ilustrado repetindo o cálculo do trabalho realizado nos Exemplos 3-4, mas desta vez utilizando um método de integração numérica.</p>
 <font><p>Os seguintes módulos precisam ser carregados para resolução dos exercícios:</p>
 <div class="cell docutils container">
@@ -454,7 +447,6 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-</section>
 <section id="exemplo-1-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-considerando-diferentes-equacoes-de-estado">
 <h2>Exemplo 1: Cálculo do trabalho em uma expansão reversível de um gás considerando diferentes equações de estado<a class="headerlink" href="#exemplo-1-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-considerando-diferentes-equacoes-de-estado" title="Permalink to this headline">#</a></h2>
 <p><font size="4"> Considere a compressão reverssível de 1,0 mol de um gás ideal, de 22,4 L para 1,0L mantendo T constante a 0ºC. Calcule o trabalho realizado neste processo considerando que o gás obedece a: a) equação de van der Waals, b) a equação do virial, e c) a equação de Redlich-Kowng.</p>
