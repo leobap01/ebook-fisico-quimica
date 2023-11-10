@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Solução &#8212; Físico-Química</title>
+    <title>Gandezas parciais molares &#8212; Físico-Química</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -167,7 +167,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Solução
+   Gandezas parciais molares
   </a>
  </li>
 </ul>
@@ -325,23 +325,60 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#solucao">
+   Solução
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Solução</h1>
+                <h1>Gandezas parciais molares</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#solucao">
+   Solução
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -349,7 +386,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="cell docutils container">
+  <section class="tex2jax_ignore mathjax_ignore" id="gandezas-parciais-molares">
+<h1>Gandezas parciais molares<a class="headerlink" href="#gandezas-parciais-molares" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -399,7 +438,7 @@ title="Print to PDF"
 </table>
 <p>Use o método da interseção para encontrar o volume molar parcial para a composição <span class="math notranslate nohighlight">\(x_{H_2 O} = 0,4 \)</span></p>
 <section id="solucao">
-<h1>Solução<a class="headerlink" href="#solucao" title="Permalink to this headline">#</a></h1>
+<h2>Solução<a class="headerlink" href="#solucao" title="Permalink to this headline">#</a></h2>
 <p>Inicialmente os valores podem ser completados para valores de <span class="math notranslate nohighlight">\(x_{H_2 O} = 0 \)</span>  e <span class="math notranslate nohighlight">\(x_{H_2 O} = 1 \)</span>. Nos extremos os valores de <span class="math notranslate nohighlight">\(\Delta V_{mix}/n = 0\)</span>. Posteriormente é preciso armazenar os valores de <span class="math notranslate nohighlight">\(x_{H_2 O} = 0,4 \)</span> e <span class="math notranslate nohighlight">\(\Delta V_{mix}/n\)</span> correspondente a esta fração molar.</p>
 <p>A reta tangente a composição desejada é utilizada usando a equação <span class="math notranslate nohighlight">\(y - y_1 = m(x - x_1)\)</span>. Onde m é o coeficiente angular da reta, obtido pela derivada primeira na composição desejada, <span class="math notranslate nohighlight">\(y_1\)</span> é <span class="math notranslate nohighlight">\(\Delta V_{mix}/n \)</span> quando <span class="math notranslate nohighlight">\(x_{H_2 O} = 0,4 \)</span>. A partir da equação da reta determinamos <span class="math notranslate nohighlight">\(\Delta V_{mix}/n \)</span> quando <span class="math notranslate nohighlight">\(x_{H_2 O} = 0 \)</span>  e <span class="math notranslate nohighlight">\(x_{H_2 O} = 1 \)</span>.</p>
 <p>Quando  <span class="math notranslate nohighlight">\(x_{H_2 O} = 0 \)</span> temos que <span class="math notranslate nohighlight">\(\Delta V_{mix}/n = V_{m,metOH} - V^* _{m,metOH}\)</span> e quando  <span class="math notranslate nohighlight">\(x_{H_2 O} = 1\)</span> temos que <span class="math notranslate nohighlight">\(\Delta V_{mix}/n = V_{m,H_2 O} - V^* _{m,H_2 O} \)</span></p>
@@ -463,7 +502,7 @@ Extrapolação quando x = 0:  [-0.52] cm³/mol
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/volume_molar_4_0.png" src="_images/volume_molar_4_0.png" />
+<img alt="_images/volume_molar_5_0.png" src="_images/volume_molar_5_0.png" />
 </div>
 </div>
 <p><font size = 4> Note que a reta tangente obtida passa pelo ponto <span class="math notranslate nohighlight">\(x_{H_2 O} = 0,4 \)</span>. De posse dos valores calculados, o próximo passo é converter os valores de densidade dos líquidos puros em  <span class="math notranslate nohighlight">\(V^* _{m,i} \)</span>.</p>
@@ -495,6 +534,7 @@ Volume parcial do metanol= [40.13763728] cm³/mol
 </div>
 </div>
 </div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
