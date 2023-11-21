@@ -164,6 +164,11 @@ const thebe_selector_output = ".output, .cell_output"
    Equilíbrio de fases em misturas
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="volume_molar.html">
+   Gandezas parciais molares
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -493,14 +498,16 @@ title="Print to PDF"
 <section id="fundamentos-teoricos">
 <h2>Fundamentos teóricos<a class="headerlink" href="#fundamentos-teoricos" title="Permalink to this headline">#</a></h2>
 <p><font size="4">  Considere a reação <span class="math notranslate nohighlight">\(aA + bB \rightarrow cC + dD\)</span> que ocorre em fase gasosa. Podemos escrever a energia livre de reação em função do quociente reacional</p>
-<p><span class="math notranslate nohighlight">\(\Delta G = \Delta Gº -RT lnQ\)</span></p>
-<p>e no equilíbrio a equação se reduz a <span class="math notranslate nohighlight">\(\Delta Gº = -RT lnK\)</span>, esta constante pode ser escrita em função das frações molares e concentrações molares da seguinte forma:</p>
+<p><span class="math notranslate nohighlight">\(\Delta G = \Delta Gº -RT \ln Q \)</span></p>
+<p>e no equilíbrio a equação se reduz a <span class="math notranslate nohighlight">\(\Delta Gº = -RT \ln K\)</span>, esta constante pode ser escrita em função das frações molares e concentrações molares da seguinte forma:</p>
 <p><span class="math notranslate nohighlight">\(K = K_x p^{\Delta \nu}\)</span></p>
 <p><span class="math notranslate nohighlight">\(K = K_c (RT)^{\Delta \nu}\)</span></p>
-<p>Esta constante de equilíbrio depende de T segundo a equação de van’t Hoff:</p>
-<p><span class="math notranslate nohighlight">\( \frac{\partial lnK}{\partial 1/T} = \frac{\Delta_r Hº}{R T^2} \)</span></p>
-<p><span class="math notranslate nohighlight">\( ln \frac{K_2}{K_1} = -\frac{\Delta_r Hº}{R} \left (\frac{1}{T_2} – \frac{1}{T_1} \right )\)</span> <font ></p>
-<p>Para a resolução dos exercíos faremos uso das bibliotecas Numpy e Matplolib.</p>
+<p>Valores de K &gt; 1 indicam reações produto favorecidas, enquanto que valores entre 0 &lt; K &lt; 1 indicam reações reagente favorecidas. Estas constantes dependem da temperatura segundo a equação de van’t Hoff:</p>
+<p><span class="math notranslate nohighlight">\( \frac{\partial lnK}{\partial T} = \frac{\Delta_r Hº}{R T^2} \)</span></p>
+<p><span class="math notranslate nohighlight">\( \ln \frac{K_2}{K_1} = -\frac{\Delta_r Hº}{R} \left (\frac{1}{T_2} – \frac{1}{T_1} \right )\)</span></p>
+<p>Segundo a equação, a variação da temperatura pode afetar o rendimento da reação dependendo do sinal do <span class="math notranslate nohighlight">\(\Delta_r Hº\)</span>.</p>
+<p>Como a constante de equilíbrio está associada a composição de equilíbrio, a minimização da energia livre de Gibbs de reação é uma maneira de se obter a composição de equilíbrio do sistema. Esta minimização pode ser feita utilizando a rotina fsolve, incluída na bilioteca SciPy do Python. Esta rotian encontra as raízes de uam função dado uma estimativa do valor da propriedade que será calculada.</p>
+<font > <p>Para a resolução dos exercíos faremos uso das bibliotecas Numpy e Matplolib.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#módulos para resolução dos exercícios:</span>
@@ -517,7 +524,7 @@ title="Print to PDF"
 <p><font size="4"> a) Use tabelas de dados termodinâmicos para calcular a constante de equilíbrio da reação <span class="math notranslate nohighlight">\( N_2(g) + O_2(g) \rightarrow 2NO(g) \)</span> em T = 298.15 K e 1 bar (0.987 atm). Calcule a concentração de equilíbrio de NO no ar atmosférico em b)  T = 298.15 K e 1 atm e c) T = 2000 K e 1 atm. <font></p>
 <section id="solucao">
 <h2>Solução:<a class="headerlink" href="#solucao" title="Permalink to this headline">#</a></h2>
-<p><font size="4"> Em primeiro lugar deve ser calculado a energia livre de reação. Em seguida a relação <span class="math notranslate nohighlight">\( K = -RTln(\Delta_r G^0)\)</span> para o cálculo da constante de equilíbrio a 298K. Para este tipo de reação, a expressão da cosntante de equilíbrio em termos das pressões parciais é igual a constante em termos de frações molares. Assim podemos assumir a composição aproximada do ar como <span class="math notranslate nohighlight">\(N_2\)</span> = 0.78 e <span class="math notranslate nohighlight">\(O_2\)</span> = 0.21 e que devido a magnitude da constante de equilíbrio estes valores não se alteram apreciavelmente. Será usada a relação <span class="math notranslate nohighlight">\( K = K_x \times p^{\Delta \nu}\)</span> para resolver o exercício. Por último usamos a equação <span class="math notranslate nohighlight">\( ln(\frac{K_2}{K_1}) = -\frac{\Delta H^0}{R} \times (\frac{1}{T_2}-\frac{1}{T_1}) \)</span>para obter a constante a 2000 K e estimar a concentração de equilíbrio de NO.  <font></p>
+<p><font size="4"> Em primeiro lugar deve ser calculado a energia livre de reação. Em seguida a relação <span class="math notranslate nohighlight">\( K = -RT \ln(\Delta_r G^0)\)</span> para o cálculo da constante de equilíbrio a 298K. Para este tipo de reação, a expressão da cosntante de equilíbrio em termos das pressões parciais é igual a constante em termos de frações molares. Assim podemos assumir a composição aproximada do ar como <span class="math notranslate nohighlight">\(N_2\)</span> = 0.78 e <span class="math notranslate nohighlight">\(O_2\)</span> = 0.21 e que devido a magnitude da constante de equilíbrio estes valores não se alteram apreciavelmente. Será usada a relação <span class="math notranslate nohighlight">\( K = K_x \times p^{\Delta \nu}\)</span> para resolver o exercício. Por último usamos a equação <span class="math notranslate nohighlight">\( \ln(\frac{K_2}{K_1}) = -\frac{\Delta H^0}{R} \times (\frac{1}{T_2}-\frac{1}{T_1}) \)</span>para obter a constante a 2000 K e estimar a concentração de equilíbrio de NO.  <font></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">T</span> <span class="o">=</span> <span class="mf">298.15</span>             <span class="c1">#[K] temperatura</span>
