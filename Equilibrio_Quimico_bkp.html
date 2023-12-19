@@ -90,11 +90,6 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-        
-      
-      
-      <img src="_static/logo-gencraft.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">Físico-Química</h1>
@@ -137,6 +132,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="Entropia.html">
    Entropia
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_livre.html">
+   Energia Livre
   </a>
  </li>
  <li class="toctree-l1">
@@ -767,7 +767,7 @@ Inicialmente deve-se montar o quadro de equlíbrio e substituir as frações na 
 <h2>Exemplo 5<a class="headerlink" href="#exemplo-5" title="Permalink to this headline">#</a></h2>
 <p><font size="4"> Gillespie e Beattie (Phys. Rev. 36:743–753 (1930)) computaram o parâmetro <span class="math notranslate nohighlight">\(K_{\phi}\)</span> para síntese da amônia, representando o volume específico de vários gases pela equação de estado de Bettie-Bridgeman. Os resultados tem a seguinte forma:</p>
 <div class="math notranslate nohighlight">
-\[ log(\frac{1}{K_{\phi}}) = (\frac{0.119184}{T}+\frac{91.87212}{T^2}+\frac{25122730}{T^4}) \times P \]</div>
+\[ \log(\frac{1}{K_{\phi}}) = (\frac{0.119184}{T}+\frac{91.87212}{T^2}+\frac{25122730}{T^4}) \times P \]</div>
 <p>Onde T e P são informados em K e atm, respectivamente.  Levando em consideração os desvios da idealidade, repita o cálculo da conversão no equilíbrio. <font ></p>
 </section>
 <section id="id3">
@@ -852,8 +852,8 @@ Inicialmente deve-se montar o quadro de equlíbrio e substituir as frações na 
     {
         requestKernel: true,
         binderOptions: {
-            repo: "None/None",
-            ref: "gh-pages",
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
         },
         codeMirrorConfig: {
             theme: "abcdef",

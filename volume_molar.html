@@ -91,11 +91,6 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-        
-      
-      
-      <img src="_static/logo-gencraft.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">Físico-Química</h1>
@@ -138,6 +133,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="Entropia.html">
    Entropia
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_livre.html">
+   Energia Livre
   </a>
  </li>
  <li class="toctree-l1">
@@ -563,8 +563,8 @@ Volume parcial do metanol= [40.13763728] cm³/mol
     {
         requestKernel: true,
         binderOptions: {
-            repo: "None/None",
-            ref: "gh-pages",
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
         },
         codeMirrorConfig: {
             theme: "abcdef",

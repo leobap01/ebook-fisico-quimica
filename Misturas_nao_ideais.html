@@ -90,11 +90,6 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-        
-      
-      
-      <img src="_static/logo-gencraft.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">Físico-Química</h1>
@@ -140,6 +135,11 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="energia_livre.html">
+   Energia Livre
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="Equilibrio_Quimico_gases_ideais.html">
    Equilíbrio Químico em Misturas de Gases Ideais
   </a>
@@ -166,7 +166,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="volume_molar.html">
-   Solução
+   Gandezas parciais molares
   </a>
  </li>
 </ul>
@@ -754,7 +754,7 @@ Fugacidade (bar) = 1.161e+03
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-5-a893ec726f54&gt;:10: RuntimeWarning: invalid value encountered in true_divide
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_120040/2959543655.py:10: RuntimeWarning: invalid value encountered in true_divide
   pI_xI = pI/xI
 </pre></div>
 </div>
@@ -782,9 +782,9 @@ Fugacidade (bar) = 1.161e+03
  1.13765199 1.20095801 1.35981793 1.50131284        nan]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-6-532e46a52019&gt;:2: RuntimeWarning: invalid value encountered in true_divide
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_120040/238950566.py:2: RuntimeWarning: invalid value encountered in true_divide
   gama_I = pI/(xI*47.12)
-&lt;ipython-input-6-532e46a52019&gt;:5: RuntimeWarning: invalid value encountered in true_divide
+/tmp/ipykernel_120040/238950566.py:5: RuntimeWarning: invalid value encountered in true_divide
   gama_A = pA/((1-xI)*37.38)
 </pre></div>
 </div>
@@ -825,18 +825,17 @@ Fugacidade (bar) = 1.161e+03
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">8</span><span class="o">-</span><span class="mi">8</span><span class="n">ab40ddcbf73</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="nn">Input In [8],</span> in <span class="ni">&lt;cell line: 10&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="k">def</span> <span class="nf">henry</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
 <span class="g g-Whitespace">      </span><span class="mi">8</span>     <span class="k">return</span> <span class="n">K</span><span class="o">*</span><span class="n">x</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span> 
 <span class="ne">---&gt; </span><span class="mi">10</span> <span class="n">popt</span><span class="p">,</span> <span class="n">pcov</span> <span class="o">=</span> <span class="n">curve_fit</span><span class="p">(</span><span class="n">henry</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">11</span> 
 
-<span class="nn">/usr/lib/python3/dist-packages/scipy/optimize/minpack.py</span> in <span class="ni">curve_fit</span><span class="nt">(f, xdata, ydata, p0, sigma, absolute_sigma, check_finite, bounds, method, jac, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">681</span>         <span class="n">args</span><span class="p">,</span> <span class="n">varargs</span><span class="p">,</span> <span class="n">varkw</span><span class="p">,</span> <span class="n">defaults</span> <span class="o">=</span> <span class="n">_getargspec</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">682</span>         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">683</span>             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Unable to determine number of fit parameters.&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">684</span>         <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
-<span class="g g-Whitespace">    </span><span class="mi">685</span>     <span class="k">else</span><span class="p">:</span>
+<span class="nn">File /usr/lib/python3/dist-packages/scipy/optimize/minpack.py:683,</span> in <span class="ni">curve_fit</span><span class="nt">(f, xdata, ydata, p0, sigma, absolute_sigma, check_finite, bounds, method, jac, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">681</span>     <span class="n">args</span><span class="p">,</span> <span class="n">varargs</span><span class="p">,</span> <span class="n">varkw</span><span class="p">,</span> <span class="n">defaults</span> <span class="o">=</span> <span class="n">_getargspec</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">682</span>     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">683</span>         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Unable to determine number of fit parameters.&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">684</span>     <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+<span class="g g-Whitespace">    </span><span class="mi">685</span> <span class="k">else</span><span class="p">:</span>
 
 <span class="ne">ValueError</span>: Unable to determine number of fit parameters.
 </pre></div>
@@ -942,8 +941,8 @@ Faça um gráfico a partir dos dados de pressão de vapor de uma mistura de benz
     {
         requestKernel: true,
         binderOptions: {
-            repo: "None/None",
-            ref: "gh-pages",
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
         },
         codeMirrorConfig: {
             theme: "abcdef",

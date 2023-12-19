@@ -33,18 +33,17 @@ popt, pcov = curve_fit(henry, x, p)
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mValueError[0m                                Traceback (most recent call last)
-[0;32m<ipython-input-8-8ab40ddcbf73>[0m in [0;36m<module>[0;34m[0m
-[1;32m      8[0m     [0;32mreturn[0m [0mK[0m[0;34m*[0m[0mx[0m[0;34m[0m[0;34m[0m[0m
-[1;32m      9[0m [0;34m[0m[0m
-[0;32m---> 10[0;31m [0mpopt[0m[0;34m,[0m [0mpcov[0m [0;34m=[0m [0mcurve_fit[0m[0;34m([0m[0mhenry[0m[0;34m,[0m [0mx[0m[0;34m,[0m [0mp[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m     11[0m [0;34m[0m[0m
+Input [0;32mIn [8][0m, in [0;36m<cell line: 10>[0;34m()[0m
+[1;32m      6[0m [38;5;28;01mdef[39;00m [38;5;21mhenry[39m(x):
+[1;32m      8[0m     [38;5;28;01mreturn[39;00m K[38;5;241m*[39mx
+[0;32m---> 10[0m popt, pcov [38;5;241m=[39m [43mcurve_fit[49m[43m([49m[43mhenry[49m[43m,[49m[43m [49m[43mx[49m[43m,[49m[43m [49m[43mp[49m[43m)[49m
 
-[0;32m/usr/lib/python3/dist-packages/scipy/optimize/minpack.py[0m in [0;36mcurve_fit[0;34m(f, xdata, ydata, p0, sigma, absolute_sigma, check_finite, bounds, method, jac, **kwargs)[0m
-[1;32m    681[0m         [0margs[0m[0;34m,[0m [0mvarargs[0m[0;34m,[0m [0mvarkw[0m[0;34m,[0m [0mdefaults[0m [0;34m=[0m [0m_getargspec[0m[0;34m([0m[0mf[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[1;32m    682[0m         [0;32mif[0m [0mlen[0m[0;34m([0m[0margs[0m[0;34m)[0m [0;34m<[0m [0;36m2[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
-[0;32m--> 683[0;31m             [0;32mraise[0m [0mValueError[0m[0;34m([0m[0;34m"Unable to determine number of fit parameters."[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m    684[0m         [0mn[0m [0;34m=[0m [0mlen[0m[0;34m([0m[0margs[0m[0;34m)[0m [0;34m-[0m [0;36m1[0m[0;34m[0m[0;34m[0m[0m
-[1;32m    685[0m     [0;32melse[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+File [0;32m/usr/lib/python3/dist-packages/scipy/optimize/minpack.py:683[0m, in [0;36mcurve_fit[0;34m(f, xdata, ydata, p0, sigma, absolute_sigma, check_finite, bounds, method, jac, **kwargs)[0m
+[1;32m    681[0m     args, varargs, varkw, defaults [38;5;241m=[39m _getargspec(f)
+[1;32m    682[0m     [38;5;28;01mif[39;00m [38;5;28mlen[39m(args) [38;5;241m<[39m [38;5;241m2[39m:
+[0;32m--> 683[0m         [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m([38;5;124m"[39m[38;5;124mUnable to determine number of fit parameters.[39m[38;5;124m"[39m)
+[1;32m    684[0m     n [38;5;241m=[39m [38;5;28mlen[39m(args) [38;5;241m-[39m [38;5;241m1[39m
+[1;32m    685[0m [38;5;28;01melse[39;00m:
 
 [0;31mValueError[0m: Unable to determine number of fit parameters.
 ValueError: Unable to determine number of fit parameters.

@@ -88,11 +88,6 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-        
-      
-      
-      <img src="_static/logo-gencraft.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">Físico-Química</h1>
@@ -138,6 +133,11 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="energia_livre.html">
+   Energia Livre
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="Equilibrio_Quimico_gases_ideais.html">
    Equilíbrio Químico em Misturas de Gases Ideais
   </a>
@@ -160,6 +160,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="solucao-ideal.html">
    Equilíbrio de fases em misturas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="volume_molar.html">
+   Gandezas parciais molares
   </a>
  </li>
 </ul>
@@ -399,8 +404,8 @@ title="Print to PDF"
     {
         requestKernel: true,
         binderOptions: {
-            repo: "None/None",
-            ref: "gh-pages",
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
         },
         codeMirrorConfig: {
             theme: "abcdef",
