@@ -92,6 +92,11 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo-gencraft.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">Físico-Química</h1>
@@ -99,17 +104,9 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
-                    Aprendendo Físico-Química com auxílio de Phython
-                </a>
-            </li>
-        </ul>
         <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Gas_ideal.html">
@@ -129,6 +126,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="Primeira_Lei_parte2.html">
    Primeira Lei da Termodinâmica: Resolvendo problemas via integração numérica
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Primeira_Lei_parte3.html">
+   Primeira Lei da Termodinâmica: Resolvendo problemas via métodos iterativos
   </a>
  </li>
  <li class="toctree-l1">
@@ -179,7 +181,7 @@ const thebe_selector_output = ".output, .cell_output"
              <!-- To handle the deprecated key -->
             
             <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
             </div>
             
         </div>
@@ -235,51 +237,6 @@ title="Fullscreen mode"
   </span>
 
 </button>
-
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://leobap01.github.io/ebook-fisico-quimica/"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://leobap01.github.io/ebook-fisico-quimica//issues/new?title=Issue%20on%20page%20%2FEq_Fases_puros.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
 
 <div class="menu-dropdown menu-dropdown-download-buttons">
   <button class="headerbtn menu-dropdown__trigger"
@@ -720,12 +677,6 @@ entalpia de vaporização (J/mol)=  45272.13274
     By Leonardo Baptista<br/>
   
       &copy; Copyright 2022.<br/>
-    <div class="extra_footer">
-      <p>
-<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
-</p>
-
-    </div>
 </p>
         </footer>
     </div>

@@ -1,0 +1,1361 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Primeira Lei da Termodinâmica: Resolvendo problemas via métodos iterativos &#8212; Físico-Química</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Entropia" href="Entropia.html" />
+    <link rel="prev" title="Primeira Lei da Termodinâmica: Resolvendo problemas via integração numérica" href="Primeira_Lei_parte2.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo-gencraft.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Físico-Química</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Gas_ideal.html">
+   Gás Ideal
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Gases_Reais_v2.html">
+   Gases Reais
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Primeira_Lei.html">
+   Primeira Lei da Termodinâmica
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Primeira_Lei_parte2.html">
+   Primeira Lei da Termodinâmica: Resolvendo problemas via integração numérica
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Primeira Lei da Termodinâmica: Resolvendo problemas via métodos iterativos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Entropia.html">
+   Entropia
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_livre.html">
+   Energia Livre
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Equilibrio_Quimico_gases_ideais.html">
+   Equilíbrio Químico em Misturas de Gases Ideais
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sistema_equacoes.html">
+   Leitura Complementar: Como resolver sistema de equações em python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Eq_Fases_puros.html">
+   Equilíbrio de fases envolvendo substâncias puras.
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Equilibrio_liquido-vapor.html">
+   Equilíbrio Líquido-Vapor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="solucao-ideal.html">
+   Equilíbrio de fases em misturas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="volume_molar.html">
+   Gandezas parciais molares
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/Primeira_Lei_parte3.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-1-calculo-da-temperatura-de-chama-adiabatica-ou-temperatura-maxima-teorica-da-gasolina">
+   Exemplo 1: Cálculo da temperatura de chama adiabática, ou temperatura máxima teórica, da gasolina.
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solucao">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Primeira Lei da Termodinâmica: Resolvendo problemas via métodos iterativos</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemplo-1-calculo-da-temperatura-de-chama-adiabatica-ou-temperatura-maxima-teorica-da-gasolina">
+   Exemplo 1: Cálculo da temperatura de chama adiabática, ou temperatura máxima teórica, da gasolina.
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solucao">
+     Solução
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="primeira-lei-da-termodinamica-resolvendo-problemas-via-metodos-iterativos">
+<h1>Primeira Lei da Termodinâmica: Resolvendo problemas via métodos iterativos<a class="headerlink" href="#primeira-lei-da-termodinamica-resolvendo-problemas-via-metodos-iterativos" title="Permalink to this headline">#</a></h1>
+<p><font size = "4">Alguns problemas em termodinâmica só podem ser resolvidos por métodos iterativos. Isto ocorre porque geralmente trabalhamos com equações de grau 3 ou superior, sistema de equações com mais variávies que equações possíveis e tipo de dependência entre variáveis do sistema. Vamos ilustrar como problemas deste tipo podem resolvidos utilizando um exemplo de cálculo de temperatura de chama adiabática.</p>
+<font><p>Os seguintes módulos precisam ser carregados para resolução dos exercícios:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#bibliotecas necessárias para resolução de exercícios</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sp</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="exemplo-1-calculo-da-temperatura-de-chama-adiabatica-ou-temperatura-maxima-teorica-da-gasolina">
+<h2>Exemplo 1: Cálculo da temperatura de chama adiabática, ou temperatura máxima teórica, da gasolina.<a class="headerlink" href="#exemplo-1-calculo-da-temperatura-de-chama-adiabatica-ou-temperatura-maxima-teorica-da-gasolina" title="Permalink to this headline">#</a></h2>
+<p><font size="4"> Assumindo que a gasolina é composta majoritariamente por iso-octano, <span class="math notranslate nohighlight">\(C_8 H_{18}\)</span>, e que este é inserido na câmara de combustão em fase gasosa: calcule a temperatura adiabática de chama para queima de 1,0 g gasolina em ar atmosférico, assumindo quantidades estequiométricas de oxigênio.</p>
+<p>Dados:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(C_8 H_{18}\)</span>(g)</p></td>
+<td><p><span class="math notranslate nohighlight">\(CO_2\)</span>(g)</p></td>
+<td><p><span class="math notranslate nohighlight">\(H_2O\)</span>(g)</p></td>
+<td><p><span class="math notranslate nohighlight">\(O_2\)</span>(g)</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\Delta_f Hº(kJ mol^{-1})\)</span></p></td>
+<td><p>-224,0</p></td>
+<td><p>-393,51</p></td>
+<td><p>-241,82</p></td>
+<td><p>-</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<div class="math notranslate nohighlight">
+\[\]</div>
+<div class="math notranslate nohighlight">
+\[Cp(CO_2) =  23,585 + 0,044813T (J K^{-1} mol^{-1})\]</div>
+<div class="math notranslate nohighlight">
+\[Cp(N_2) = 28,986 – 0,001854T (J K^{-1} mol^{-1})\]</div>
+<div class="math notranslate nohighlight">
+\[Cp(H_2 O) =  30,092 + 0,00683T (J K{-1} mol^{-1})\]</div>
+<section id="solucao">
+<h3>Solução<a class="headerlink" href="#solucao" title="Permalink to this headline">#</a></h3>
+<p>A solução é obtida resolvendo a seguinte equação: <span class="math notranslate nohighlight">\(\int_{T_0}^{T} dH = \int_{T_0}^{T}  Cp dT\)</span>.Onde é assumido que a combustão é completa e existem apenas os produtos da combustão e <span class="math notranslate nohighlight">\(N_2\)</span> do ar atmosférico ao fim da reação. Desta forma é preciso:</p>
+<ul class="simple">
+<li><p>Fazer o cálculo estequiométrico para determinar número de mols de cada produto formado</p></li>
+<li><p>Calcular <span class="math notranslate nohighlight">\(\Delta Cp\)</span></p></li>
+<li><p>Integrar simbolicamente a equação resultante</p></li>
+<li><p>De forma iterativa calcular a temperatura da chama.</p></li>
+</ul>
+<p>Reação de combustão:</p>
+<div class="math notranslate nohighlight">
+\[ C_8 H_{18(l)} + 12.5O_{2(g)} \rightarrow 8CO_{2(g)} + 9H_2 O_{(g)}\]</div>
+<font>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#a) Estequiometria</span>
+
+<span class="c1"># quantidade de matéria de gasolina (n)</span>
+
+
+<span class="n">n</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="mf">114.23</span>     <span class="c1"># mol   </span>
+
+<span class="n">n_co2</span> <span class="o">=</span> <span class="mi">8</span><span class="o">*</span><span class="n">n</span>        <span class="c1"># mol</span>
+<span class="n">n_h2o</span> <span class="o">=</span> <span class="mi">9</span><span class="o">*</span><span class="n">n</span>        <span class="c1"># mol  </span>
+<span class="n">n_o2</span> <span class="o">=</span> <span class="mf">12.25</span><span class="o">*</span><span class="n">n</span>
+<span class="n">n_n2</span> <span class="o">=</span> <span class="mi">79</span> <span class="o">*</span> <span class="n">n_o2</span><span class="o">/</span><span class="mi">21</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#b) calculando Cp dos produtos</span>
+
+<span class="n">cp_co2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">23.585</span><span class="p">,</span><span class="mf">0.044813</span><span class="p">])</span>
+<span class="n">cp_n2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">28.986</span><span class="p">,</span><span class="o">-</span><span class="mf">0.001854</span><span class="p">])</span>
+<span class="n">cp_h2o</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">30.092</span><span class="p">,</span><span class="mf">0.00683</span><span class="p">])</span>
+
+<span class="n">cp</span> <span class="o">=</span> <span class="n">n_co2</span> <span class="o">*</span>  <span class="n">cp_co2</span> <span class="o">+</span> <span class="n">n_n2</span> <span class="o">*</span> <span class="n">cp_n2</span> <span class="o">+</span> <span class="n">n_h2o</span> <span class="o">*</span> <span class="n">cp_h2o</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#c) Resolvendo a integral simbolicamente</span>
+<span class="c1"># Define a variável simbólica </span>
+<span class="n">T</span> <span class="o">=</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Symbol</span><span class="p">(</span><span class="s1">&#39;T&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">Cp</span> <span class="p">(</span><span class="n">T</span><span class="p">):</span> 
+    <span class="k">return</span> <span class="n">cp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">cp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">T</span>
+
+<span class="c1"># Integração</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">sympy</span><span class="o">.</span><span class="n">integrate</span><span class="p">(</span><span class="n">Cp</span><span class="p">(</span><span class="n">T</span><span class="p">),</span> <span class="n">T</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cp dos produtos= &quot;</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">Input In [4],</span> in <span class="ni">&lt;cell line: 3&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1">#c) Resolvendo a integral simbolicamente</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># Define a variável simbólica </span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">T</span> <span class="o">=</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Symbol</span><span class="p">(</span><span class="s1">&#39;T&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="k">def</span> <span class="nf">Cp</span> <span class="p">(</span><span class="n">T</span><span class="p">):</span> 
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="k">return</span> <span class="n">cp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">cp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">T</span>
+
+<span class="ne">NameError</span>: name &#39;sympy&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#d) calculando Tad</span>
+<span class="c1"># Calculando Delta H de reação</span>
+
+<span class="n">DH</span> <span class="o">=</span> <span class="n">n_co2</span> <span class="o">*</span> <span class="p">(</span><span class="o">-</span><span class="mf">393.51</span><span class="p">)</span> <span class="o">+</span> <span class="n">n_h2o</span> <span class="o">*</span> <span class="p">(</span><span class="o">-</span><span class="mf">241.82</span><span class="p">)</span> <span class="o">-</span> <span class="n">n</span> <span class="o">*</span> <span class="p">(</span><span class="o">-</span><span class="mf">224.0</span><span class="p">)</span> <span class="c1"># em kJ/mol</span>
+
+
+<span class="c1"># loop while para achar Tad</span>
+
+<span class="n">Q</span> <span class="o">=</span> <span class="o">-</span><span class="mi">10</span> <span class="c1"># J/mol</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mi">1000</span> <span class="c1"># Valor estimado de Tad deve ser bem acima da temperatura inicial</span>
+
+<span class="k">while</span> <span class="n">Q</span> <span class="o">&gt;</span> <span class="n">DH</span><span class="o">*</span><span class="mi">1000</span><span class="p">:</span> <span class="c1"># multiplicado por 1000 para adequar as unidades de energia </span>
+    
+    <span class="n">T</span> <span class="o">+=</span> <span class="mi">2</span>
+    <span class="n">Q</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="mf">0.00146430666199772</span><span class="o">*</span><span class="p">(</span><span class="n">T</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mf">298.15</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="mf">15.7163573492077</span><span class="o">*</span><span class="p">(</span><span class="n">T</span><span class="o">-</span><span class="mf">298.15</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="n">Q</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Temperatura de chama adiabática= &quot;</span> <span class="o">+</span> <span class="nb">format</span><span class="p">(</span><span class="n">T</span> <span class="p">,</span> <span class="s1">&#39; 5.2f&#39;</span><span class="p">),</span> <span class="s2">&quot;K&quot;</span><span class="p">)</span>
+    
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1002 -12401.960635337671
+1004 -12439.26814836402
+1006 -12476.587375843666
+1008 -12513.91831777661
+1010 -12551.260974162848
+1012 -12588.615345002381
+1014 -12625.981430295213
+1016 -12663.359230041337
+1018 -12700.74874424076
+1020 -12738.14997289348
+1022 -12775.562915999491
+1024 -12812.987573558803
+1026 -12850.423945571409
+1028 -12887.87203203731
+1030 -12925.331832956508
+1032 -12962.803348329004
+1034 -13000.286578154792
+1036 -13037.78152243388
+1038 -13075.28818116626
+1040 -13112.806554351937
+1042 -13150.336641990913
+1044 -13187.87844408318
+1046 -13225.431960628748
+1048 -13262.99719162761
+1050 -13300.574137079766
+1052 -13338.162796985222
+1054 -13375.763171343971
+1056 -13413.375260156015
+1058 -13450.99906342136
+1060 -13488.634581139997
+1062 -13526.281813311929
+1064 -13563.940759937159
+1066 -13601.611421015687
+1068 -13639.293796547507
+1070 -13676.987886532625
+1072 -13714.693690971038
+1074 -13752.411209862748
+1076 -13790.140443207754
+1078 -13827.881391006056
+1080 -13865.634053257652
+1082 -13903.398429962546
+1084 -13941.174521120736
+1086 -13978.96232673222
+1088 -14016.761846797002
+1090 -14054.57308131508
+1092 -14092.396030286454
+1094 -14130.230693711124
+1096 -14168.07707158909
+1098 -14205.93516392035
+1100 -14243.804970704909
+1102 -14281.68649194276
+1104 -14319.57972763391
+1106 -14357.484677778357
+1108 -14395.401342376097
+1110 -14433.329721427133
+1112 -14471.269814931467
+1114 -14509.221622889096
+1116 -14547.185145300022
+1118 -14585.160382164244
+1120 -14623.14733348176
+1122 -14661.145999252574
+1124 -14699.156379476683
+1126 -14737.178474154087
+1128 -14775.212283284789
+1130 -14813.257806868787
+1132 -14851.315044906078
+1134 -14889.383997396668
+1136 -14927.464664340554
+1138 -14965.557045737733
+1140 -15003.66114158821
+1142 -15041.776951891985
+1144 -15079.904476649053
+1146 -15118.043715859418
+1148 -15156.19466952308
+1150 -15194.357337640035
+1152 -15232.531720210289
+1154 -15270.717817233839
+1156 -15308.915628710682
+1158 -15347.125154640824
+1160 -15385.34639502426
+1162 -15423.579349860993
+1164 -15461.824019151021
+1166 -15500.080402894348
+1168 -15538.348501090966
+1170 -15576.628313740885
+1172 -15614.919840844097
+1174 -15653.223082400606
+1176 -15691.53803841041
+1178 -15729.864708873512
+1180 -15768.203093789907
+1182 -15806.553193159602
+1184 -15844.91500698259
+1186 -15883.288535258873
+1188 -15921.673777988453
+1190 -15960.070735171332
+1192 -15998.479406807503
+1194 -16036.899792896973
+1196 -16075.331893439736
+1198 -16113.775708435796
+1200 -16152.231237885153
+1202 -16190.698481787804
+1204 -16229.177440143754
+1206 -16267.668112952999
+1208 -16306.170500215538
+1210 -16344.684601931374
+1212 -16383.210418100509
+1214 -16421.747948722936
+1216 -16460.29719379866
+1218 -16498.85815332768
+1220 -16537.430827309996
+1222 -16576.01521574561
+1224 -16614.611318634517
+1226 -16653.21913597672
+1228 -16691.838667772223
+1230 -16730.469914021018
+1232 -16769.11287472311
+1234 -16807.7675498785
+1236 -16846.433939487182
+1238 -16885.11204354916
+1240 -16923.80186206444
+1242 -16962.50339503301
+1244 -17001.216642454878
+1246 -17039.941604330044
+1248 -17078.678280658503
+1250 -17117.42667144026
+1252 -17156.18677667531
+1254 -17194.95859636366
+1256 -17233.742130505303
+1258 -17272.537379100242
+1260 -17311.34434214848
+1262 -17350.163019650012
+1264 -17388.99341160484
+1266 -17427.835518012962
+1268 -17466.68933887438
+1270 -17505.554874189096
+1272 -17544.432123957107
+1274 -17583.321088178418
+1276 -17622.22176685302
+1278 -17661.13415998092
+1280 -17700.058267562115
+1282 -17738.99408959661
+1284 -17777.941626084394
+1286 -17816.90087702548
+1288 -17855.87184241986
+1290 -17894.854522267535
+1292 -17933.848916568506
+1294 -17972.855025322773
+1296 -18011.872848530336
+1298 -18050.9023861912
+1300 -18089.943638305354
+1302 -18128.996604872802
+1304 -18168.061285893553
+1306 -18207.137681367596
+1308 -18246.225791294935
+1310 -18285.32561567557
+1312 -18324.437154509502
+1314 -18363.56040779673
+1316 -18402.695375537252
+1318 -18441.84205773107
+1320 -18481.000454378187
+1322 -18520.1705654786
+1324 -18559.352391032306
+1326 -18598.545931039305
+1328 -18637.75118549961
+1330 -18676.968154413204
+1332 -18716.196837780095
+1334 -18755.437235600282
+1336 -18794.689347873766
+1338 -18833.95317460054
+1340 -18873.22871578062
+1342 -18912.515971413988
+1344 -18951.81494150066
+1346 -18991.12562604062
+1348 -19030.44802503388
+1350 -19069.782138480434
+1352 -19109.127966380285
+1354 -19148.485508733433
+1356 -19187.854765539876
+1358 -19227.235736799616
+1360 -19266.628422512647
+1362 -19306.032822678982
+1364 -19345.448937298606
+1366 -19384.87676637153
+1368 -19424.31630989775
+1370 -19463.767567877265
+1372 -19503.230540310073
+1374 -19542.705227196184
+1376 -19582.191628535584
+1378 -19621.689744328283
+1380 -19661.19957457428
+1382 -19700.72111927357
+1384 -19740.254378426154
+1386 -19779.79935203204
+1388 -19819.356040091217
+1390 -19858.924442603693
+1392 -19898.504559569465
+1394 -19938.096390988532
+1396 -19977.699936860892
+1398 -20017.315197186548
+1400 -20056.942171965507
+1402 -20096.580861197755
+1404 -20136.231264883303
+1406 -20175.893383022147
+1408 -20215.567215614283
+1410 -20255.25276265972
+1412 -20294.95002415845
+1414 -20334.659000110474
+1416 -20374.379690515798
+1418 -20414.112095374418
+1420 -20453.85621468633
+1422 -20493.61204845154
+1424 -20533.37959667005
+1426 -20573.15885934185
+1428 -20612.94983646695
+1430 -20652.752528045345
+1432 -20692.566934077033
+1434 -20732.393054562017
+1436 -20772.230889500304
+1438 -20812.08043889188
+1440 -20851.941702736753
+1442 -20891.814681034924
+1444 -20931.699373786392
+1446 -20971.595780991152
+1448 -21011.503902649212
+1450 -21051.423738760564
+1452 -21091.355289325213
+1454 -21131.298554343164
+1456 -21171.253533814404
+1458 -21211.22022773894
+1460 -21251.198636116776
+1462 -21291.18875894791
+1464 -21331.190596232333
+1466 -21371.204147970057
+1468 -21411.229414161073
+1470 -21451.266394805385
+1472 -21491.315089902997
+1474 -21531.3754994539
+1476 -21571.4476234581
+1478 -21611.531461915605
+1480 -21651.627014826397
+1482 -21691.734282190486
+1484 -21731.853264007874
+1486 -21771.983960278554
+1488 -21812.12637100253
+1490 -21852.280496179807
+1492 -21892.446335810375
+1494 -21932.62388989424
+1496 -21972.813158431403
+1498 -22013.01414142186
+1500 -22053.226838865612
+1502 -22093.451250762664
+1504 -22133.68737711301
+1506 -22173.93521791665
+1508 -22214.19477317359
+1510 -22254.46604288382
+1512 -22294.74902704735
+1514 -22335.043725664178
+1516 -22375.3501387343
+1518 -22415.668266257715
+1520 -22455.99810823443
+1522 -22496.33966466444
+1524 -22536.692935547744
+1526 -22577.05792088435
+1528 -22617.434620674245
+1530 -22657.823034917437
+1532 -22698.22316361393
+1534 -22738.635006763714
+1536 -22779.058564366795
+1538 -22819.493836423175
+1540 -22859.940822932847
+1542 -22900.399523895812
+1544 -22940.86993931208
+1546 -22981.35206918164
+1548 -23021.845913504498
+1550 -23062.35147228065
+1552 -23102.868745510103
+1554 -23143.397733192847
+1556 -23183.938435328884
+1558 -23224.490851918225
+1560 -23265.054982960857
+1562 -23305.630828456786
+1564 -23346.218388406014
+1566 -23386.81766280853
+1568 -23427.428651664348
+1570 -23468.051354973464
+1572 -23508.685772735873
+1574 -23549.331904951578
+1576 -23589.98975162058
+1578 -23630.659312742875
+1580 -23671.340588318468
+1582 -23712.033578347357
+1584 -23752.73828282954
+1586 -23793.454701765022
+1588 -23834.182835153802
+1590 -23874.92268299587
+1592 -23915.67424529124
+1594 -23956.43752203991
+1596 -23997.212513241866
+1598 -24037.999218897123
+1600 -24078.79763900568
+1602 -24119.607773567528
+1604 -24160.42962258267
+1606 -24201.263186051114
+1608 -24242.108463972847
+1610 -24282.96545634788
+1612 -24323.834163176212
+1614 -24364.714584457834
+1616 -24405.606720192754
+1618 -24446.510570380975
+1620 -24487.426135022484
+1622 -24528.353414117293
+1624 -24569.292407665398
+1626 -24610.2431156668
+1628 -24651.205538121492
+1630 -24692.17967502949
+1632 -24733.165526390774
+1634 -24774.16309220536
+1636 -24815.172372473244
+1638 -24856.193367194417
+1640 -24897.22607636889
+1642 -24938.27049999666
+1644 -24979.326638077724
+1646 -25020.39449061208
+1648 -25061.474057599742
+1650 -25102.56533904069
+1652 -25143.66833493494
+1654 -25184.783045282486
+1656 -25225.909470083327
+1658 -25267.04760933746
+1660 -25308.197463044897
+1662 -25349.359031205622
+1664 -25390.532313819644
+1666 -25431.71731088697
+1668 -25472.91402240758
+1670 -25514.122448381495
+1672 -25555.342588808704
+1674 -25596.574443689206
+1676 -25637.818013023007
+1678 -25679.073296810104
+1680 -25720.340295050497
+1682 -25761.619007744182
+1684 -25802.909434891168
+1686 -25844.21157649145
+1688 -25885.525432545022
+1690 -25926.851003051896
+1692 -25968.188288012065
+1694 -26009.537287425526
+1696 -26050.898001292288
+1698 -26092.270429612345
+1700 -26133.654572385694
+1702 -26175.050429612344
+1704 -26216.45800129229
+1706 -26257.877287425526
+1708 -26299.30828801206
+1710 -26340.751003051897
+1712 -26382.205432545023
+1714 -26423.671576491444
+1716 -26465.149434891166
+1718 -26506.639007744183
+1720 -26548.140295050493
+1722 -26589.653296810102
+1724 -26631.178013023004
+1726 -26672.7144436892
+1728 -26714.2625888087
+1730 -26755.822448381492
+1732 -26797.394022407578
+1734 -26838.977310886963
+1736 -26880.57231381964
+1738 -26922.17903120562
+1740 -26963.797463044888
+1742 -27005.427609337457
+1744 -27047.06947008332
+1746 -27088.72304528248
+1748 -27130.388334934934
+1750 -27172.065339040684
+1752 -27213.754057599734
+1754 -27255.45449061208
+1756 -27297.166638077717
+1758 -27338.890499996654
+1760 -27380.626076368884
+1762 -27422.37336719441
+1764 -27464.132372473236
+1766 -27505.903092205353
+1768 -27547.685526390767
+1770 -27589.47967502948
+1772 -27631.285538121487
+1774 -27673.10311566679
+1776 -27714.93240766539
+1778 -27756.773414117284
+1780 -27798.626135022474
+1782 -27840.490570380964
+1784 -27882.366720192746
+1786 -27924.254584457824
+1788 -27966.1541631762
+1790 -28008.06545634787
+1792 -28049.988463972837
+1794 -28091.923186051103
+1796 -28133.86962258266
+1798 -28175.827773567515
+1800 -28217.79763900567
+1802 -28259.779218897114
+1804 -28301.772513241856
+1806 -28343.777522039898
+1808 -28385.794245291232
+1810 -28427.82268299586
+1812 -28469.862835153792
+1814 -28511.91470176501
+1816 -28553.97828282953
+1818 -28596.053578347346
+1820 -28638.140588318456
+1822 -28680.239312742862
+1824 -28722.349751620568
+1826 -28764.471904951562
+1828 -28806.605772735857
+1830 -28848.75135497345
+1832 -28890.908651664337
+1834 -28933.07766280852
+1836 -28975.258388406
+1838 -29017.45082845677
+1840 -29059.65498296084
+1842 -29101.87085191821
+1844 -29144.098435328873
+1846 -29186.337733192828
+1848 -29228.58874551009
+1850 -29270.851472280636
+1852 -29313.125913504482
+1854 -29355.412069181628
+1856 -29397.709939312066
+1858 -29440.019523895797
+1860 -29482.34082293283
+1862 -29524.673836423157
+1864 -29567.018564366776
+1866 -29609.375006763694
+1868 -29651.74316361391
+1870 -29694.12303491742
+1872 -29736.514620674225
+1874 -29778.91792088433
+1876 -29821.332935547725
+1878 -29863.75966466442
+1880 -29906.198108234414
+1882 -29948.648266257696
+1884 -29991.11013873428
+1886 -30033.58372566416
+1888 -30076.06902704733
+1890 -30118.566042883802
+1892 -30161.07477317357
+1894 -30203.59521791663
+1896 -30246.127377112985
+1898 -30288.671250762643
+1900 -30331.226838865594
+1902 -30373.794141421837
+1904 -30416.373158431383
+1906 -30458.96388989422
+1908 -30501.566335810352
+1910 -30544.180496179782
+1912 -30586.80637100251
+1914 -30629.443960278528
+1916 -30672.09326400785
+1918 -30714.754282190464
+1920 -30757.42701482637
+1922 -30800.111461915578
+1924 -30842.80762345808
+1926 -30885.515499453875
+1928 -30928.235089902973
+1930 -30970.966394805364
+1932 -31013.709414161047
+1934 -31056.46414797003
+1936 -31099.230596232308
+1938 -31142.00875894788
+1940 -31184.798636116753
+1942 -31227.600227738916
+1944 -31270.413533814375
+1946 -31313.238554343137
+1948 -31356.075289325192
+1950 -31398.92373876054
+1952 -31441.783902649186
+1954 -31484.655780991125
+1956 -31527.539373786363
+1958 -31570.434681034898
+1960 -31613.34170273673
+1962 -31656.26043889185
+1964 -31699.190889500274
+1966 -31742.133054561993
+1968 -31785.086934077004
+1970 -31828.052528045315
+1972 -31871.02983646692
+1974 -31914.01885934182
+1976 -31957.01959667002
+1978 -32000.03204845151
+1980 -32043.0562146863
+1982 -32086.092095374388
+1984 -32129.139690515767
+1986 -32172.199000110446
+1988 -32215.27002415842
+1990 -32258.352762659688
+1992 -32301.44721561425
+1994 -32344.553383022117
+1996 -32387.671264883273
+1998 -32430.800861197724
+2000 -32473.942171965475
+2002 -32517.09519718652
+2004 -32560.25993686086
+2006 -32603.4363909885
+2008 -32646.62455956943
+2010 -32689.824442603658
+2012 -32733.03604009119
+2014 -32776.25935203201
+2016 -32819.49437842612
+2018 -32862.74111927354
+2020 -32905.99957457425
+2022 -32949.26974432825
+2024 -32992.55162853555
+2026 -33035.84522719615
+2028 -33079.15054031004
+2030 -33122.467567877226
+2032 -33165.79630989771
+2034 -33209.13676637149
+2036 -33252.48893729857
+2038 -33295.85282267895
+2040 -33339.22842251261
+2042 -33382.61573679958
+2044 -33426.01476553984
+2046 -33469.425508733395
+2048 -33512.84796638025
+2050 -33556.2821384804
+2052 -33599.728025033844
+2054 -33643.185626040584
+2056 -33686.65494150062
+2058 -33730.135971413954
+2060 -33773.62871578058
+2062 -33817.13317460051
+2064 -33860.649347873725
+2066 -33904.17723560024
+2068 -33947.716837780055
+2070 -33991.26815441316
+2072 -34034.83118549956
+2074 -34078.40593103927
+2076 -34121.99239103226
+2078 -34165.59056547855
+2080 -34209.200454378144
+2082 -34252.82205773103
+2084 -34296.45537553721
+2086 -34340.100407796686
+2088 -34383.75715450946
+2090 -34427.42561567553
+2092 -34471.10579129489
+2094 -34514.79768136755
+2096 -34558.50128589351
+2098 -34602.21660487276
+2100 -34645.94363830531
+2102 -34689.682386191154
+2104 -34733.4328485303
+2106 -34777.195025322726
+2108 -34820.96891656846
+2110 -34864.75452226749
+2112 -34908.551842419816
+2114 -34952.360877025436
+2116 -34996.18162608435
+2118 -35040.01408959656
+2120 -35083.85826756207
+2122 -35127.714159980875
+2124 -35171.58176685298
+2126 -35215.46108817837
+2128 -35259.35212395706
+2130 -35303.25487418905
+2132 -35347.16933887433
+2134 -35391.09551801292
+2136 -35435.03341160479
+2138 -35478.98301964996
+2140 -35522.94434214843
+2142 -35566.917379100196
+2144 -35610.90213050525
+2146 -35654.89859636361
+2148 -35698.90677667526
+2150 -35742.92667144021
+2152 -35786.95828065845
+2154 -35831.00160432999
+2156 -35875.05664245483
+2158 -35919.12339503296
+2160 -35963.20186206439
+2162 -36007.29204354911
+2164 -36051.393939487134
+2166 -36095.50754987845
+2168 -36139.63287472306
+2170 -36183.769914020966
+2172 -36227.918667772174
+2174 -36272.079135976666
+2176 -36316.251318634466
+2178 -36360.43521574556
+2180 -36404.63082730994
+2182 -36448.838153327626
+2184 -36493.05719379861
+2186 -36537.28794872288
+2188 -36581.530418100454
+2190 -36625.78460193132
+2192 -36670.05050021548
+2194 -36714.32811295294
+2196 -36758.6174401437
+2198 -36802.918481787754
+2200 -36847.2312378851
+2202 -36891.55570843574
+2204 -36935.89189343968
+2206 -36980.239792896915
+2208 -37024.59940680745
+2210 -37068.97073517127
+2212 -37113.3537779884
+2214 -37157.74853525882
+2216 -37202.15500698253
+2218 -37246.573193159544
+2220 -37291.00309378985
+2222 -37335.44470887345
+2224 -37379.89803841035
+2226 -37424.36308240055
+2228 -37468.83984084404
+2230 -37513.32831374082
+2232 -37557.82850109091
+2234 -37602.34040289429
+2236 -37646.86401915096
+2238 -37691.399349860934
+2240 -37735.9463950242
+2242 -37780.50515464076
+2244 -37825.07562871063
+2246 -37869.657817233776
+2248 -37914.251720210224
+2250 -37958.85733763998
+2252 -38003.47466952302
+2254 -38048.10371585935
+2256 -38092.74447664899
+2258 -38137.396951891926
+2260 -38182.06114158815
+2262 -38226.737045737675
+2264 -38271.42466434049
+2266 -38316.12399739661
+2268 -38360.835044906016
+2270 -38405.557806868725
+2272 -38450.292283284725
+2274 -38495.038474154026
+2276 -38539.79637947662
+2278 -38584.56599925251
+2280 -38629.347333481695
+2282 -38674.14038216418
+2284 -38718.94514529996
+2286 -38763.76162288903
+2288 -38808.5898149314
+2290 -38853.42972142707
+2292 -38898.28134237603
+2294 -38943.14467777829
+2296 -38988.019727633844
+2298 -39032.9064919427
+2300 -39077.80497070484
+2302 -39122.715163920286
+2304 -39167.63707158902
+2306 -39212.57069371106
+2308 -39257.51603028639
+2310 -39302.473081315016
+2312 -39347.44184679694
+2314 -39392.42232673215
+2316 -39437.41452112067
+2318 -39482.418429962476
+2320 -39527.43405325759
+2322 -39572.461391005985
+2324 -39617.50044320769
+2326 -39662.55120986268
+2328 -39707.613690970975
+2330 -39752.687886532556
+2332 -39797.77379654744
+2334 -39842.87142101562
+2336 -39887.98075993709
+2338 -39933.10181331186
+2340 -39978.23458113993
+2342 -40023.37906342129
+2344 -40068.53526015594
+2346 -40113.7031713439
+2348 -40158.882796985155
+2350 -40204.0741370797
+2352 -40249.27719162754
+2354 -40294.49196062868
+2356 -40339.71844408311
+2358 -40384.95664199084
+2360 -40430.20655435187
+2362 -40475.46818116619
+2364 -40520.741522433804
+2366 -40566.02657815472
+2368 -40611.32334832893
+2370 -40656.63183295643
+2372 -40701.95203203724
+2374 -40747.28394557133
+2376 -40792.627573558726
+2378 -40837.98291599942
+2380 -40883.349972893404
+2382 -40928.72874424068
+2384 -40974.11923004126
+2386 -41019.52143029514
+2388 -41064.93534500231
+2390 -41110.36097416277
+2392 -41155.798317776535
+2394 -41201.24737584359
+2396 -41246.70814836394
+2398 -41292.1806353376
+2400 -41337.66483676454
+2402 -41383.160752644784
+2404 -41428.66838297832
+2406 -41474.18772776515
+2408 -41519.71878700528
+2410 -41565.26156069871
+2412 -41610.81604884543
+2414 -41656.38225144545
+2416 -41701.96016849876
+2418 -41747.54980000537
+2420 -41793.15114596527
+2422 -41838.76420637847
+2424 -41884.38898124498
+2426 -41930.02547056477
+2428 -41975.67367433786
+2430 -42021.33359256424
+2432 -42067.00522524392
+2434 -42112.688572376894
+2436 -42158.383633963174
+2438 -42204.09041000274
+2440 -42249.808900495605
+2442 -42295.53910544177
+2444 -42341.28102484122
+2446 -42387.03465869397
+2448 -42432.80000700003
+2450 -42478.577069759376
+2452 -42524.36584697201
+2454 -42570.16633863795
+2456 -42615.97854475718
+2458 -42661.80246532971
+2460 -42707.63810035554
+2462 -42753.48544983466
+2464 -42799.34451376708
+2466 -42845.21529215279
+2468 -42891.0977849918
+2470 -42936.9919922841
+2472 -42982.8979140297
+2474 -43028.8155502286
+2476 -43074.74490088079
+2478 -43120.68596598628
+2480 -43166.63874554506
+2482 -43212.603239557146
+2484 -43258.57944802253
+2486 -43304.5673709412
+2488 -43350.56700831317
+2490 -43396.57836013843
+2492 -43442.601426416986
+2494 -43488.63620714884
+2496 -43534.682702334
+2498 -43580.74091197245
+2500 -43626.81083606419
+2502 -43672.89247460923
+2504 -43718.98582760757
+2506 -43765.0908950592
+2508 -43811.207676964135
+2510 -43857.33617332236
+2512 -43903.47638413388
+2514 -43949.62830939869
+2516 -43995.7919491168
+2518 -44041.96730328821
+2520 -44088.154371912926
+2522 -44134.353154990924
+2524 -44180.563652522214
+2526 -44226.785864506805
+2528 -44273.019790944694
+2530 -44319.26543183588
+2532 -44365.522787180365
+2534 -44411.79185697814
+2536 -44458.07264122921
+2538 -44504.36513993358
+2540 -44550.66935309124
+2542 -44596.985280702196
+2544 -44643.31292276646
+2546 -44689.65227928401
+Temperatura de chama adiabática=  2546.00 K
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="Primeira_Lei_parte2.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Primeira Lei da Termodinâmica: Resolvendo problemas via integração numérica</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Entropia.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Entropia</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Leonardo Baptista<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
