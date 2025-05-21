@@ -1,691 +1,410 @@
 
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" data-content_root="./" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Primeira Lei da Termodinâmica &#8212; Físico-Química</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Primeira_Lei';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Primeira Lei da Termodinâmica: Resolvendo problemas via integração numérica" href="Primeira_Lei_parte2.html" />
     <link rel="prev" title="Gases Reais" href="Gases_Reais_v2.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
-    
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="index.html">
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="_static/logo-gencraft.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Físico-Química</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="_static/logo-gencraft.png" class="logo__image only-light" alt="Físico-Química - Home"/>
+    <script>document.write(`<img src="_static/logo-gencraft.png" class="logo__image only-dark" alt="Físico-Química - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="Gas_ideal.html">
-   Gás Ideal
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Gases_Reais_v2.html">
-   Gases Reais
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Primeira Lei da Termodinâmica
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Primeira_Lei_parte2.html">
-   Primeira Lei da Termodinâmica: Resolvendo problemas via integração numérica
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Primeira_Lei_parte3.html">
-   Primeira Lei da Termodinâmica: Resolvendo problemas via métodos iterativos
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Entropia.html">
-   Entropia
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="energia_livre.html">
-   Energia Livre
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Equilibrio_Quimico_gases_ideais.html">
-   Equilíbrio Químico em Misturas de Gases Ideais
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="sistema_equacoes.html">
-   Leitura Complementar: Como resolver sistema de equações em python
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Eq_Fases_puros.html">
-   Equilíbrio de fases envolvendo substâncias puras.
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Equilibrio_liquido-vapor.html">
-   Equilíbrio Líquido-Vapor
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="solucao-ideal.html">
-   Equilíbrio de fases em misturas
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="volume_molar.html">
-   Gandezas parciais molares
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="Gas_ideal.html">Gás Ideal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Gases_Reais_v2.html">Gases Reais</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Primeira Lei da Termodinâmica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Primeira_Lei_parte2.html">Primeira Lei da Termodinâmica: Resolvendo problemas via integração numérica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Primeira_Lei_parte3.html">Primeira Lei da Termodinâmica: Resolvendo problemas via métodos iterativos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Entropia.html">Entropia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="energia_livre.html">Energia Livre</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Equilibrio_Quimico_gases_ideais.html">Equilíbrio Químico em Misturas de Gases Ideais</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sistema_equacoes.html">Leitura Complementar: Como resolver sistema de equações em python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Eq_Fases_puros.html">Equilíbrio de fases envolvendo substâncias puras.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Equilibrio_liquido-vapor.html">Equilíbrio Líquido-Vapor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solucao-ideal.html">Equilíbrio de fases em misturas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="volume_molar.html">Gandezas parciais molares</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Primeira_Lei.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
 </div>
 
 
-          
 
 
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
 <button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="_sources/Primeira_Lei.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
 
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </button>
-
-      </li>
+</div></div>
       
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
+    </div>
   
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
-
-    </div>
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#fundamentos-teoricos">
-   Fundamentos teóricos
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-1-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-ideal">
-   Exemplo 1: Cálculo do trabalho em uma expansão reversível de um gás ideal
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#solucao">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-2-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-de-van-der-waals">
-   Exemplo 2: Cálculo do trabalho em uma expansão reversível de um gás de van der Waals
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-3-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-que-obedece-uma-expansao-do-virial">
-   Exemplo 3: Cálculo do trabalho em uma expansão reversível de um gás que obedece uma expansão do virial
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id2">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-4-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-de-redlich-kwong">
-   Exemplo 4: Cálculo do trabalho em uma expansão reversível de um gás de Redlich-Kwong
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id3">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-5-calculo-do-trabalho-associado-a-uma-reacao-quimica">
-   Exemplo 5: Cálculo do trabalho associado a uma reação química
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id4">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exercicio-6-calculos-envolvendo-aquecimento-de-um-gas-ideal">
-   Exercício 6: Cálculos envolvendo aquecimento de um gás ideal
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id5">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-7-calculos-da-primeira-lei-envolvendo-o-aquecimento-de-um-gas-ideal">
-   Exemplo 7: Cálculos da primeira Lei envolvendo o aquecimento de um gás ideal
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id6">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-8-calculo-da-entalpia-quando-c-p-e-funcao-da-temperatura">
-   Exemplo 8: Cálculo da entalpia quando
-   <span class="math notranslate nohighlight">
-    \(C_p\)
-   </span>
-   é função da temperatura
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id7">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-9-calculos-envolvendo-a-capacidade-calorifica-quando-esta-e-uma-funcao-da-temperatura">
-   Exemplo 9: Cálculos envolvendo a capacidade calorífica, quando esta é uma função da temperatura
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#solucao-do-problema-a-p-cte">
-     Solução do problema a p = cte
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#solucao-do-problema-a-v-cte">
-     Solução do problema a V = cte
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-10-calculo-da-entalpia-em-diferentes-temperaturas">
-   Exemplo 10: Cálculo da entalpia em diferentes temperaturas
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id8">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-11-obtencao-do-polinomio-da-capacidade-calorifica-por-ajuste-polinomial">
-   Exemplo 11: Obtenção do polinômio da capacidade calorífica por ajuste polinomial
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id9">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-12-obtendo-funcoes-para-cp-t">
-   Exemplo 12: Obtendo funções para Cp(T)
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id10">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-13-calculando-delta-ho-t-quando-cp-e-funcao-da-temperatura">
-   Exemplo 13: Calculando
-   <span class="math notranslate nohighlight">
-    \( \Delta Hº(T)\)
-   </span>
-   quando Cp é função da temperatura
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id11">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Primeira Lei da Termodinâmica</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#fundamentos-teoricos">
-   Fundamentos teóricos
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-1-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-ideal">
-   Exemplo 1: Cálculo do trabalho em uma expansão reversível de um gás ideal
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#solucao">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-2-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-de-van-der-waals">
-   Exemplo 2: Cálculo do trabalho em uma expansão reversível de um gás de van der Waals
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-3-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-que-obedece-uma-expansao-do-virial">
-   Exemplo 3: Cálculo do trabalho em uma expansão reversível de um gás que obedece uma expansão do virial
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id2">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-4-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-de-redlich-kwong">
-   Exemplo 4: Cálculo do trabalho em uma expansão reversível de um gás de Redlich-Kwong
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id3">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-5-calculo-do-trabalho-associado-a-uma-reacao-quimica">
-   Exemplo 5: Cálculo do trabalho associado a uma reação química
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id4">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exercicio-6-calculos-envolvendo-aquecimento-de-um-gas-ideal">
-   Exercício 6: Cálculos envolvendo aquecimento de um gás ideal
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id5">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-7-calculos-da-primeira-lei-envolvendo-o-aquecimento-de-um-gas-ideal">
-   Exemplo 7: Cálculos da primeira Lei envolvendo o aquecimento de um gás ideal
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id6">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-8-calculo-da-entalpia-quando-c-p-e-funcao-da-temperatura">
-   Exemplo 8: Cálculo da entalpia quando
-   <span class="math notranslate nohighlight">
-    \(C_p\)
-   </span>
-   é função da temperatura
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id7">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-9-calculos-envolvendo-a-capacidade-calorifica-quando-esta-e-uma-funcao-da-temperatura">
-   Exemplo 9: Cálculos envolvendo a capacidade calorífica, quando esta é uma função da temperatura
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#solucao-do-problema-a-p-cte">
-     Solução do problema a p = cte
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#solucao-do-problema-a-v-cte">
-     Solução do problema a V = cte
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-10-calculo-da-entalpia-em-diferentes-temperaturas">
-   Exemplo 10: Cálculo da entalpia em diferentes temperaturas
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id8">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-11-obtencao-do-polinomio-da-capacidade-calorifica-por-ajuste-polinomial">
-   Exemplo 11: Obtenção do polinômio da capacidade calorífica por ajuste polinomial
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id9">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-12-obtendo-funcoes-para-cp-t">
-   Exemplo 12: Obtendo funções para Cp(T)
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id10">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exemplo-13-calculando-delta-ho-t-quando-cp-e-funcao-da-temperatura">
-   Exemplo 13: Calculando
-   <span class="math notranslate nohighlight">
-    \( \Delta Hº(T)\)
-   </span>
-   quando Cp é função da temperatura
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id11">
-     Solução
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Primeira Lei da Termodinâmica</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamentos-teoricos">Fundamentos teóricos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-1-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-ideal">Exemplo 1: Cálculo do trabalho em uma expansão reversível de um gás ideal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solucao">Solução</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-2-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-de-van-der-waals">Exemplo 2: Cálculo do trabalho em uma expansão reversível de um gás de van der Waals</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Solução</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-3-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-que-obedece-uma-expansao-do-virial">Exemplo 3: Cálculo do trabalho em uma expansão reversível de um gás que obedece uma expansão do virial</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Solução</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-4-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-de-redlich-kwong">Exemplo 4: Cálculo do trabalho em uma expansão reversível de um gás de Redlich-Kwong</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Solução</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-5-calculo-do-trabalho-associado-a-uma-reacao-quimica">Exemplo 5: Cálculo do trabalho associado a uma reação química</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Solução</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercicio-6-calculos-envolvendo-aquecimento-de-um-gas-ideal">Exercício 6: Cálculos envolvendo aquecimento de um gás ideal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Solução</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-7-calculos-da-primeira-lei-envolvendo-o-aquecimento-de-um-gas-ideal">Exemplo 7: Cálculos da primeira Lei envolvendo o aquecimento de um gás ideal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Solução</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-8-calculo-da-entalpia-quando-c-p-e-funcao-da-temperatura">Exemplo 8: Cálculo da entalpia quando <span class="math notranslate nohighlight">\(C_p\)</span> é função da temperatura</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Solução</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-9-calculos-envolvendo-a-capacidade-calorifica-quando-esta-e-uma-funcao-da-temperatura">Exemplo 9: Cálculos envolvendo a capacidade calorífica, quando esta é uma função da temperatura</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solucao-do-problema-a-p-cte">Solução do problema a p = cte</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solucao-do-problema-a-v-cte">Solução do problema a V = cte</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-10-calculo-da-entalpia-em-diferentes-temperaturas">Exemplo 10: Cálculo da entalpia em diferentes temperaturas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Solução</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-11-obtencao-do-polinomio-da-capacidade-calorifica-por-ajuste-polinomial">Exemplo 11: Obtenção do polinômio da capacidade calorífica por ajuste polinomial</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Solução</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-12-obtendo-funcoes-para-cp-t">Exemplo 12: Obtendo funções para Cp(T)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Solução</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-13-calculando-delta-ho-t-quando-cp-e-funcao-da-temperatura">Exemplo 13: Calculando <span class="math notranslate nohighlight">\( \Delta Hº(T)\)</span> quando Cp é função da temperatura</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Solução</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
   <section class="tex2jax_ignore mathjax_ignore" id="primeira-lei-da-termodinamica">
-<h1>Primeira Lei da Termodinâmica<a class="headerlink" href="#primeira-lei-da-termodinamica" title="Permalink to this headline">#</a></h1>
+<h1>Primeira Lei da Termodinâmica<a class="headerlink" href="#primeira-lei-da-termodinamica" title="Link to this heading">#</a></h1>
 <section id="fundamentos-teoricos">
-<h2>Fundamentos teóricos<a class="headerlink" href="#fundamentos-teoricos" title="Permalink to this headline">#</a></h2>
+<h2>Fundamentos teóricos<a class="headerlink" href="#fundamentos-teoricos" title="Link to this heading">#</a></h2>
 <p><font size="4"> Imagine um sistema fechado, por exemplo o refrigerante dentro de uma garrafa ou um cilindro de gás. Este sistema quando em repouso e na ausência de campos externos, apresenta  uma determinada energia, denominada energia interna (U). Esta energia está relacionada a energia cinética e potencial das partículas que compõe o sistema. Se desejamos causar alguma alteração no sistema, as únicas maneiras de se fazer isso é esquentando ou resfriando o sistema, ou realizando trabalho.</p>
 <p>O primeiro método é intuitivo e pode ser feito por fazer o sistema entrar em contato com um corpo em temperatura mais alta ou mais baixa. Quando isso acontecer, haverá fluxo de calor (Q) do corpo mais quente para o corpo mais frio. Quando o sistema esfriar, significa que este perdeu calor para as vizinhanças, logo sofreu um processo exotérmico (Q &lt; 0). No entanto, quando o sistema esquentar, este recebeu calor das vizinhanças, logo, passou por um processo endotérmico (Q &gt; 0).</p>
 <p>No caso do sistema fechado, realizar trabalho significa a princípio  provocar uma mudança de volume do sistema contra uma pressão externa. Este trabalho é visto como uma elevação ou abaixamento de uma massa nas vizinhanças. Se houver uma expansão do sistema, elevando uma massa nas vizinhanças, é dito que foi realizado trabalho nas vizinhanças e este é positivo (W  &gt; 0). Caso haja uma contração do sistema, é dito que foi realizado trabalho sobre o sistema e este é negativo (W &lt; 0).  Matematicamente o trabalho de expansão pode ser definido como:</p>
@@ -701,20 +420,33 @@ title="Print to PDF"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#bibliotecas necessárias para resolução de exercícios</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">curve_fit</span>
-<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">quad</span> <span class="c1"># rotina para integraçã ode funções pelo método da quadratura</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.optimize</span><span class="w"> </span><span class="kn">import</span> <span class="n">curve_fit</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.integrate</span><span class="w"> </span><span class="kn">import</span> <span class="n">quad</span> <span class="c1"># rotina para integraçã ode funções pelo método da quadratura</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1">#bibliotecas necessárias para resolução de exercícios</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span><span class="w"> </span><span class="nn">scipy.optimize</span><span class="w"> </span><span class="kn">import</span> <span class="n">curve_fit</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">from</span><span class="w"> </span><span class="nn">scipy.integrate</span><span class="w"> </span><span class="kn">import</span> <span class="n">quad</span> <span class="c1"># rotina para integraçã ode funções pelo método da quadratura</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;numpy&#39;
 </pre></div>
 </div>
 </div>
 </div>
 </section>
 <section id="exemplo-1-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-ideal">
-<h2>Exemplo 1: Cálculo do trabalho em uma expansão reversível de um gás ideal<a class="headerlink" href="#exemplo-1-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-ideal" title="Permalink to this headline">#</a></h2>
+<h2>Exemplo 1: Cálculo do trabalho em uma expansão reversível de um gás ideal<a class="headerlink" href="#exemplo-1-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-ideal" title="Link to this heading">#</a></h2>
 <p><font size="4"> Considere a compressão reverssível de 1.0 mol de um gás ideal, de 22.4 L para 10.0L mantendo T constante a 0ºC. Calcule o trabalho realizado neste processo. Repita os cáclulos para uma segunda compressão de 10.0 L até 1.0 L mantendo a temperatura a 0ºC.</p>
 <section id="solucao">
-<h3>Solução<a class="headerlink" href="#solucao" title="Permalink to this headline">#</a></h3>
+<h3>Solução<a class="headerlink" href="#solucao" title="Link to this heading">#</a></h3>
 <p>O trabalho reversível é o trabalho teórico máximo que o sistema pode realizar. Este trabalho é teórico pois considera que o trabalho é feito em <em>n</em> etapas infinitesimais. O valor do trabalho dependerá do sistema e da equação de estado que descreve este sistema. Por este motivo, em primeiro lugar é preciso encontrar um expressão para o trabalho p-V de um gás ideal. No trabalho reversível podemos considerar que a pressão de oposição se iguala a pressão do sistema, sendo esta calculada pela equação de estado. Desta forma podemos obter o trabalho reversível de uma gás ideal da seguinte forma:</p>
 <div class="math notranslate nohighlight">
 \[ dW = -pdV \]</div>
@@ -798,10 +530,10 @@ W em uma única etapa (J/mol)= 7060.581
 </section>
 </section>
 <section id="exemplo-2-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-de-van-der-waals">
-<h2>Exemplo 2: Cálculo do trabalho em uma expansão reversível de um gás de van der Waals<a class="headerlink" href="#exemplo-2-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-de-van-der-waals" title="Permalink to this headline">#</a></h2>
+<h2>Exemplo 2: Cálculo do trabalho em uma expansão reversível de um gás de van der Waals<a class="headerlink" href="#exemplo-2-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-de-van-der-waals" title="Link to this heading">#</a></h2>
 <p><font size="4"> Repita o exercício anterior para o <span class="math notranslate nohighlight">\(O_2\)</span>, assumindo que este se comporta como um gás de van der Waals.</p>
 <section id="id1">
-<h3>Solução<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<h3>Solução<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <p>Novamente nosso problema se resume a encontrar uma equação com a qual podemos calcular o trabalho feito por um gás de van der Waals.</p>
 <div class="math notranslate nohighlight">
 \[ dW = -pdV \]</div>
@@ -886,10 +618,10 @@ W em uma única etapa (J/mol)= 6999.130
 </section>
 </section>
 <section id="exemplo-3-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-que-obedece-uma-expansao-do-virial">
-<h2>Exemplo 3: Cálculo do trabalho em uma expansão reversível de um gás que obedece uma expansão do virial<a class="headerlink" href="#exemplo-3-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-que-obedece-uma-expansao-do-virial" title="Permalink to this headline">#</a></h2>
+<h2>Exemplo 3: Cálculo do trabalho em uma expansão reversível de um gás que obedece uma expansão do virial<a class="headerlink" href="#exemplo-3-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-que-obedece-uma-expansao-do-virial" title="Link to this heading">#</a></h2>
 <p><font size = "4"> A equação de estado dos gases pode ser escrita na forma de uma expansão do virial, <span class="math notranslate nohighlight">\( pV_m = RT \left( 1 + \frac{B}{V_{m,}} + \frac{C}{V^2_{m}} + ...\right)\)</span>. Repita os exercícios anteriores para compressão do <span class="math notranslate nohighlight">\(O_2\)</span> e compare os resultados. Dados: B = <span class="math notranslate nohighlight">\( -22,0 \times 10^{-6} m^3 mol^{-1}\)</span>, C = <span class="math notranslate nohighlight">\( 1100 \times 10^{-12} m^6 mol^{-2}\)</span>.</p>
 <section id="id2">
-<h3>Solução<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
+<h3>Solução<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
 <p>Em primeiro lugar é preciso encontrar um expressão para o trabalho p-V de um gás que obedece a equação do virial.</p>
 <div class="math notranslate nohighlight">
 \[ dW = -pdV \]</div>
@@ -964,10 +696,10 @@ W em uma única etapa (J/mol)= 6999.130
 </section>
 </section>
 <section id="exemplo-4-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-de-redlich-kwong">
-<h2>Exemplo 4: Cálculo do trabalho em uma expansão reversível de um gás de Redlich-Kwong<a class="headerlink" href="#exemplo-4-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-de-redlich-kwong" title="Permalink to this headline">#</a></h2>
+<h2>Exemplo 4: Cálculo do trabalho em uma expansão reversível de um gás de Redlich-Kwong<a class="headerlink" href="#exemplo-4-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-de-redlich-kwong" title="Link to this heading">#</a></h2>
 <p><font size ="4" >O estado de um gás pode ser descrito pela equação de Redlich-Kwong, <span class="math notranslate nohighlight">\( \left (p +\frac{a}{V_m(V_m +b)T^{1/2}} \right) (V_m - b) = RT \)</span>. Repita os exercícios anteriores para compressão do <span class="math notranslate nohighlight">\(O_2\)</span> e compare os resultados. Dados: a = 17,16 <span class="math notranslate nohighlight">\(L^2 K^{1/2} atm. mol^{-2}\)</span>, b = <span class="math notranslate nohighlight">\(0,0221 L. mol^{-1}\)</span>.</p>
 <section id="id3">
-<h3>Solução<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
+<h3>Solução<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <p>Novamente nosso problema se resume a encontrar uma equação com a qual podemos calcular o trabalho feito por um gás que obedece a equação de Redlich-Kwong.</p>
 <div class="math notranslate nohighlight">
 \[ dW = -pdV \]</div>
@@ -1044,10 +776,10 @@ W em uma única etapa (J/mol)= 6999.130
 </section>
 </section>
 <section id="exemplo-5-calculo-do-trabalho-associado-a-uma-reacao-quimica">
-<h2>Exemplo 5: Cálculo do trabalho associado a uma reação química<a class="headerlink" href="#exemplo-5-calculo-do-trabalho-associado-a-uma-reacao-quimica" title="Permalink to this headline">#</a></h2>
+<h2>Exemplo 5: Cálculo do trabalho associado a uma reação química<a class="headerlink" href="#exemplo-5-calculo-do-trabalho-associado-a-uma-reacao-quimica" title="Link to this heading">#</a></h2>
 <p><font size = "4"> Uma reação química ocorre num vaso de seção reta uniforme de 50 cm², provido de um pistão. Em virtude de reação, o pistão se desloca 15 cm contra a pressão externa de 1 atm. Calcule o trabalho feito pelo sistema.</p>
 <section id="id4">
-<h3>Solução<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
+<h3>Solução<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
 <p>O trabalho é <span class="math notranslate nohighlight">\( W = -\int p_{ext} dV = - p_{ext} \Delta V \)</span>, onde a variação do volume é dado pela distância de deslocamento do pistão multiplicado pela área seção reta do mesmo. Perceba que neste caso é usado a pressão externa e não a equaçã ode estado de um gás. É feito desta maneira porque o problema informa que a expansão ocorre contra uma pressão de oposição constante.<font></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1077,10 +809,10 @@ W em uma única etapa (J/mol)= 6999.130
 </section>
 </section>
 <section id="exercicio-6-calculos-envolvendo-aquecimento-de-um-gas-ideal">
-<h2>Exercício 6: Cálculos envolvendo aquecimento de um gás ideal<a class="headerlink" href="#exercicio-6-calculos-envolvendo-aquecimento-de-um-gas-ideal" title="Permalink to this headline">#</a></h2>
+<h2>Exercício 6: Cálculos envolvendo aquecimento de um gás ideal<a class="headerlink" href="#exercicio-6-calculos-envolvendo-aquecimento-de-um-gas-ideal" title="Link to this heading">#</a></h2>
 <p><font size = "4">Uma amostra de 1,00 mol de um gás ideal monoatômico, Cv = 3/2R, inicialmente a <span class="math notranslate nohighlight">\(p_1\)</span> = 1,00 atm e <span class="math notranslate nohighlight">\(T_1\)</span> = 300 K, é aquecida reversivelmente, até 400 K, a volume constante. Calcule a pressão final, ΔU, Q e W.</p>
 <section id="id5">
-<h3>Solução<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h3>
+<h3>Solução<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
 <p>Para este caso, W = 0, pois V = cte, e dU = dQ. Sabemos que:</p>
 <div class="math notranslate nohighlight">
 \[ \Delta U = \int_{T_1}^{T_2} C_V dT \]</div>
@@ -1124,10 +856,10 @@ Q (J/mol) = 1247.17
 </section>
 </section>
 <section id="exemplo-7-calculos-da-primeira-lei-envolvendo-o-aquecimento-de-um-gas-ideal">
-<h2>Exemplo 7: Cálculos da primeira Lei envolvendo o aquecimento de um gás ideal<a class="headerlink" href="#exemplo-7-calculos-da-primeira-lei-envolvendo-o-aquecimento-de-um-gas-ideal" title="Permalink to this headline">#</a></h2>
+<h2>Exemplo 7: Cálculos da primeira Lei envolvendo o aquecimento de um gás ideal<a class="headerlink" href="#exemplo-7-calculos-da-primeira-lei-envolvendo-o-aquecimento-de-um-gas-ideal" title="Link to this heading">#</a></h2>
 <p><font size = "4">Quando se aquecem 2 mols de <span class="math notranslate nohighlight">\(CO_2\)</span>, à pressão constante de 1,25 atm, sua temperatura passa de 250 K a 277 K. A capacidade calorífica molar do <span class="math notranslate nohighlight">\(CO_2\)</span> a pressão constante, <span class="math notranslate nohighlight">\(C_{p,m}\)</span>, é 37,11 JK-¹ mol-¹. Calcule Q, ΔH e ΔU.</p>
 <section id="id6">
-<h3>Solução<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h3>
+<h3>Solução<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
 <p>Sabe-se que nessas condições de pressão constante Q = <span class="math notranslate nohighlight">\( \Delta H \)</span>. Portanto, temos realizar apenas uma integração:</p>
 <div class="math notranslate nohighlight">
 \[ \Delta H = Q= \int_{250}^{277} C_p dT\]</div>
@@ -1179,10 +911,10 @@ Q (J) = 2968.80
 </section>
 </section>
 <section id="exemplo-8-calculo-da-entalpia-quando-c-p-e-funcao-da-temperatura">
-<h2>Exemplo 8: Cálculo da entalpia quando <span class="math notranslate nohighlight">\(C_p\)</span> é função da temperatura<a class="headerlink" href="#exemplo-8-calculo-da-entalpia-quando-c-p-e-funcao-da-temperatura" title="Permalink to this headline">#</a></h2>
+<h2>Exemplo 8: Cálculo da entalpia quando <span class="math notranslate nohighlight">\(C_p\)</span> é função da temperatura<a class="headerlink" href="#exemplo-8-calculo-da-entalpia-quando-c-p-e-funcao-da-temperatura" title="Link to this heading">#</a></h2>
 <p><font size ="4">Qual a variação da entalpia molar do <span class="math notranslate nohighlight">\(N_2\)</span> quando este gás é aquecido de 25°C até 100°C? Considere <span class="math notranslate nohighlight">\(C_{p,m} (J K^{-1} mol^{-1}) = 28,58 + 3,77 \times 10^{-3} T - \frac{0,50 \times 10^5}{T^2}\)</span>.</p>
 <section id="id7">
-<h3>Solução<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h3>
+<h3>Solução<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
 <p>Este problema é solucionado resolvendo a seguinte equação:</p>
 <div class="math notranslate nohighlight">
 \[\Delta Hº_m = \int_{T_1 }^{T_2 } C_{p,m}dT \]</div>
@@ -1220,10 +952,10 @@ Q (J) = 2968.80
 </section>
 </section>
 <section id="exemplo-9-calculos-envolvendo-a-capacidade-calorifica-quando-esta-e-uma-funcao-da-temperatura">
-<h2>Exemplo 9: Cálculos envolvendo a capacidade calorífica, quando esta é uma função da temperatura<a class="headerlink" href="#exemplo-9-calculos-envolvendo-a-capacidade-calorifica-quando-esta-e-uma-funcao-da-temperatura" title="Permalink to this headline">#</a></h2>
+<h2>Exemplo 9: Cálculos envolvendo a capacidade calorífica, quando esta é uma função da temperatura<a class="headerlink" href="#exemplo-9-calculos-envolvendo-a-capacidade-calorifica-quando-esta-e-uma-funcao-da-temperatura" title="Link to this heading">#</a></h2>
 <p><font size = "4">A capacidade calorífica a pressão constante de uma amostra de gás ideal varia com a temperatura de acordo com a expressão <span class="math notranslate nohighlight">\(C_p (J ~K^{-1}) = 20,17 + 0,3655 (T/K)\)</span>. Calcule Q, W e ΔH, quando a temperatura é elevada de 25°C a 200°C (i) a pressão constante e (ii) a volume constante.</p>
 <section id="solucao-do-problema-a-p-cte">
-<h3>Solução do problema a p = cte<a class="headerlink" href="#solucao-do-problema-a-p-cte" title="Permalink to this headline">#</a></h3>
+<h3>Solução do problema a p = cte<a class="headerlink" href="#solucao-do-problema-a-p-cte" title="Link to this heading">#</a></h3>
 <p>Sabe-se que nessas condições de pressão constante Q = <span class="math notranslate nohighlight">\( \Delta H \)</span>. Portanto, temos que realizar apenas uma integração:</p>
 <div class="math notranslate nohighlight">
 \[ \Delta H = Q= \int_{T_1}^{T_2} C_p dT\]</div>
@@ -1235,7 +967,7 @@ Como é um gás ideal, <span class="math notranslate nohighlight">\( C_p - C_V =
 \[ \Delta U =  \int_{298 K}^{473 K} (20,17 + 0,3665(T/K) -R)   dT  \]</div>
 </section>
 <section id="solucao-do-problema-a-v-cte">
-<h3>Solução do problema a V = cte<a class="headerlink" href="#solucao-do-problema-a-v-cte" title="Permalink to this headline">#</a></h3>
+<h3>Solução do problema a V = cte<a class="headerlink" href="#solucao-do-problema-a-v-cte" title="Link to this heading">#</a></h3>
 <p>A volume constante W = 0, logo, o cálculo da entalpia se dará pela seguinte integração :</p>
 <div class="math notranslate nohighlight">
 \[ \Delta H = \int_{T_1}^{T_2} C_p dT\]</div>
@@ -1316,10 +1048,10 @@ b) Q (J) = 23290.14
 </section>
 </section>
 <section id="exemplo-10-calculo-da-entalpia-em-diferentes-temperaturas">
-<h2>Exemplo 10: Cálculo da entalpia em diferentes temperaturas<a class="headerlink" href="#exemplo-10-calculo-da-entalpia-em-diferentes-temperaturas" title="Permalink to this headline">#</a></h2>
+<h2>Exemplo 10: Cálculo da entalpia em diferentes temperaturas<a class="headerlink" href="#exemplo-10-calculo-da-entalpia-em-diferentes-temperaturas" title="Link to this heading">#</a></h2>
 <p><font size ="4">A entalpia padrão de formação do <span class="math notranslate nohighlight">\(H_2 O(g)\)</span> a 298K  é -241,82 kJ/mol. Estime seu valor a 100°C dadas as seguintes capacidades caloríficas molares, a pressão constante: <span class="math notranslate nohighlight">\(H_2 O(g):33,58 ~J K^{-1} mol^{-1}; H_2 (g): 28,84 ~J K^{-1} mol^{-1}; O_2(g): 29,37 ~J K^{-1} mol^{-1}\)</span>. Admita que as capacidades caloríficas sejam independentes da temperatura.</p>
 <section id="id8">
-<h3>Solução<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h3>
+<h3>Solução<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
 <p>É possível estimar a variação de entalpia em uma determinada temperatura a partir da entalpia e capacidades caloríficas em uma temperatura de referência. Nestes casos, é aplicada a Lei de Kirchhoff:</p>
 <div class="math notranslate nohighlight">
 \[ \int d\Delta H = \int_{T_1}^{T_2} \Delta C_{p} dT\]</div>
@@ -1361,9 +1093,9 @@ b) Q (J) = 23290.14
 </section>
 </section>
 <section id="exemplo-11-obtencao-do-polinomio-da-capacidade-calorifica-por-ajuste-polinomial">
-<h2>Exemplo 11: Obtenção do polinômio da capacidade calorífica por ajuste polinomial<a class="headerlink" href="#exemplo-11-obtencao-do-polinomio-da-capacidade-calorifica-por-ajuste-polinomial" title="Permalink to this headline">#</a></h2>
+<h2>Exemplo 11: Obtenção do polinômio da capacidade calorífica por ajuste polinomial<a class="headerlink" href="#exemplo-11-obtencao-do-polinomio-da-capacidade-calorifica-por-ajuste-polinomial" title="Link to this heading">#</a></h2>
 <p><font size ="4">Os dados a seguir mostram como a capacidade calorífica molar padrão, a pressão constante, do dióxido de enxofre varia com a temperatura. De quanto aumenta a entalpia molar padrão do <span class="math notranslate nohighlight">\(SO_{2(g)}\)</span> quando a temperatura varia de 298,15 até 1500 K?</p>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p></p></th>
 <th class="head"><p></p></th>
@@ -1396,8 +1128,9 @@ b) Q (J) = 23290.14
 </tr>
 </tbody>
 </table>
+</div>
 <section id="id9">
-<h3>Solução<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h3>
+<h3>Solução<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
 <p>Em primeiro lugar é preciso encontrar uma equação que relacione Cp com temperatura, pois esta é função de T no intervalo de valores estudado. A princípio uma regressão polinomial será usada para encontrar a relação entre Cp e T. Em muito dos casos um polinômio de terceiro grau é suficiente para resolver este tipo de problema. <font></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1443,7 +1176,7 @@ b) Q (J) = 23290.14
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/Primeira_Lei_44_0.png" src="_images/Primeira_Lei_44_0.png" />
+<img alt="_images/5a0948cf112180f7e32843d8dc860bad16a7927bc880d44a86a53a5ae69d8279.png" src="_images/5a0948cf112180f7e32843d8dc860bad16a7927bc880d44a86a53a5ae69d8279.png" />
 </div>
 </div>
 <p><font size ="4"> O gráfico confirma que um polinônio de terceiro grau é suficiente para descrever a dependência de <span class="math notranslate nohighlight">\(C_p\)</span> com a temperatura nas condições do problema.A partir do polinômio obtido é possível calcular a variação da entalpia pela integração da capacidade calorífica.</p>
@@ -1478,9 +1211,9 @@ b) Q (J) = 23290.14
 </section>
 </section>
 <section id="exemplo-12-obtendo-funcoes-para-cp-t">
-<h2>Exemplo 12: Obtendo funções para Cp(T)<a class="headerlink" href="#exemplo-12-obtendo-funcoes-para-cp-t" title="Permalink to this headline">#</a></h2>
+<h2>Exemplo 12: Obtendo funções para Cp(T)<a class="headerlink" href="#exemplo-12-obtendo-funcoes-para-cp-t" title="Link to this heading">#</a></h2>
 <p><font size ="4"> Os dados a seguir mostram como a capacidade calorífica molar padrão a pressão constante da amônia varia com a temperatura. Ajuste uma expressão com a forma <span class="math notranslate nohighlight">\( C_{p,m} = a + bT + \frac{c}{T^2}\)</span> aos dados, e determine os valores de a, b e c. Verifique se não seria melhor expressar os dados na forma <span class="math notranslate nohighlight">\(C_{p,m} = \alpha + \beta T + \gamma T^2\)</span>, e determine os valores desses coeficientes.</p>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p></p></th>
 <th class="head"><p></p></th>
@@ -1516,9 +1249,10 @@ b) Q (J) = 23290.14
 </tr>
 </tbody>
 </table>
+</div>
 <font size ="4">
 <section id="id10">
-<h3>Solução<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h3>
+<h3>Solução<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
 <p>O ajuste da primeira função será feito usando a rotina scipy.optimize.curve_fit para fazermos uma regressão não linear usando o método dos mínimos quadrados. Inicialmente deve ser definido a função que desejamos ajustar aos dados fornecidos no problema, usando a sintaxe python padrão, e posteriormente proceder com o ajuste. Para comparamos a qualidade de ambos os ajustes, a equação de segundo grau sugerida será ajustada aos dados usando o mesmo procedimento. <font></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1531,7 +1265,7 @@ b) Q (J) = 23290.14
 <span class="c1"># Definir a função que será ajustada usando o formato</span>
 <span class="c1"># python para descrever funções</span>
 
-<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">func</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
 
     <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">*</span><span class="n">T</span> <span class="o">+</span> <span class="n">c</span><span class="o">/</span><span class="n">T</span><span class="o">**</span><span class="mi">2</span>
 
@@ -1559,7 +1293,7 @@ b) Q (J) = 23290.14
 <span class="c1"># Definir a função que será ajustada usando o formato</span>
 <span class="c1"># python para descrever funções</span>
 
-<span class="k">def</span> <span class="nf">func2</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">func2</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
 
     <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">*</span><span class="n">T</span> <span class="o">+</span> <span class="n">c</span><span class="o">*</span><span class="n">T</span><span class="o">**</span><span class="mi">2</span>
 
@@ -1599,7 +1333,7 @@ b) Q (J) = 23290.14
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/Primeira_Lei_51_0.png" src="_images/Primeira_Lei_51_0.png" />
+<img alt="_images/4615afc098ed71248e9be6159404cd2cdc6576b3186e0e2a76bc96bce7c8d170.png" src="_images/4615afc098ed71248e9be6159404cd2cdc6576b3186e0e2a76bc96bce7c8d170.png" />
 </div>
 </div>
 <p><font size = "4"> Uma análise visual dos ajustes mostra que ambas as funções são equivalentes. Mas um teste estatístico pode indicar qual das funções se ajusta melhor aos dados experimentais. Como a rotina scipy.optimize.curve_fit retorna a matriz de covariância, é possível calcular o desvio padrão de cada ajuste. Os elementos da diagonal da matriz de covariância fornecem o variância dos parâmetros estimados. A raíz quadrada destes parâmetros fornece o desvio padrão dos parâmetros estimados. <font></p>
@@ -1626,9 +1360,9 @@ desvio padrão do segundo ajuste  =  [4.36659308e-01 1.45459699e-03 1.10590957e-
 </section>
 </section>
 <section id="exemplo-13-calculando-delta-ho-t-quando-cp-e-funcao-da-temperatura">
-<h2>Exemplo 13: Calculando <span class="math notranslate nohighlight">\( \Delta Hº(T)\)</span> quando Cp é função da temperatura<a class="headerlink" href="#exemplo-13-calculando-delta-ho-t-quando-cp-e-funcao-da-temperatura" title="Permalink to this headline">#</a></h2>
+<h2>Exemplo 13: Calculando <span class="math notranslate nohighlight">\( \Delta Hº(T)\)</span> quando Cp é função da temperatura<a class="headerlink" href="#exemplo-13-calculando-delta-ho-t-quando-cp-e-funcao-da-temperatura" title="Link to this heading">#</a></h2>
 <p><font size="4"> Às vezes é mais adequado exprimir a dependência que a capacidade calorífica tem em relação à temperatura pela expressão empírica <span class="math notranslate nohighlight">\(C_{p,m} = \alpha + \beta T + \gamma T^2\)</span>. Utilize esta expressão para determinar a entalpia padrão de combustão do metano a 350 K. Use os seguintes dados obtidos a 298 K:</p>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p></p></th>
 <th class="head"><p></p></th>
@@ -1664,8 +1398,9 @@ desvio padrão do segundo ajuste  =  [4.36659308e-01 1.45459699e-03 1.10590957e-
 </tr>
 </tbody>
 </table>
+</div>
 <section id="id11">
-<h3>Solução<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h3>
+<h3>Solução<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
 <p>É possível estimar a variação de entalpia em uma determinada temperatura a partir da entalpia e capacidades caloríficas em uma temperatura de referência. Nestes casos, é aplicada a Lei de Kirchhoff:</p>
 <div class="math notranslate nohighlight">
 \[ \int d\Delta H = \int_{T_1}^{T_2} \Delta C_{p} dT\]</div>
@@ -1785,7 +1520,7 @@ desvio padrão do segundo ajuste  =  [4.36659308e-01 1.45459699e-03 1.10590957e-
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
@@ -1793,50 +1528,156 @@ desvio padrão do segundo ajuste  =  [4.36659308e-01 1.45459699e-03 1.10590957e-
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="Gases_Reais_v2.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Gases Reais</p>
-        </div>
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Gases_Reais_v2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Gases Reais</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="Primeira_Lei_parte2.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="Primeira_Lei_parte2.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Primeira Lei da Termodinâmica: Resolvendo problemas via integração numérica</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamentos-teoricos">Fundamentos teóricos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-1-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-ideal">Exemplo 1: Cálculo do trabalho em uma expansão reversível de um gás ideal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solucao">Solução</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-2-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-de-van-der-waals">Exemplo 2: Cálculo do trabalho em uma expansão reversível de um gás de van der Waals</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Solução</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-3-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-que-obedece-uma-expansao-do-virial">Exemplo 3: Cálculo do trabalho em uma expansão reversível de um gás que obedece uma expansão do virial</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Solução</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-4-calculo-do-trabalho-em-uma-expansao-reversivel-de-um-gas-de-redlich-kwong">Exemplo 4: Cálculo do trabalho em uma expansão reversível de um gás de Redlich-Kwong</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Solução</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-5-calculo-do-trabalho-associado-a-uma-reacao-quimica">Exemplo 5: Cálculo do trabalho associado a uma reação química</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Solução</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercicio-6-calculos-envolvendo-aquecimento-de-um-gas-ideal">Exercício 6: Cálculos envolvendo aquecimento de um gás ideal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Solução</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-7-calculos-da-primeira-lei-envolvendo-o-aquecimento-de-um-gas-ideal">Exemplo 7: Cálculos da primeira Lei envolvendo o aquecimento de um gás ideal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Solução</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-8-calculo-da-entalpia-quando-c-p-e-funcao-da-temperatura">Exemplo 8: Cálculo da entalpia quando <span class="math notranslate nohighlight">\(C_p\)</span> é função da temperatura</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Solução</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-9-calculos-envolvendo-a-capacidade-calorifica-quando-esta-e-uma-funcao-da-temperatura">Exemplo 9: Cálculos envolvendo a capacidade calorífica, quando esta é uma função da temperatura</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solucao-do-problema-a-p-cte">Solução do problema a p = cte</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solucao-do-problema-a-v-cte">Solução do problema a V = cte</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-10-calculo-da-entalpia-em-diferentes-temperaturas">Exemplo 10: Cálculo da entalpia em diferentes temperaturas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Solução</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-11-obtencao-do-polinomio-da-capacidade-calorifica-por-ajuste-polinomial">Exemplo 11: Obtenção do polinômio da capacidade calorífica por ajuste polinomial</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Solução</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-12-obtendo-funcoes-para-cp-t">Exemplo 12: Obtendo funções para Cp(T)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Solução</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemplo-13-calculando-delta-ho-t-quando-cp-e-funcao-da-temperatura">Exemplo 13: Calculando <span class="math notranslate nohighlight">\( \Delta Hº(T)\)</span> quando Cp é função da temperatura</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Solução</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-    By Leonardo Baptista<br/>
-  
-      &copy; Copyright 2022.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
+<p class="component-author">
+By Leonardo Baptista
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
 </div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>
